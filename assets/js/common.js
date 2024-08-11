@@ -86,16 +86,13 @@ jQuery(document).ready(function ($) {
     }, 1600);
   }
 
-  $(".panels").hover(
-    function () {
-      activatePanel(this);
-    },
-    function () {
-      if (!$(".panels").hasClass("active")) {
-        activatePanel("#pannel1");
-      }
+  $(".panels").on("click", function () {
+    activatePanel(this);
+
+    if (!$(".panels").hasClass("active")) {
+      activatePanel("#pannel1");
     }
-  );
+  });
   l;
   activatePanel("#pannel1");
 });

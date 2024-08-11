@@ -238,6 +238,7 @@
   justify-content: center;
 }
 .tooglepanelwrap .panels {
+  cursor: pointer;
   width: 80px;
   height: 600px;
   box-shadow: 1px 0px 2px 1px gray;

@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="bycategory global_width">
-        <h1 class="title"> Product Collections</h1>
+        <h1 class="title_prod"> Product Collections</h1>
         <div class="homecollection ">
 
             <div class="articles">
