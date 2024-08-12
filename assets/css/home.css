@@ -4,6 +4,8 @@
   font-family: "Mathilga";
   src: url("../fonts/Mathilga-lgwXD.otf") format("opentype");
 }
+.missionary .frontrow1 {
+}
 .bycategory {
   margin-top: 105px;
 }
@@ -113,23 +115,26 @@
   padding: 100px 0;
 }
 @media (max-width: 1440px) {
+  .missionary .leftcorner {
+    padding: 10px 40px;
+  }
   .homecollection {
-    padding: 10px;
+    padding: 10px 40px;
   }
   .bycategory .title_prod {
-    padding: 0 15px;
+    padding: 0 40px;
   }
-  .tooglepanel {
-    padding: 100px 10px;
+  .home .tooglepanel {
+    padding: 100px 0px;
   }
   .trending_on_socials_wrap {
     padding: 50px 15px;
   }
   .originals_title {
-    padding: 0px 15px;
+    padding: 0px 40px;
   }
   .homecollection .list_of_articles .viewcollection {
-    padding: 20px 23px;
+    padding: 20px 10px;
   }
 }
 @media (max-width: 888px) {

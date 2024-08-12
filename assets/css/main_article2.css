@@ -1,0 +1,94 @@
+.missionary_front1 .listcontent {
+  display: flex;
+}
+.missionary_front1 .listcontent img {
+  max-width: 451px;
+  max-height: 411px;
+}
+.missionary_front1 .listcontent section {
+  max-width: 418px;
+  width: 100%;
+  margin-right: 24px;
+}
+.missionary_front1 .listcontent section h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.missionary_front1 .listcontent section h2 {
+  margin: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.missionary_front1 .listcontent section p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+.missionary_front2 {
+  display: flex;
+}
+.missionary_front2 .leftcorner {
+  max-width: 418px;
+  width: 100%;
+  height: 267px;
+  border-radius: 6px;
+}
+.missionary_front2 .leftcorner section {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  right: 20px;
+}
+.missionary_front2 .leftcorner section .listofcategory .category {
+  color: #f4d77e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.missionary_front2 .leftcorner section h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: white;
+}
+.missionary_front2 .rightcontent section h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.missionary_front2 .rightcontent section h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin: 20px 0;
+}
+.missionary_front2 .rightcontent section p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+.missionary_front2 .rightcontent {
+  max-width: 391px;
+  height: 232px;
+  width: 100%;
+  margin-left: 55px;
+  margin-top: 20px;
+}

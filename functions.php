@@ -31,5 +31,31 @@ function truncate_excerpt($length = 40, $append = '...')
     }
     return $title;
 }
+
+// 
+function getlist_categories()
+{
+    $categories = get_the_category();
+    if (!empty($categories)) {
+        $categories = array_slice($categories, 0, 1);
+        ?>
+
+        <div class="listofcategory">
+            <?php
+            foreach ($categories as $category) {
+                ?>
+                <h1 class="category">
+                    <?php echo esc_html($category->name) ?>
+                </h1>
+
+                <?php
+            }
+            ?>
+        </div>
+
+        <?php
+    }
+
+}
 //================================================
 include_once(aliving_dir . '/custom/main.php');

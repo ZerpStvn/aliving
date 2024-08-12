@@ -1,6 +1,19 @@
 <?php get_header(); ?>
 <div class="home  ">
 
+    <div class="missionary global_width">
+        <div class="leftcorner">
+            <div class="frontrow1">
+                <?php missionary_front1() ?>
+
+                <?php missionary_front2() ?>
+            </div>
+            <div class="frontrow2">
+
+            </div>
+        </div>
+    </div>
+
     <div class="tooglepanel global_width">
         <?php toggleFronts() ?>
     </div>

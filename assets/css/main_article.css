@@ -438,6 +438,9 @@
   .panels.active .pannelcontent {
     padding: 30px 0px 30px 10px;
   }
+  .tooglepanelwrap {
+    padding: 0 40px;
+  }
 }
 @media (max-width: 990px) {
   .original_collections li {
