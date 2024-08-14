@@ -13,6 +13,7 @@ jQuery(document).ready(function ($) {
       $(".sticky-header").css("background-color", "transparent");
     }
   });
+
   jQuery(".responsive").slick({
     dots: false,
     arrows: false,
@@ -66,14 +67,6 @@ jQuery(document).ready(function ($) {
 
   function activatePanel(panel) {
     $(".panels").removeClass("active");
-    $(".pannelcontent").removeClass("active");
-    $(panel).addClass("active");
-    $(panel).find(".pannelcontent").addClass("active");
-  }
-
-  // Handle hover events
-  function activatePanel(panel) {
-    $(".panels").removeClass("active");
     $(".pannelcontent").removeClass("show-content");
 
     $(panel).addClass("active");
@@ -89,10 +82,29 @@ jQuery(document).ready(function ($) {
   $(".panels").on("click", function () {
     activatePanel(this);
 
-    if (!$(".panels").hasClass("active")) {
+    // Ensure the first panel is active if no panel is active
+    if (!$(".panels.active").length) {
       activatePanel("#pannel1");
     }
   });
-  l;
+
   activatePanel("#pannel1");
+
+  // Tab links functionality
+  $(".tablinks button").click(function () {
+    $(".tabcontents > div").removeClass("active");
+    $(".tablinks button").removeClass("tabactive");
+    if ($(this).hasClass("thelist")) {
+      $(this).addClass("tabactive");
+      $(".the_list_content").addClass("active");
+    } else if ($(this).hasClass("listdeals")) {
+      $(this).addClass("tabactive");
+      $(".listandguidecontent").addClass("active");
+    } else if ($(this).hasClass("giftguides")) {
+      $(this).addClass("tabactive");
+      $(".giftsguidecontent").addClass("active");
+    }
+  });
+
+  $(".tablinks button:first").trigger("click");
 });
