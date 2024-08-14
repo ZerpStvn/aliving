@@ -55,6 +55,39 @@
 
         </div>
     </div>
+    <div class="shopwrap">
+        <div class="global_width">
+            <div class="shopwraplist">
+                <h1>Shop Width Us!</h1>
+                <div class="shopbtn">
+                    <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper
+                        vehicula.
+                        Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada.</p>
+                    <a class="secondarybutton" href="">See More<span><img
+                                src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
+                                alt="arrow_icon"></span></a>
+                </div>
+            </div>
+            <div class="tabwraps">
+                <ul class="tablinks">
+                    <li><button class="thelist"> The List</button></li>
+                    <li><button class="listdeals">List & Deals</button></li>
+                    <li><button class="giftguides">Gift Guides</button></li>
+                </ul>
 
+                <div class="tabcontents">
+                    <div class="the_list_content">
+                        d
+                    </div>
+                    <div class="listandguidecontent">
+                        s
+                    </div>
+                    <div class="giftsguidecontent">
+                        a
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <?php get_footer(); ?>
