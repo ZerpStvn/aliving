@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <div class="home  ">
-
     <div class="tooglepanel global_width">
         <?php toggleFronts() ?>
     </div>
@@ -58,7 +57,7 @@
     <div class="shopwrap">
         <div class="global_width">
             <div class="shopwraplist">
-                <h1>Shop Width Us!</h1>
+                <h1>Shop With Us!</h1>
                 <div class="shopbtn">
                     <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper
                         vehicula.
@@ -77,13 +76,13 @@
 
                 <div class="tabcontents">
                     <div class="the_list_content">
-                        d
+                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "originals") ?>
                     </div>
                     <div class="listandguidecontent">
-                        s
+                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "originals") ?>
                     </div>
                     <div class="giftsguidecontent">
-                        a
+                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "originals") ?>
                     </div>
                 </div>
             </div>

@@ -434,6 +434,124 @@
   line-height: 21px;
   text-align: left;
 }
+/* shop with us */
+.shopwithus {
+  list-style: none;
+}
+.shopwithus .columns {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.shopwithus .left-column {
+  display: flex;
+}
+.shopwithus .left-column li {
+  background-color: #000000;
+  max-width: 400px;
+  width: 100%;
+}
+.shopwithus .left-column li:nth-child(2) {
+  margin-left: 25px;
+}
+
+.shopwithus .columns .listofcategory .category {
+  color: #f4d77e;
+}
+.shopwithus .left-column img {
+  width: 100%;
+  object-fit: cover;
+  height: 405px;
+}
+.shopwithus .left-column .infosection {
+  max-width: 405px;
+  width: 100%;
+  padding: 18px;
+}
+.shopwithus .left-column .infosection h2 {
+  font-family: var(--maintitlefonts);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.shopwithus .left-column .infosection h3 {
+  font-family: var(--maintitlefonts);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 21px;
+  text-align: left;
+}
+.shopwithus .mainleft .title {
+  max-width: 715px;
+  width: 100%;
+}
+.shopwithus .mainleft .title h2 {
+  font-family: var(--maintitlefonts);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-top: 25px;
+}
+.shopwithus .mainleft .title p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  margin: 17px 0 15px 0;
+}
+.shopwithus .mainleft .title a {
+  display: flex;
+  font-family: var(--maintitlefonts);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+.shopwithus .mainleft .title a span {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+}
+.shopwithus .right-column img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.shopwithus .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.shopwithus .right-column li {
+  max-width: 446px;
+  width: 100%;
+}
+.shopwithus .right-column li .leftfeatured {
+  display: flex;
+  background-color: #000000;
+}
+.shopwithus .right-column li .infosection {
+  padding: 12px;
+}
+.shopwithus .right-column li .infosection h2 {
+  font-family: var(--maintitlefonts);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+.shopwithus .right-column li .infosection h3 {
+  font-family: var(--maintitlefonts);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-top: 15px;
+}
 @media (max-width: 1440px) {
   .panels.active .pannelcontent {
     padding: 30px 0px 30px 10px;
