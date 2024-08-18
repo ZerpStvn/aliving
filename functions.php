@@ -79,5 +79,24 @@ function my_custom_login_logo()
 }
 add_action('login_enqueue_scripts', 'my_custom_login_logo');
 
+
+// 
+function filter_editorial_posts_by_author($query)
+{
+    // Check if we're in the admin area and it's the main query
+    if (is_admin() && $query->is_main_query() && $query->get('post_type') === 'editorial') {
+
+        $current_user = wp_get_current_user();
+
+        // If the user is not an administrator, filter posts by author
+        if (!in_array('administrator', $current_user->roles)) {
+            $query->set('author', $current_user->ID);
+        }
+    }
+}
+add_action('pre_get_posts', 'filter_editorial_posts_by_author');
+
+
+
 //================================================
 include_once(aliving_dir . '/custom/main.php');

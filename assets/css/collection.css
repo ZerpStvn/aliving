@@ -95,7 +95,7 @@ ul.collection_service {
   margin-bottom: 30px;
 }
 @media (max-width: 1440px) {
-  .decor .collectiontile h1 {
-    padding-left: 18px;
+  .decor.collections {
+    padding: 0 30px;
   }
 }

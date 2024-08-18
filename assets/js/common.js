@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
     "http://localhost/aliving/wp-content/themes/aliving/assets/image/logo4.png";
   var menuItems = [
     { url: "/home/", selector: 'li:contains("Home")' },
-    { url: "/editorial/", selector: 'li:contains("Editiorial")' },
+    { url: "/editorial/", selector: 'li:contains("Editorial")' },
     { url: "/decor/", selector: 'li:contains("Decor")' },
     { url: "/house-keeping/", selector: 'li:contains("House Keeping")' },
     { url: "/home-improvement/", selector: 'li:contains("Home improvement")' },
@@ -21,6 +21,7 @@ jQuery(document).ready(function ($) {
   menuItems.forEach(function (item) {
     if (currentUrl.includes(item.url)) {
       $(item.selector).addClass("activenav");
+      console.log(item.url);
     }
   });
   //editorial

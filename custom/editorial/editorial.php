@@ -147,7 +147,7 @@ class EditorialPostType
         $products = get_post_meta($post->ID, '_products', true);
 
         if (!is_array($products)) {
-            $products = array(array('name' => '', 'ranking' => '', 'link' => '', 'image' => '', 'description' => ''));
+            $products = array(array('name' => '', 'ranking' => '', 'link' => '', 'image' => '', 'description' => '', 'price' => ''));
         }
         ?>
 
@@ -181,6 +181,10 @@ class EditorialPostType
                     <textarea name="products[<?php echo $index; ?>][description]" id="product_description_<?php echo $index; ?>"
                         rows="4" class="widefat"><?php echo esc_textarea($product['description'] ?? ''); ?></textarea>
 
+                    <label for="product_price_<?php echo $index; ?>">Product Price:</label>
+                    <input type="text" name="products[<?php echo $index; ?>][price]" id="product_price_<?php echo $index; ?>"
+                        value="<?php echo esc_attr($product['price'] ?? ''); ?>" class="widefat">
+
                     <button type="button" class="remove-product button">Remove</button>
                 </div>
             <?php endforeach; ?>
@@ -210,6 +214,8 @@ class EditorialPostType
                         '<button type="button" class="upload_image_button button">Upload Image</button>' +
                         '<label for="product_description_' + productIndex + '">Product Description:</label>' +
                         '<textarea name="products[' + productIndex + '][description]" id="product_description_' + productIndex + '" rows="4" class="widefat"></textarea>' +
+                        '<label for="product_price_' + productIndex + '">Product Price:</label>' +
+                        '<input type="text" name="products[' + productIndex + '][price]" id="product_price_' + productIndex + '" class="widefat">' +
                         '<button type="button" class="remove-product button">Remove</button>' +
                         '</div>';
                     $('#products-wrapper').append(productHtml);
@@ -310,6 +316,7 @@ class EditorialPostType
             );
         }
     }
+
 }
 
 new EditorialPostType();
