@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
   var defaultLogo =
     "http://localhost/aliving/wp-content/themes/aliving/assets/image/Logo1.png";
   var scrolledLogo =
-    "http://localhost/aliving/wp-content/themes/aliving/assets/image/Logo4.png";
+    "http://localhost/aliving/wp-content/themes/aliving/assets/image/logo4.png";
   var menuItems = [
     { url: "/home/", selector: 'li:contains("Home")' },
     { url: "/editorial/", selector: 'li:contains("Editiorial")' },

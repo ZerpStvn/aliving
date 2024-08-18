@@ -35,7 +35,7 @@ endif;
                     echo 'logocontainer';
                 } ?>">
                     <a href="<?php echo get_home_url() ?>"> <img id="site-logo" src="<?php if (is_single()) {
-                           echo esc_url(aliving_image . '/Logo4.png');
+                           echo esc_url(aliving_image . '/logo4.png');
                        } else {
                            echo esc_url(aliving_image . '/Logo1.png');
                        } ?>" loading="lazy" alt="Main Logo"></a>
