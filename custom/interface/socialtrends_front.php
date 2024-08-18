@@ -19,10 +19,11 @@ function socialtrending()
                 // $linkurl = get_post_meta( $post_id, "trending_on_socials_meta_box", true)
                 ?>
                 <li class="socialtrending">
-                    <a href="<?php echo get_permalink() ?>">
+                    <a href="#">
                         <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="trending">
                         <h1><?php echo get_the_title() ?></h1>
                     </a>
+
                 </li>
                 <?php
             endwhile;

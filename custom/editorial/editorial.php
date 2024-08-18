@@ -130,10 +130,12 @@ class EditorialPostType
         ?>
         <label for="service">Select Service:</label>
         <select name="service" id="service" class="postbox">
+            <option value="none" <?php selected($service, 'none'); ?>>none</option>
             <option value="decor" <?php selected($service, 'decor'); ?>>Decor</option>
-            <option value="house_improvement" <?php selected($service, 'house_improvement'); ?>>House Improvement</option>
-            <option value="home_decoration" <?php selected($service, 'home_decoration'); ?>>Home Decoration</option>
+            <option value="house_keeping" <?php selected($service, 'house_improvement'); ?>>House Keeping</option>
+            <option value="home_improvement" <?php selected($service, 'home_decoration'); ?>>Home Improvement</option>
             <option value="garden" <?php selected($service, 'garden'); ?>>Garden</option>
+            <option value="whattobuy" <?php selected($service, 'whattobuy'); ?>>What to buy</option>
         </select>
         <?php
     }

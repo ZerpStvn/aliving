@@ -31,5 +31,35 @@ function truncate_excerpt($length = 40, $append = '...')
     }
     return $title;
 }
+function my_theme_register_menus()
+{
+    register_nav_menus(
+        array(
+            'primary' => __('Primary Menu', 'my-theme'),
+            'footer' => __('Footer Menu', 'my-theme')
+        )
+    );
+}
+add_action('init', 'my_theme_register_menus');
+
+
+function authorbio()
+{
+    $author_bio = get_the_author_meta('description');
+    echo substr($author_bio, 0, 30);
+}
+
+function redirect_404_to_home()
+{
+    if (is_404()) {
+        wp_redirect(site_url() . '/not-found');
+        exit;
+    }
+}
+add_action('template_redirect', 'redirect_404_to_home');
+
+
+// show recent post
+
 //================================================
 include_once(aliving_dir . '/custom/main.php');

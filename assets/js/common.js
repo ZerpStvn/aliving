@@ -1,4 +1,49 @@
 jQuery(document).ready(function ($) {
+  // checl url
+  var currentUrl = window.location.href;
+  // onscroll
+  var defaultLogo =
+    "http://localhost/aliving/wp-content/themes/aliving/assets/image/Logo1.png";
+  var scrolledLogo =
+    "http://localhost/aliving/wp-content/themes/aliving/assets/image/Logo4.png";
+  var menuItems = [
+    { url: "/home/", selector: 'li:contains("Home")' },
+    { url: "/editorial/", selector: 'li:contains("Editiorial")' },
+    { url: "/decor/", selector: 'li:contains("Decor")' },
+    { url: "/house-keeping/", selector: 'li:contains("House Keeping")' },
+    { url: "/home-improvement/", selector: 'li:contains("Home improvement")' },
+    { url: "/gardening/", selector: 'li:contains("Gardening")' },
+    { url: "/what-to-buy/", selector: 'li:contains("What to Buy")' },
+    { url: "/products/", selector: 'li:contains("Products")' },
+    { url: "/gifts/", selector: 'li:contains("Gifts")' },
+  ];
+
+  menuItems.forEach(function (item) {
+    if (currentUrl.includes(item.url)) {
+      $(item.selector).addClass("activenav");
+    }
+  });
+  //editorial
+  if (window.location.href.includes("/editorial/")) {
+    $(".navmenuheader li a").css("color", "white");
+    $(".navmenuheader .activenav").css("border-bottom", "1px solid white");
+    $(".sub-menu li a").css("color", "black");
+    $(window).on("scroll", function () {
+      var scrollTop = $(this).scrollTop();
+
+      if (scrollTop > 0) {
+        $("#site-logo").attr("src", defaultLogo);
+        $(".navmenuheader li a").css("color", "black");
+        $(".sub-menu li a").css("color", "black");
+        $(".navmenuheader .activenav").css("border-bottom", "1px solid black");
+      } else {
+        $("#site-logo").attr("src", scrolledLogo);
+        $(".navmenuheader li a").css("color", "white");
+        $(".sub-menu li a").css("color", "black");
+        $(".navmenuheader .activenav").css("border-bottom", "1px solid white");
+      }
+    });
+  }
   $(window).on("scroll", function () {
     var scrollTop = $(window).scrollTop();
     var maxScroll = 300;
@@ -16,7 +61,9 @@ jQuery(document).ready(function ($) {
 
   jQuery(".responsive").slick({
     dots: false,
-    arrows: false,
+    arrows: true,
+    prevArrow: $("#arrow-left"),
+    nextArrow: $("#arrow-right"),
     autoplay: false,
     autoplaySpeed: 0,
     infinite: true,
@@ -82,13 +129,22 @@ jQuery(document).ready(function ($) {
   $(".panels").on("click", function () {
     activatePanel(this);
 
-    // Ensure the first panel is active if no panel is active
     if (!$(".panels.active").length) {
       activatePanel("#pannel1");
     }
   });
 
-  activatePanel("#pannel1");
+  if (window.location.href.includes("/house-keeping/")) {
+    activatePanel("#pannel2");
+  } else if (window.location.href.includes("/home-improvement/")) {
+    activatePanel("#pannel3");
+  } else if (window.location.href.includes("/gardening/")) {
+    activatePanel("#pannel4");
+  } else if (window.location.href.includes("/what-to-buy/")) {
+    activatePanel("#pannel5");
+  } else {
+    activatePanel("#pannel1");
+  }
 
   // Tab links functionality
   $(".tablinks button").click(function () {
@@ -107,4 +163,25 @@ jQuery(document).ready(function ($) {
   });
 
   $(".tablinks button:first").trigger("click");
+
+  // nav menu
+  $(".collection-header").removeClass("activenav");
+  var scrollTopremove = $(window).scrollTop();
+
+  $(window).on("scroll", function () {
+    var scrollTopremove = $(window).scrollTop();
+
+    if (scrollTopremove > 0) {
+      $(".collection-header").removeClass("activenav");
+    }
+  });
+  $("#collectionnav").on("click", function (e) {
+    e.preventDefault();
+
+    $(".collection-header").toggleClass("activenav");
+  });
+
+  $(".socialtrending a").on("click", function (e) {
+    e.preventDefault();
+  });
 });

@@ -9,4 +9,7 @@ include_once(aliving_dir . "/custom/interface/originals_front.php");
 include_once(aliving_dir . "/custom/interface/socialtrends_front.php");
 include_once(aliving_dir . "/custom/interface/toggle_front.php");
 include_once(aliving_dir . "/custom/interface/shopwithus_front.php");
+include_once(aliving_dir . "/custom/interface/collections_front.php");
+include_once(aliving_dir . "/custom/interface/morelikethis_front.php");
 include_once(aliving_dir . "/custom/misc/trendingonsocials.php");
+include_once(aliving_dir . "/custom/interface/latest_front.php");

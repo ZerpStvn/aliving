@@ -166,6 +166,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  padding-bottom: 70px;
   justify-content: center;
 }
 /* tabs */
@@ -201,6 +202,36 @@
   background-color: #f4d77e;
   border-radius: 20px 20px 0 0;
   color: black;
+}
+.buttonsarrow {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.buttonsarrow #arrow-right {
+  margin-left: 20px;
+}
+.buttonsarrow button {
+  border: 1px solid white;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: white;
+}
+.ourlatest {
+}
+.ourlatest .ourlatestwrap {
+  padding: 100px 60px;
+}
+.ourlatest .ourlatestwrap h2 {
+  font-family: var(--maintitlefonts);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 74.4px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ce3e55;
 }
 @media (max-width: 1440px) {
   .homecollection {

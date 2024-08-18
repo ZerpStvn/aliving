@@ -88,5 +88,15 @@
             </div>
         </div>
     </div>
+    <div class="ourlatest global_width">
+
+        <div class="ourlatestwrap">
+            <h2>
+                Our Latest
+            </h2>
+            <?php ourlastestpost() ?>
+        </div>
+
+    </div>
 </div>
 <?php get_footer(); ?>
