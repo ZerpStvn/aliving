@@ -7,7 +7,7 @@
         <div class="homecollection ">
             <div class="trending">
                 <!-- <img src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo" class="logooverlay"> -->
-                <?php trendFront('trending', 'editorial') ?>
+                <?php trendFront('decor', 'editorial') ?>
                 <div class="hottopics">
                     <?php trendFrontHottopics('hot_topic', 'editorial') ?>
                 </div>
