@@ -9,10 +9,9 @@ function trendFront($status, $type)
             'post_type' => 'editorial',
             'meta_query' => array(
                 'relation' => 'AND',
-
                 array(
-                    'key' => '_editorial_type',
-                    'value' => $type,
+                    'key' => '_editorial_status',
+                    'value' => $status,
                     'compare' => '='
                 )
             ),
@@ -106,8 +105,8 @@ function trendFrontfeatured($status, $type)
                 'relation' => 'AND',
 
                 array(
-                    'key' => '_editorial_type',
-                    'value' => $type,
+                    'key' => '_editorial_status',
+                    'value' => $status,
                     'compare' => '='
                 )
             ),

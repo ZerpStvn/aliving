@@ -81,18 +81,10 @@ function listofarticle($type, )
         $trending_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                'meta_query' => array(
-                    'relation' => 'AND',
-                    array(
-                        'key' => '_editorial_type',
-                        'value' => $type,
-                        'compare' => '='
-                    ),
 
-                ),
                 'orderby' => 'date',
                 'order' => 'DESC',
-                'posts_per_page' => 5,
+                'posts_per_page' => 4,
             )
         );
 

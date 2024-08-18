@@ -331,6 +331,7 @@
 .panels.active .pannelcontent .recentcontent img {
   max-width: 490px;
   height: 308px;
+  width: 100%;
   object-fit: cover;
 }
 .panels.active .pannelcontent .contentwrapping {
@@ -466,6 +467,7 @@
 .shopwithus .left-column img {
   width: 100%;
   object-fit: cover;
+  border-radius: 0px !important;
   height: 405px;
 }
 .shopwithus .left-column .infosection {
@@ -523,6 +525,7 @@
 }
 .shopwithus .right-column img {
   width: 160px;
+  border-radius: 0px !important;
   height: 160px;
   object-fit: cover;
 }

@@ -107,12 +107,12 @@ class EditorialPostType
         $editorial_type = get_post_meta($post->ID, '_editorial_type', true);
         $editorial_status = get_post_meta($post->ID, '_editorial_status', true);
         ?>
-        <label for="editorial_type">Select Type:</label>
+        <!-- <label for="editorial_type">Select Type:</label>
         <select name="editorial_type" id="editorial_type" class="postbox">
             <option value="" <?php selected($editorial_type, ''); ?>>None</option>
             <option value="editorial" <?php selected($editorial_type, 'editorial'); ?>>Editorial</option>
             <option value="article" <?php selected($editorial_type, 'article'); ?>>Article</option>
-        </select>
+        </select> -->
         <br><br>
         <label for="editorial_status">Select Status:</label>
         <select name="editorial_status" id="editorial_status" class="postbox">
