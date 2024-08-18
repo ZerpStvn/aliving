@@ -61,7 +61,7 @@ endif;
                     </li>
 
                     <li>
-                        <a href="">Products</a>
+                        <a href="">Product Recommendation</a>
                     </li>
                     <li>
                         <a href="">Gifts</a>
