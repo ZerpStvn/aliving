@@ -97,6 +97,14 @@ function filter_editorial_posts_by_author($query)
 add_action('pre_get_posts', 'filter_editorial_posts_by_author');
 
 
+// 
+function my_theme_add_elementor_support()
+{
+    add_post_type_support('editorial', 'elementor');
+}
+add_action('init', 'my_theme_add_elementor_support');
+
+
 
 //================================================
 include_once(aliving_dir . '/custom/main.php');

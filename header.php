@@ -61,10 +61,10 @@ endif;
                     </li>
 
                     <li>
-                        <a href="">Product Recommendation</a>
+                        <a href="<?php echo get_site_url() . "/product-recommendation" ?>">Product Recommendation</a>
                     </li>
                     <li>
-                        <a href="">Gifts</a>
+                        <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>
                     </li>
 
                 </nav>

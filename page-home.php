@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 <div class="home  ">
+    <div class="missionary">
+        <div class="missionarywrap global_width">
+            <img id="logooverlay" src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo"
+                class="logooverlay">
+            <?php missionaryfront() ?>
+        </div>
+    </div>
     <div class="tooglepanel global_width">
         <?php toggleFronts() ?>
     </div>
@@ -41,7 +48,6 @@
                 </div>
             </div>
             <div class="trending">
-                <!-- <img src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo" class="logooverlay"> -->
                 <?php trendFront('trending', 'editorial', ) ?>
                 <div class="hottopics">
                     <?php trendFrontHottopics('hot_topic', 'editorial') ?>

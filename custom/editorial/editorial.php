@@ -120,6 +120,9 @@ class EditorialPostType
             <option value="hot_topic" <?php selected($editorial_status, 'hot_topic'); ?>>Hot Topic</option>
             <option value="trending" <?php selected($editorial_status, 'trending'); ?>>Trending</option>
             <option value="featured" <?php selected($editorial_status, 'featured'); ?>>Featured</option>
+            <option value="product_recommendation" <?php selected($editorial_status, 'product_recommendation'); ?>>Product
+                Recommendation</option>
+            <option value="gifts" <?php selected($editorial_status, 'gifts'); ?>>Gifts</option>
         </select>
         <?php
     }

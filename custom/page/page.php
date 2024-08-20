@@ -60,6 +60,14 @@ function add_customer_pages()
             'post_name' => 'editorial'
         ),
         array(
+            'post_title' => 'Product Recomendation',
+            'post_content' => 'Product Recomendation',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'product-recommendation'
+        ),
+        array(
             'post_title' => 'Gifts',
             'post_content' => 'Gifts',
             'post_status' => 'publish',
