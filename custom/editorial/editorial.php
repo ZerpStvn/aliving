@@ -109,9 +109,9 @@ class EditorialPostType
         ?>
         <!-- <label for="editorial_type">Select Type:</label>
         <select name="editorial_type" id="editorial_type" class="postbox">
-            <option value="" <?php selected($editorial_type, ''); ?>>None</option>
-            <option value="editorial" <?php selected($editorial_type, 'editorial'); ?>>Editorial</option>
-            <option value="article" <?php selected($editorial_type, 'article'); ?>>Article</option>
+            <option value="" <?php //selected($editorial_type, ''); ?>>None</option>
+            <option value="editorial" <?php //selected($editorial_type, 'editorial'); ?>>Editorial</option>
+            <option value="article" <?php //selected($editorial_type, 'article'); ?>>Article</option>
         </select> -->
         <br><br>
         <label for="editorial_status">Select Status:</label>

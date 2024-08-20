@@ -145,7 +145,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 37px 0px;
+  padding: 37px 16px;
   color: white;
 }
 .footer .footerwrap .socials h1 {

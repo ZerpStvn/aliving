@@ -219,8 +219,7 @@
   border-radius: 100%;
   color: white;
 }
-.ourlatest {
-}
+
 .ourlatest .ourlatestwrap {
   padding: 100px 60px;
 }
@@ -233,6 +232,7 @@
   text-align: center;
   color: #ce3e55;
 }
+
 @media (max-width: 1440px) {
   .homecollection {
     padding: 10px;
@@ -251,6 +251,9 @@
   }
   .homecollection .list_of_articles .viewcollection {
     padding: 20px 23px;
+  }
+  .buttonsarrow {
+    padding-right: 16px;
   }
 }
 @media (max-width: 888px) {

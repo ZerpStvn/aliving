@@ -127,8 +127,98 @@
   text-align: left;
   margin-top: 10px;
 }
+.trendingpost {
+  max-width: 426px;
+  width: 100%;
+}
+.trendingpost .first-latest-trending {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 267px;
+  padding: 0 20px 16px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+.trendingpost .first-latest-trending .infocontent h2 {
+  font-family: var(--maintitlefonts);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.trendingpost .first-latest-trending .infocontent p {
+  font-family: var(--mainfont);
+  color: #f4d77e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.trendingpost .next-three-posts-trending .post img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+.trendingpost .next-three-posts-trending {
+  color: black;
+}
+.next-three-posts-trending .post:not(:first-child):not(:last-child) {
+  border-top: 1px solid #d9d9d9;
+}
+.trendingpost .next-three-posts-trending .post {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.missionary .listofcontent {
+  display: flex;
+  justify-content: space-between;
+}
+.missionary .listofcontent .post .left {
+  max-width: 263px;
+  width: 100%;
+}
+.missionary .listofcontent .post p {
+  font-family: var(--maintitlefonts);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.missionary .trendinglist #trendingtitle {
+  color: #698f92;
+  font-family: var(--mainfont);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.trendingpost .buttontrendwrap .viewcollection {
+  color: white;
+  background-color: black;
+  padding: 16px 21px;
+  display: flex;
+  align-items: center;
+}
+.trendingpost .buttontrendwrap .viewcollection span {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+}
+.trendingpost .buttontrendwrap {
+  float: right;
+  margin-top: 10px;
+}
 @media (max-width: 1440px) {
-  .missionaryfrontwrap {
+  .missionaryfrontwrap,
+  .trendinglist {
     padding: 0 30px;
   }
 }
