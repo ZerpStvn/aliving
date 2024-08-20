@@ -115,7 +115,7 @@ function toggleFronts()
 }
 function collectiontoggleFronts()
 {
-    $categories = array('decor', 'house_improvement', 'home_decoration', 'garden', 'whattobuy');
+    $categories = array('decor', 'house_keeping', 'home_improvement', 'garden', 'whattobuy');
     $panel_count = count($categories);
     ?>
 

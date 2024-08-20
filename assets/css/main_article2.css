@@ -1,6 +1,9 @@
 .missionarywrap {
   position: relative;
 }
+.missionarywrap a {
+  color: black;
+}
 .missionarywrap .logooverlay {
   position: absolute;
   width: 385.99px;
@@ -101,6 +104,28 @@
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+}
+.missionaryfrontwrap .next-three-posts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #d9d9d9;
+}
+.missionaryfrontwrap .next-three-posts .post {
+  max-width: 275px;
+  width: 100%;
+}
+.missionaryfrontwrap .next-three-posts .post .listofcategory .category {
+  color: #e37052;
+}
+.missionaryfrontwrap .next-three-posts .post p {
+  font-family: var(--maintitlefonts);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  margin-top: 10px;
 }
 @media (max-width: 1440px) {
   .missionaryfrontwrap {
