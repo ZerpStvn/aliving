@@ -3,9 +3,9 @@ jQuery(document).ready(function ($) {
   var currentUrl = window.location.href;
   // onscroll
   var defaultLogo =
-    "http://localhost/aliving/wp-content/themes/aliving/assets/image/Logo1.png";
+    "http://localhost/aleving/wp-content/themes/aliving/assets/image/Logo1.png";
   var scrolledLogo =
-    "http://localhost/aliving/wp-content/themes/aliving/assets/image/logo4.png";
+    "http://localhost/aleving/wp-content/themes/aliving/assets/image/logo4.png";
   var menuItems = [
     { url: "/home/", selector: 'li:contains("Home")' },
     { url: "/editorial/", selector: 'li:contains("Editorial")' },
@@ -14,7 +14,10 @@ jQuery(document).ready(function ($) {
     { url: "/home-improvement/", selector: 'li:contains("Home improvement")' },
     { url: "/gardening/", selector: 'li:contains("Gardening")' },
     { url: "/what-to-buy/", selector: 'li:contains("What to Buy")' },
-    { url: "/products/", selector: 'li:contains("Products")' },
+    {
+      url: "/product-recommendation/",
+      selector: 'li:contains("Product Recommendation")',
+    },
     { url: "/gifts/", selector: 'li:contains("Gifts")' },
   ];
 
@@ -46,6 +49,7 @@ jQuery(document).ready(function ($) {
     });
   }
   $(window).on("scroll", function () {
+    console.log("scroll");
     var scrollTop = $(window).scrollTop();
     var maxScroll = 300;
 

@@ -97,7 +97,6 @@ function missionaryfront()
     <?php
 }
 
-
 function trendinglistview()
 {
     ?>
@@ -127,8 +126,9 @@ function trendinglistview()
 
                 if ($post_count == 1): ?>
                     <!-- Show the first trending content -->
-                    <a href="<?php echo get_permalink() ?>">
-                        <div class="first-latest-trending" style="background-image:url(<?php echo get_the_post_thumbnail_url() ?>)">
+                    <a href="<?php echo get_permalink(); ?>">
+                        <div class="first-latest-trending"
+                            style="background-image:url(<?php echo esc_url(get_the_post_thumbnail_url()); ?>)">
                             <div class="infocontent">
                                 <p>By <?php the_author(); ?></p>
                                 <h2><?php echo truncate_title(40); ?></h2>
@@ -136,13 +136,10 @@ function trendinglistview()
                         </div>
                     </a>
 
-                <?php elseif ($post_count >= 2 && $post_count <= 4): ?>
-                    <!-- Start of the next three posts -->
-                    <?php if ($post_count == 2): ?>
-                        <div class="next-three-posts-trending">
-                        <?php endif; ?>
-                        <!-- Show the 4th to 6th posts -->
-                        <a href="<?php echo get_permalink() ?>" class="post">
+                <?php else: ?>
+                    <!-- Show the 2nd to 4th posts each as separate items -->
+                    <div class="next-three-posts-trending">
+                        <a href="<?php echo esc_url(get_permalink()); ?>" class="post">
                             <div class="left">
                                 <?php
                                 $categories = get_the_category();
@@ -150,40 +147,30 @@ function trendinglistview()
                                     $categories = array_slice($categories, 0, 1);
                                     ?>
                                     <div class="listofcategory">
-                                        <?php
-                                        foreach ($categories as $category) {
-                                            ?>
+                                        <?php foreach ($categories as $category): ?>
                                             <h1 class="category">
-                                                <?php echo esc_html($category->name) ?>
+                                                <?php echo esc_html($category->name); ?>
                                             </h1>
-
-                                            <?php
-                                        }
-                                        ?>
+                                        <?php endforeach; ?>
                                     </div>
-
-                                    <?php
-                                }
-                                ?>
+                                <?php } ?>
                                 <p><?php echo truncate_title(40); ?></p>
                             </div>
-                            <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="featured">
+                            <img src="<?php echo esc_url(get_the_post_thumbnail_url()); ?>" loading="lazy" alt="featured">
                         </a>
-                        <?php if ($post_count == 6): ?>
-                            </>
-                        <?php endif; ?>
-                    <?php endif;
+                    </div>
+                <?php endif;
 
             endwhile;
             wp_reset_postdata();
         else: ?>
-                <div>No posts found.</div>
-            <?php endif; ?>
-            <div class="buttontrendwrap">
-                <a class="viewcollection" href="">Read More <span><img
-                            src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                            alt="arrow_icon"></span></a>
-            </div>
+            <div>No posts found.</div>
+        <?php endif; ?>
+        <div class="buttontrendwrap">
+            <a class="viewcollection" href="">Read More <span><img
+                        src="<?php echo esc_url(aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"); ?>"
+                        alt="arrow_icon"></span></a>
         </div>
-        <?php
+    </div>
+    <?php
 }

@@ -174,7 +174,7 @@
   justify-content: space-between;
   padding: 20px 0;
 }
-.missionary .listofcontent {
+#missionary .listofcontent {
   display: flex;
   justify-content: space-between;
 }
@@ -216,6 +216,7 @@
   float: right;
   margin-top: 10px;
 }
+
 @media (max-width: 1440px) {
   .missionaryfrontwrap,
   .trendinglist {

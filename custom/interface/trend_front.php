@@ -69,7 +69,6 @@ function trendFrontHottopics($status, $type)
         <?php
         $trending_query = new WP_Query(array(
             'post_type' => 'editorial',
-
             'orderby' => 'date',
             'order' => 'DESC',
             'posts_per_page' => 1,
@@ -103,7 +102,6 @@ function trendFrontfeatured($status, $type)
             'post_type' => 'editorial',
             'meta_query' => array(
                 'relation' => 'AND',
-
                 array(
                     'key' => '_editorial_status',
                     'value' => $status,

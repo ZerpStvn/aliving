@@ -77,13 +77,13 @@ class EditorialPostType
             'side'
         );
 
-        add_meta_box(
-            'product_meta_box',
-            'Product Options',
-            array($this, 'product_meta_box_html'),
-            'editorial',
-            'normal'
-        );
+        // add_meta_box(
+        //     'product_meta_box',
+        //     'Product Options',
+        //     array($this, 'product_meta_box_html'),
+        //     'editorial',
+        //     'normal'
+        // );
 
         add_meta_box(
             'gifts_meta_box',

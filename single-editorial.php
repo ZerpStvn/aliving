@@ -44,9 +44,9 @@ if ($get_editorial_status === "gifts") {
                         <?php echo truncate_title(40) ?>
 
                         </h1>
-                        <p><?php echo truncate_excerpt(210) ?>
+                        <!-- <p><?php echo truncate_excerpt(210) ?>
 
-                        </p>
+                        </p> -->
                     </div>
                     <div class="authordescrip global_padding">
                         <div class="authorwrap">
@@ -77,7 +77,14 @@ if ($get_editorial_status === "gifts") {
                     $content = apply_filters('the_content', get_the_content());
                     echo $content;
                     ?>
+
                 </div>
+            </div>
+            <div class="nextpostwrap">
+                <div class="containernextpost ">
+                <?php display_next_post_link() ?>
+                </div>
+
             </div>
         </div>
     <?php
