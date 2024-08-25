@@ -600,6 +600,16 @@
     padding: 30px 0px 30px 10px;
   }
 }
+@media (max-width: 1440px) {
+  .panels.active .pannelcontent {
+    padding: 30px 0px 30px 10px;
+  }
+}
+@media (max-width: 1252px) {
+  .trending {
+    display: none;
+  }
+}
 @media (max-width: 990px) {
   .original_collections li {
     width: 318px !important;
@@ -611,11 +621,23 @@
 }
 @media (max-width: 865px) {
   .original_collections li {
-    width: 282px !important;
+    width: 324px !important;
   }
 }
 @media (max-width: 488px) {
   .social_trending {
     margin-top: 6px;
+  }
+  .ourlatestcollection {
+    grid-template-columns: 1fr 1fr;
+  }
+  .original_collections li {
+    width: 302px !important;
+    height: 426px;
+  }
+  /* font */
+  .missionaryfrontwrap .first-latest .infocontent h2 {
+    font-size: 24px;
+    line-height: 36px;
   }
 }

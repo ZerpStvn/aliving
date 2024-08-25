@@ -4,12 +4,19 @@
 .missionarywrap a {
   color: black;
 }
+.missionaryfrontwrap.mobile {
+  display: none;
+}
+.missionaryfrontwrap.desktop {
+  display: block;
+}
 .missionarywrap .logooverlay {
   position: absolute;
   width: 385.99px;
   height: 160px;
   top: -100px;
 }
+
 .missionaryfrontwrap .first-latest img {
   max-width: 451px;
   width: 100%;
@@ -42,6 +49,7 @@
   max-width: 899px;
   width: 100%;
   padding: 0;
+  list-style: none;
 }
 .missionaryfrontwrap .second-latest {
   display: flex;
@@ -217,9 +225,92 @@
   margin-top: 10px;
 }
 
+/*slider  */
+
 @media (max-width: 1440px) {
-  .missionaryfrontwrap,
   .trendinglist {
     padding: 0 30px;
+  }
+  .missionarywrap {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1252px) /* Show only the first list item */ {
+  .missionaryfrontwrap.mobile {
+    display: block;
+    max-width: 100%;
+
+    width: 100%;
+  }
+  .missionaryfrontwrap.mobile li a .first-latest {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: start;
+  }
+  .missionaryfrontwrap.mobile li a .first-latest .infocontent {
+    width: 100%;
+  }
+  .missionaryfrontwrap.mobile li a .first-latest .infocontent h3 {
+    font-family: var(--mainfont);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+  }
+  .missionaryfrontwrap .first-latest .infocontent {
+    margin-top: 16px;
+  }
+  .missionaryfrontwrap.mobile li a .first-latest img {
+    max-width: 100%;
+  }
+  .missionaryfrontwrap.desktop {
+    display: none;
+  }
+  /* Trending */
+  .trendinglist {
+    margin-top: 30px;
+  }
+  .trendingpost {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: auto auto; /* Two rows, height adjusts based on content */
+    gap: 20px;
+  }
+
+  .trendingpost .first-trendingcont {
+    grid-column: span 2;
+  }
+  .trendingpost .buttontrendwrap {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .trendingpost .buttontrendwrap .viewcollection {
+    width: 122px;
+  }
+  .wrapslider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* slider */
+  ul.original_collections.responsive.slick-initialized.slick-slider {
+    width: 92%;
+  }
+}
+@media (max-width: 768px) {
+  ul.original_collections.responsive.slick-initialized.slick-slider {
+    width: 96%;
+  }
+}
+@media (max-width: 488px) {
+  .trendingpost {
+    display: flex;
+    flex-direction: column;
   }
 }

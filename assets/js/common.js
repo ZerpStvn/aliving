@@ -81,30 +81,24 @@ jQuery(document).ready(function ($) {
         settings: {
           arrows: false,
           centerMode: true,
-          slidesToShow: 3,
+          slidesToShow: 1,
         },
       },
       {
-        breakpoint: 990,
+        breakpoint: 900,
         settings: {
-          slidesToShow: 2,
           arrows: false,
           centerMode: true,
-          centerPadding: "50px",
-        },
-      },
-      {
-        breakpoint: 622,
-        settings: {
+          centerPadding: "550px",
           slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          centerPadding: "20px",
         },
       },
     ],
   });
-
+  // Log the breakpoint check
+  jQuery(window).resize(function () {
+    console.log("Current width: " + jQuery(window).width());
+  });
   jQuery(".original_collections li:even").each(function () {
     const $this = $(this);
     const $cat = $this.find(".category");
