@@ -7,14 +7,16 @@ get_header();
     </div>
     <div class="decorwrap global_width">
         <div class="homecollection ">
-            <div class="trending">
-                <!-- <img src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo" class="logooverlay"> -->
-                <?php trendFront('trending', 'editorial') ?>
-                <div class="hottopics">
-                    <?php trendFrontHottopics('hot_topic', 'editorial') ?>
-                </div>
-                <div class="featured">
-                    <?php trendFrontfeatured('featured', 'editorial') ?>
+            <div>
+                <div class="trending">
+                    <!-- <img src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo" class="logooverlay"> -->
+                    <?php trendFront('trending', 'editorial') ?>
+                    <div class="hottopics">
+                        <?php trendFrontHottopics('hot_topic', 'editorial') ?>
+                    </div>
+                    <div class="featured">
+                        <?php trendFrontfeatured('featured', 'editorial') ?>
+                    </div>
                 </div>
             </div>
             <div class="articles">

@@ -2,26 +2,25 @@
 $post_id = get_the_ID();
 $get_service = get_post_meta($post_id, '_service', true);
 $get_editorial_status = get_post_meta($post_id, '_editorial_status', true);
+$store_front = get_post_meta($post->ID, '_store_front', true);
+$publish_date = get_the_date('F j, Y');
+
 ?>
 <?php
 if ($get_editorial_status === "gifts") {
     ?>
     <div class="elementor-singlewrap product-gifts">
-        <?php
+        <div class="predoct-recomwrap global_width">
+            <div class="sectiontitle">
+                <?php if (!empty($store_front)): ?>
+                    <h1> Beast Deals At <?php echo $store_front ?></h1>
+                <?php else: ?>
+                    <h1>Beast Deals</h1>
+                    <h2> Update <?php echo $publish_date ?></h2>
+                <?php endif; ?>
+            </div>
 
-        if (have_posts()):
-            while (have_posts()):
-                the_post();
-                the_content();
-            endwhile;
-        endif;
-        ?>
-    </div>
-    <?php
 
-} else if ($get_editorial_status === "product_recommendation") {
-    ?>
-        <div class="elementor-singlewrap product-recom">
             <?php
 
             if (have_posts()):
@@ -31,6 +30,37 @@ if ($get_editorial_status === "gifts") {
                 endwhile;
             endif;
             ?>
+        </div>
+    </div>
+    <?php
+
+} else if ($get_editorial_status === "product_recommendation") {
+    ?>
+
+        <div class="elementor-singlewrap product-recom">
+
+            <div class="predoct-recomwrap global_width">
+                <div class="sectiontitle">
+                <?php if (!empty($store_front)): ?>
+                        <h1> Beast Deals At <?php echo $store_front ?></h1>
+                <?php else: ?>
+                        <h1>Beast Deals</h1>
+                        <h2> Update <?php echo $publish_date ?></h2>
+                <?php endif; ?>
+                </div>
+
+                <?php
+
+                if (have_posts()):
+                    while (have_posts()):
+                        the_post();
+                        the_content();
+                    endwhile;
+                endif;
+                ?>
+
+            </div>
+
         </div>
     <?php
 } else {

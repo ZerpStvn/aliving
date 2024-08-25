@@ -4,7 +4,6 @@ include_once(aliving_dir . "/custom/page/page.php");
 include_once(aliving_dir . "/custom/enqueue/themescripts.php");
 include_once(aliving_dir . "/custom/editorial/editorial.php");
 include_once(aliving_dir . "/custom/widget/producshortcode.php");
-include_once(aliving_dir . "/custom/widget/widget-alivingproduct.php");
 include_once(aliving_dir . "/custom/editorial/aliving_product.php");
 include_once(aliving_dir . "/custom/interface/trend_front.php");
 include_once(aliving_dir . "/custom/interface/article_front.php");

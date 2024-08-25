@@ -7,12 +7,12 @@
                     class="logooverlay">
                 <?php missionaryfront() ?>
             </div>
+            <div class="trendinglist">
+                <h1 id="trendingtitle">Trending</h1>
+                <?php trendinglistview('trending') ?>
+            </div>
+        </div>
 
-        </div>
-        <div class="trendinglist">
-            <h1 id="trendingtitle">Trending</h1>
-            <?php trendinglistview() ?>
-        </div>
     </div>
     <div class="tooglepanel global_width">
         <?php toggleFronts() ?>

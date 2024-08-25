@@ -147,3 +147,5 @@ function full_alivingproduct_shortcode($atts)
 }
 
 add_shortcode('full_alivingproduct', 'full_alivingproduct_shortcode');
+
+

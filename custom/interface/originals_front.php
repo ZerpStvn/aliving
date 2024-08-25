@@ -14,7 +14,7 @@ function originalsFronts()
                         array(
                             'taxonomy' => 'category',
                             'field' => 'slug',
-                            'terms' => 'originals',
+                            'terms' => 'a-list-of-living',
                         ),
 
                     ),

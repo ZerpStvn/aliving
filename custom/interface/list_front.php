@@ -97,7 +97,7 @@ function missionaryfront()
     <?php
 }
 
-function trendinglistview()
+function trendinglistview($status)
 {
     ?>
     <div class="trendingpost">
@@ -105,16 +105,18 @@ function trendinglistview()
         $trending_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                'tax_query' => array(
+                'meta_query' => array(
+                    'relation' => 'AND',
                     array(
-                        'taxonomy' => 'category',
-                        'field' => 'slug',
-                        'terms' => 'trending',
+                        'key' => '_editorial_status',
+                        'value' => $status,
+                        'compare' => '='
                     ),
+
                 ),
                 'orderby' => 'date',
                 'order' => 'DESC',
-                'posts_per_page' => 8,
+                'posts_per_page' => 4,
             )
         );
 

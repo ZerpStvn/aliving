@@ -170,3 +170,18 @@
   text-align: center;
   color: white;
 }
+.elementor-singlewrap .predoct-recomwrap .sectiontitle {
+  text-align: center;
+  padding: 26px 0;
+  border-bottom: 1px solid #e37052;
+  margin-bottom: 35px;
+}
+.elementor-singlewrap .predoct-recomwrap .sectiontitle h1 {
+  font-family: var(--maintitlefonts);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 93.6px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #e37052;
+}
