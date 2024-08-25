@@ -237,6 +237,9 @@
   .homecollection {
     padding: 10px 30px;
   }
+  .collections .homecollection {
+    padding: 10px 0px;
+  }
   .bycategory .title_prod {
     padding: 0 30px;
   }
@@ -324,11 +327,11 @@
     max-width: 90%;
   }
   .shopwithus .left-column li {
-    max-width: 308px;
+    max-width: 100%;
   }
   .shopwithus .left-column {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .shopwithus .mainleft .title {
     max-width: 90%;
@@ -381,6 +384,9 @@
   .ourlatestcollection li a img {
     width: 100%;
     height: 141px;
+  }
+  .collections .homecollection .articles {
+    flex-direction: column;
   }
 }
 

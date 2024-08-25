@@ -80,6 +80,7 @@ jQuery(document).ready(function ($) {
         breakpoint: 1400,
         settings: {
           arrows: false,
+          infinite: true,
           centerMode: true,
           slidesToShow: 1,
         },
@@ -88,6 +89,7 @@ jQuery(document).ready(function ($) {
         breakpoint: 900,
         settings: {
           arrows: false,
+          infinite: true,
           centerMode: true,
           centerPadding: "550px",
           slidesToShow: 1,

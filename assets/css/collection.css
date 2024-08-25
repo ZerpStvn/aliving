@@ -103,3 +103,13 @@ ul.collection_service {
     padding: 0 30px;
   }
 }
+@media (max-width: 666px) {
+  .collection_list a {
+    flex-direction: column;
+    align-items: start;
+    padding: 0px 0px;
+  }
+  .collection_list a img {
+    width: 100%;
+  }
+}
