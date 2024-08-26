@@ -201,3 +201,50 @@ img {
   line-height: 93.6px;
   letter-spacing: -0.02em;
 }
+#hamburgermenu {
+  display: none;
+}
+@media (max-width: 988px) {
+  .global_padding {
+    padding: 2px 30px;
+  }
+  nav.navmenuheader {
+    display: none;
+  }
+  #hamburgermenu {
+    display: block;
+    color: black;
+    font-family: var(--mainfont);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a#hamburgermenu span {
+    margin-left: 10px;
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 890px) {
+  .footer .footerwrap .rightcolumn .listpage {
+    flex-direction: column;
+  }
+  .footer .footerwrap .rightcolumn {
+    padding: 0px 30px 50px 30px;
+  }
+  ul.discovery,
+  .newsletters {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 488px) {
+  #hamburgermenu {
+    font-size: 20px;
+  }
+  a#hamburgermenu span {
+    font-size: 40px;
+  }
+}

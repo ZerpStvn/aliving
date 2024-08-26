@@ -6,50 +6,88 @@ jQuery(document).ready(function ($) {
     "http://localhost/aleving/wp-content/themes/aliving/assets/image/Logo1.png";
   var scrolledLogo =
     "http://localhost/aleving/wp-content/themes/aliving/assets/image/logo4.png";
-  var menuItems = [
-    { url: "/home/", selector: 'li:contains("Home")' },
-    { url: "/editorial/", selector: 'li:contains("Editorial")' },
-    { url: "/decor/", selector: 'li:contains("Decor")' },
-    { url: "/house-keeping/", selector: 'li:contains("House Keeping")' },
-    { url: "/home-improvement/", selector: 'li:contains("Home improvement")' },
-    { url: "/gardening/", selector: 'li:contains("Gardening")' },
-    { url: "/what-to-buy/", selector: 'li:contains("What to Buy")' },
-    {
-      url: "/product-recommendation/",
-      selector: 'li:contains("Product Recommendation")',
-    },
-    { url: "/gifts/", selector: 'li:contains("Gifts")' },
-  ];
+  var currentUrl = window.location.pathname;
 
-  menuItems.forEach(function (item) {
-    if (currentUrl.includes(item.url)) {
-      $(item.selector).addClass("activenav");
-      console.log(item.url);
+  if (currentUrl.includes("/editorial/")) {
+    if ($("div").hasClass("product-recom")) {
+      $('li:contains("Product Recommendation")').addClass("activenav");
+    } else {
+      $('li:contains("Editorial")').addClass("activenav");
     }
-  });
+  } else {
+    // Regular menu activation for other pages
+    var menuItems = [
+      { url: "/home/", selector: 'li:contains("Home")' },
+      { url: "/editorial/", selector: 'li:contains("Editorial")' },
+      { url: "/decor/", selector: 'li:contains("Decor")' },
+      { url: "/house-keeping/", selector: 'li:contains("House Keeping")' },
+      {
+        url: "/home-improvement/",
+        selector: 'li:contains("Home improvement")',
+      },
+      { url: "/gardening/", selector: 'li:contains("Gardening")' },
+      { url: "/what-to-buy/", selector: 'li:contains("What to Buy")' },
+      {
+        url: "/product-recommendation/",
+        selector: 'li:contains("Product Recommendation")',
+      },
+      { url: "/gifts/", selector: 'li:contains("Gifts")' },
+    ];
+
+    // Iterate through the menu items and add the 'activenav' class to the matching item
+    menuItems.forEach(function (item) {
+      if (currentUrl.includes(item.url)) {
+        $(item.selector).addClass("activenav");
+        console.log(item.url);
+      }
+    });
+  }
   //editorial
-  if (window.location.href.includes("/editorial/")) {
-    $(".navmenuheader li a").css("color", "white");
+  if ($("div").hasClass("editorial")) {
     $(".navmenuheader .activenav").css("border-bottom", "1px solid white");
     $(".sub-menu li a").css("color", "black");
+    $(".navmenuheader li a").css("color", "white");
+    $("#hamburgermenu span").css("color", "white");
+    $("#hamburgermenu").css("color", "white");
+  } else {
+    $(".navmenuheader li a").css("color", "black");
+    $("#site-logo").attr("src", defaultLogo);
+    $("#hamburgermenu span").css("color", "black");
+    $("#hamburgermenu").css("color", "black");
+  }
+  if (window.location.href.includes("/editorial/")) {
     $(window).on("scroll", function () {
       var scrollTop = $(this).scrollTop();
 
-      if (scrollTop > 0) {
-        $("#site-logo").attr("src", defaultLogo);
-        $(".navmenuheader li a").css("color", "black");
+      if ($("div").hasClass("editorial")) {
+        if (scrollTop > 0) {
+          $("#site-logo").attr("src", defaultLogo);
+          $(".navmenuheader li a").css("color", "black");
+          $(".sub-menu li a").css("color", "black");
+          $(".navmenuheader .activenav").css(
+            "border-bottom",
+            "1px solid black"
+          );
+          $("#hamburgermenu span").css("color", "black");
+          $("#hamburgermenu").css("color", "black");
+        } else {
+          $("#site-logo").attr("src", scrolledLogo);
+          $(".navmenuheader li a").css("color", "white");
+          $(".sub-menu li a").css("color", "black");
+          $(".navmenuheader .activenav").css(
+            "border-bottom",
+            "1px solid white"
+          );
+          $("#hamburgermenu span").css("color", "white");
+          $("#hamburgermenu").css("color", "white");
+        }
+      } else {
         $(".sub-menu li a").css("color", "black");
         $(".navmenuheader .activenav").css("border-bottom", "1px solid black");
-      } else {
-        $("#site-logo").attr("src", scrolledLogo);
-        $(".navmenuheader li a").css("color", "white");
-        $(".sub-menu li a").css("color", "black");
-        $(".navmenuheader .activenav").css("border-bottom", "1px solid white");
       }
     });
   }
   $(window).on("scroll", function () {
-    console.log("scroll");
     var scrollTop = $(window).scrollTop();
     var maxScroll = 300;
 
@@ -77,30 +115,31 @@ jQuery(document).ready(function ($) {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 1440,
         settings: {
-          arrows: false,
+          arrows: true,
+          prevArrow: $("#arrow-left"),
+          nextArrow: $("#arrow-right"),
           infinite: true,
           centerMode: true,
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 1250,
         settings: {
-          arrows: false,
+          arrows: true,
+          prevArrow: $("#arrow-left"),
+          nextArrow: $("#arrow-right"),
           infinite: true,
           centerMode: true,
-          centerPadding: "550px",
           slidesToShow: 1,
         },
       },
     ],
   });
   // Log the breakpoint check
-  jQuery(window).resize(function () {
-    console.log("Current width: " + jQuery(window).width());
-  });
+  jQuery(window).resize(function () {});
   jQuery(".original_collections li:even").each(function () {
     const $this = $(this);
     const $cat = $this.find(".category");

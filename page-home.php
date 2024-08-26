@@ -45,17 +45,17 @@
             <div class="articles">
                 <div class="list_of_articles">
                     <h2 class="latestarticle">Latest</h2>
-                    <?php listofarticle('article') ?>
+                    <?php listofarticle() ?>
                     <a class="viewcollection" href="">View Collections <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>
                 </div>
                 <div class="featuredarticles">
-                    <?php articlefeatured('featured', 'article') ?>
+                    <?php articlefeatured() ?>
                 </div>
             </div>
             <div class="trending">
-                <?php trendFront('trending', 'editorial', ) ?>
+                <?php trendFront('trending', ) ?>
                 <div class="hottopics">
                     <?php trendFrontHottopics('hot_topic', 'editorial') ?>
                 </div>
@@ -89,13 +89,13 @@
 
                 <div class="tabcontents">
                     <div class="the_list_content">
-                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "originals") ?>
+                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "aliving list") ?>
                     </div>
                     <div class="listandguidecontent">
-                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "originals") ?>
+                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "deals") ?>
                     </div>
                     <div class="giftsguidecontent">
-                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "originals") ?>
+                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "gifts") ?>
                     </div>
                 </div>
             </div>

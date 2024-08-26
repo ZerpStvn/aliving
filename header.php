@@ -11,10 +11,34 @@
 </head>
 
 <body <?php body_class();
+
 $latest_editorial = new WP_Query(array(
     'post_type' => 'editorial',
     'posts_per_page' => 1,
 ));
+
+$latestEditorialpost = new WP_Query(array(
+    'post_type' => 'editorial',
+    'meta_query' => array(
+        'relation' => 'AND',
+        array(
+            'key' => '_editorial_status',
+            'value' => 'product_recommendation',
+            'compare' => '='
+        ),
+    ),
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'posts_per_page' => 1,
+));
+if ($latestEditorialpost->have_posts()):
+    $latestEditorialpost->the_post();
+    $latestEditorialpost = get_permalink();
+    wp_reset_postdata();
+else:
+
+    $latestEditorialpost = home_url();
+endif;
 
 if ($latest_editorial->have_posts()):
     $latest_editorial->the_post();
@@ -40,6 +64,9 @@ endif;
                            echo esc_url(aliving_image . '/Logo1.png');
                        } ?>" loading="lazy" alt="Main Logo"></a>
                 </div>
+                <a href="#" id="hamburgermenu">Menu <span class="material-symbols-outlined">
+                        menu
+                    </span></a>
                 <nav class="navmenuheader">
                     <li>
                         <a href="<?php echo get_home_url() ?>">Home</a>
@@ -61,7 +88,7 @@ endif;
                     </li>
 
                     <li>
-                        <a href="<?php echo get_site_url() . "/product-recommendation" ?>">Product Recommendation</a>
+                        <a href="<?php echo esc_url($latestEditorialpost) ?>">Product Recommendation</a>
                     </li>
                     <li>
                         <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>

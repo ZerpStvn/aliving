@@ -91,7 +91,7 @@ function shopwithusfront($title, $description, $link, $slugs)
                 <div class="title">
                     <h2><?php echo $title ?></h2>
                     <p><?php echo $description ?></p>
-                    <a href="<?php echo $link ?>">See More<span><img
+                    <a href="<?php echo esc_url($link) ?>">See More<span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 
-function articlefeatured($status, $type)
+function articlefeatured($categories = null)
 {
     ?>
     <div class="articlefeatured_collection">
@@ -8,19 +8,14 @@ function articlefeatured($status, $type)
         $trending_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                // 'meta_query' => array(
-                //     'relation' => 'AND',
-                //     array(
-                //         'key' => '_editorial_status',
-                //         'value' => $status,
-                //         'compare' => '='
-                //     ),
-                //     array(
-                //         'key' => '_editorial_type',
-                //         'value' => $type,
-                //         'compare' => '='
-                //     )
-                // ),
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => '_service',
+                        'value' => !empty($categories) ? $categories : array(),
+                        'compare' => '='
+                    )
+                ),
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'posts_per_page' => 1,
@@ -73,7 +68,7 @@ function articlefeatured($status, $type)
     <?php
 }
 
-function listofarticle($type, )
+function listofarticle($categories = null)
 {
     ?>
     <ul class="collection_article">
@@ -81,7 +76,14 @@ function listofarticle($type, )
         $trending_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => '_service',
+                        'value' => !empty($categories) ? $categories : array(),
+                        'compare' => '='
+                    )
+                ),
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'posts_per_page' => 4,

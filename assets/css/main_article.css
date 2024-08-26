@@ -43,7 +43,7 @@
   line-height: 30px;
   text-align: left;
 }
-.treding_post_collection li a .post_excerpt {
+.treding_post_collection li a p {
   max-width: 243px;
   width: 100%;
   margin-top: 3px;
@@ -205,6 +205,11 @@
   height: 346px;
   object-fit: cover;
 }
+.original_collections li h2,
+.original_collections li h1 {
+  max-width: 280px;
+  width: 100%;
+}
 .social_trending {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -245,7 +250,7 @@
   height: 600px;
   box-shadow: 1px 0px 2px 1px gray;
   position: relative;
-  transition: all 1.6s ease-in-out; /* Apply transition here */
+  transition: all 0.6s ease-in-out; /* Apply transition here */
 }
 
 .panels.active {
@@ -263,7 +268,7 @@
   position: relative;
   overflow: hidden; /* Hide content when width is 0 */
   opacity: 0; /* Start as invisible */
-  transition: width 1.6s ease-in-out, opacity 1.6s ease-in-out; /* Smooth transitions for both width and opacity */
+  transition: width 1.6s ease-in-out, opacity 0.2s ease-in-out; /* Smooth transitions for both width and opacity */
 }
 
 .panels.active .pannelcontent.show-content {
@@ -600,11 +605,6 @@
     padding: 30px 0px 30px 10px;
   }
 }
-@media (max-width: 1440px) {
-  .panels.active .pannelcontent {
-    padding: 30px 0px 30px 10px;
-  }
-}
 @media (max-width: 1252px) {
   .trending {
     display: none;
@@ -623,6 +623,21 @@
   .original_collections li {
     width: 324px !important;
   }
+  .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
+    margin-top: 58px;
+    margin-bottom: 35px;
+  }
+  .bycategory .title_prod {
+    margin-top: 33px;
+    margin-bottom: 4px;
+    line-height: 76.4px;
+  }
+  .homecollection {
+    padding: 25px 30px;
+  }
+  .articlefeatured_collection .articlefeatured img {
+    width: 100%;
+  }
 }
 @media (max-width: 488px) {
   .social_trending {
@@ -639,5 +654,10 @@
   .missionaryfrontwrap .first-latest .infocontent h2 {
     font-size: 24px;
     line-height: 36px;
+  }
+  .missionarywrap .logooverlay {
+    width: 360.99px;
+    height: 129px;
+    top: -84px;
   }
 }

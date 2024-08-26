@@ -43,6 +43,7 @@ if ($get_editorial_status === "gifts") {
                 <div class="sectiontitle">
                 <?php if (!empty($store_front)): ?>
                         <h1> Beast Deals At <?php echo $store_front ?></h1>
+                        <h2> Update <?php echo $publish_date ?></h2>
                 <?php else: ?>
                         <h1>Beast Deals</h1>
                         <h2> Update <?php echo $publish_date ?></h2>

@@ -46,7 +46,7 @@
   margin-top: 28px;
 }
 .missionaryfrontwrap {
-  max-width: 899px;
+  max-width: 987px;
   width: 100%;
   padding: 0;
   list-style: none;
@@ -56,7 +56,7 @@
   width: 100%;
 }
 .missionaryfrontwrap .second-latest .first-second-latest {
-  max-width: 395px;
+  max-width: 473px;
   width: 100%;
   height: 267px;
   background-position: center;
@@ -233,6 +233,9 @@
   }
   .missionarywrap {
     padding: 0 30px;
+  }
+  .missionaryfrontwrap .second-latest .first-second-latest {
+    max-width: 321px;
   }
 }
 @media (max-width: 1252px) /* Show only the first list item */ {

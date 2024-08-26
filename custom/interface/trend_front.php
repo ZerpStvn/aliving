@@ -1,6 +1,6 @@
 <?php
 
-function trendFront($status, $type)
+function trendFront($status, $categories = null)
 {
     ?>
     <ul class="treding_post_collection">
@@ -13,8 +13,14 @@ function trendFront($status, $type)
                     'key' => '_editorial_status',
                     'value' => $status,
                     'compare' => '='
+                ),
+                array(
+                    'key' => '_service',
+                    'value' => !empty($categories) ? $categories : array(),
+                    'compare' => '='
                 )
             ),
+
             'orderby' => 'date',
             'order' => 'DESC',
             'posts_per_page' => 2,
