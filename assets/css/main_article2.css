@@ -306,6 +306,163 @@
     width: 92%;
   }
 }
+
+/* toggle mobile */
+.tabstoggle {
+  list-style: none;
+}
+.tabstoggle .decor,
+#pannelwrap1 {
+  background-color: #652b41;
+}
+.tabstoggle .house_keeping,
+#pannelwrap2 {
+  background-color: #debb50;
+}
+.tabstoggle .home_improvements,
+#pannelwrap3 {
+  background-color: #e37052;
+}
+.tabstoggle .gardening,
+#pannelwrap4 {
+  background-color: #ce3e55;
+}
+.tabstoggle {
+  display: flex;
+}
+.tabstoggle li {
+  max-width: 179px;
+  height: 260px;
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tabstoggle li h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+}
+.tabstoggle li a {
+  color: white;
+  width: 40px;
+  transform: rotate(270deg);
+  font-family: var(--maintitlefonts);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.togglemobilewrap {
+  list-style: none;
+}
+.togglemobilewrap li {
+  padding: 36px 15px 18px 15px;
+}
+.togglemobilewrap .pannelcontent .contentwrapping {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent .rigthcorner {
+  width: 100%;
+}
+.togglemobilewrap
+  .pannelcontent
+  .contentwrapping
+  .recentcontent
+  .rigthcorner
+  a {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent a {
+  max-width: 480px;
+  width: 100%;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent a h1 {
+  font-family: var(--maintitlefonts);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 20px 0;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent a h2 {
+  font-family: var(--mainfont);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent a p {
+  font-family: var(--maintitlefonts);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-top: 20px;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .recentcontent a img {
+  max-width: 490px;
+  height: 308px;
+  width: 100%;
+}
+
+.togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
+  max-width: 587px;
+  width: 100%;
+  margin: 35px 0 56px 0;
+  padding-bottom: 48px;
+  border-bottom: 1px solid white;
+}
+.togglemobilewrap .pannelcontent .contentwrapping .listofcontent .list-item h2 {
+  font-family: var(--maintitlefonts);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.togglemobilewrap
+  .pannelcontent
+  .contentwrapping
+  .listofcontent
+  .list-item
+  .listofcategory
+  .category {
+  font-family: var(--mainfont);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
 @media (max-width: 768px) {
   ul.original_collections.responsive.slick-initialized.slick-slider {
     width: 96%;

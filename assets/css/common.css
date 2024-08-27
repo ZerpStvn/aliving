@@ -48,6 +48,9 @@ img {
   align-items: center;
   list-style: none;
 }
+.centerheader nav > li:hover {
+  border-bottom: 1px solid black;
+}
 .centerheader nav > li {
   margin: 0 15px;
 }
@@ -175,6 +178,9 @@ img {
   list-style: none;
   padding: 14px;
   width: 256px;
+}
+.centerheader nav .collection-header.activenav .sub-menu li:hover {
+  border-bottom: 1px solid black;
 }
 .centerheader nav .collection-header.activenav .sub-menu li a {
   color: black;

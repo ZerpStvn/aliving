@@ -111,7 +111,7 @@ jQuery(document).ready(function ($) {
     autoplaySpeed: 0,
     infinite: true,
     speed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 2,
     centerMode: true,
     responsive: [
       {
@@ -122,7 +122,7 @@ jQuery(document).ready(function ($) {
           nextArrow: $("#arrow-right"),
           infinite: true,
           centerMode: true,
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
       {

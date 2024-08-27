@@ -232,6 +232,12 @@
   text-align: center;
   color: #ce3e55;
 }
+.tooglepanel-mobile {
+  max-width: 716px;
+  width: 100%;
+  padding: 49px 0;
+  display: none;
+}
 
 @media (max-width: 1440px) {
   .homecollection {
@@ -266,6 +272,9 @@
   }
   .tooglepanel {
     display: none;
+  }
+  .tooglepanel-mobile {
+    display: block;
   }
 
   .homecollection .articles {

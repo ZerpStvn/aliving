@@ -17,6 +17,9 @@
     <div class="tooglepanel global_width">
         <?php toggleFronts() ?>
     </div>
+    <div class="tooglepanel-mobile global_width">
+        <?php toggleFrontsmobile() ?>
+    </div>
     <div class="originals">
         <div class="originalswrap global_width">
             <h2 class="originals_title">
@@ -46,7 +49,8 @@
                 <div class="list_of_articles">
                     <h2 class="latestarticle">Latest</h2>
                     <?php listofarticle() ?>
-                    <a class="viewcollection" href="">View Collections <span><img
+                    <a class="viewcollection" href="<?php echo get_site_url() . '/gardening/' ?>">View Collections
+                        <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>
                 </div>
@@ -75,7 +79,7 @@
                     <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper
                         vehicula.
                         Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada.</p>
-                    <a class="secondarybutton" href="">See More<span><img
+                    <a class="secondarybutton" href="<?php echo get_site_url() . '/whattobuy/' ?>">See More<span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>
                 </div>

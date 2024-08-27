@@ -185,6 +185,13 @@
   text-align: center;
   color: #e37052;
 }
+.elementor-singlewrap .predoct-recomwrap .sectiontitle h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 27px 0;
+  text-align: center;
+}
 @media (max-width: 1225px) {
   .containernextpost .next-post {
     width: 100%;
@@ -247,6 +254,12 @@
   .editorial-header {
     height: 811px;
   }
+  .elementor-singlewrap .predoct-recomwrap .sectiontitle h1 {
+    font-size: 44px;
+  }
+  .elementor-singlewrap .predoct-recomwrap .sectiontitle h2 {
+    margin: 0px 0px;
+  }
 }
 @media (max-width: 568px) {
   .editorial .excerptwrap {
@@ -259,6 +272,9 @@
     grid-template-columns: 1fr 1fr;
   }
   .editorial-header .wrapcontent .headingcontent h1 {
-    font-size: 58px;
+    line-height: 68.6px;
+    font-size: 44px;
+
+    padding-left: 23px;
   }
 }

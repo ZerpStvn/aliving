@@ -14,6 +14,7 @@ function theme_enqueue_styles()
     wp_register_script('common_js', aliving_js . '/common.js', array('jquery'), '1.0', true);
     wp_register_script('jquery_js', aliving_js . '/jquery.js', array('jquery'), '3.7.1', true);
     wp_register_script('slick_js', aliving_js . '/slick.js', array('jquery'), '1.2', true);
+    wp_register_script('toggle_js', aliving_js . '/toggle.js', array('jquery'), '1.3', true);
 
 
     // ======
@@ -29,6 +30,7 @@ function theme_enqueue_styles()
     wp_enqueue_script('common_js');
     wp_enqueue_script('jquery_js');
     wp_enqueue_script('slick_js');
+    wp_enqueue_script('toggle_js');
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 

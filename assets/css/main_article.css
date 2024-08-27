@@ -621,7 +621,7 @@
 }
 @media (max-width: 865px) {
   .original_collections li {
-    width: 324px !important;
+    width: 299px !important;
   }
   .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
     margin-top: 58px;
@@ -638,6 +638,31 @@
   .articlefeatured_collection .articlefeatured img {
     width: 100%;
   }
+  .collections .collection_article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .collections .homecollection .articles {
+    flex-direction: column;
+  }
+  .collections .homecollection .list_of_articles .viewcollection {
+    display: none;
+  }
+  .collections
+    .articlefeatured_collection
+    .articlefeatured
+    .articlefeatured_details
+    h3 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .collection_list a .infocontent p {
+    margin-bottom: 11px;
+  }
+  .collection_list {
+    margin-top: 35px;
+  }
 }
 @media (max-width: 488px) {
   .social_trending {
@@ -647,8 +672,8 @@
     grid-template-columns: 1fr 1fr;
   }
   .original_collections li {
-    width: 302px !important;
-    height: 426px;
+    width: 274px !important;
+    height: 394px;
   }
   /* font */
   .missionaryfrontwrap .first-latest .infocontent h2 {
@@ -656,8 +681,15 @@
     line-height: 36px;
   }
   .missionarywrap .logooverlay {
-    width: 360.99px;
+    width: 322.99px;
     height: 129px;
     top: -84px;
+  }
+  .missionary .listofcontent .post p {
+    width: 98%;
+  }
+  .shopwrap .shopbtn p {
+    font-size: 14px;
+    margin-top: 13px;
   }
 }
