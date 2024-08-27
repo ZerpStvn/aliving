@@ -97,5 +97,8 @@ endif;
                 </nav>
             </div>
         </div>
+        <?php
+        popupmenu();
+        ?>
     </header>
     <main>

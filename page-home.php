@@ -18,7 +18,7 @@
         <?php toggleFronts() ?>
     </div>
     <div class="tooglepanel-mobile global_width">
-        <?php toggleFrontsmobile() ?>
+        <?php toggleFrontsmobile(true) ?>
     </div>
     <div class="originals">
         <div class="originalswrap global_width">

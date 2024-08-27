@@ -44,7 +44,8 @@ endif;
     <div class="footerwrap global_width">
         <div class="uppercontent">
             <div class="leftcolumn">
-                <img src="<?php echo esc_url(aliving_image . "/Logo3.png") ?>" loading="lazy" alt="footer">
+                <a href="<?php echo get_home_url() . "/" ?>"><img
+                        src="<?php echo esc_url(aliving_image . "/Logo3.png") ?>" loading="lazy" alt="footer"></a>
                 <h2>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
                     Nullam malesuada erat ut turpis.

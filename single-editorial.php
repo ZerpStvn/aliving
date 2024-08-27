@@ -49,6 +49,17 @@ if ($get_editorial_status === "gifts") {
                         <h2> Update <?php echo $publish_date ?></h2>
                 <?php endif; ?>
                 </div>
+                <div class="authorwrap-ico">
+
+                    <h1>By <?php $author_id = $post->post_author;
+                    $author_name = get_the_author_meta('display_name', $author_id);
+                    echo $author_name
+                        ?></h1>
+
+                    <div>
+                    <?php shareicon() ?>
+                    </div>
+                </div>
 
                 <?php
 
@@ -94,7 +105,7 @@ if ($get_editorial_status === "gifts") {
             <div class="excerptwrap">
                 <div class="leftcorner">
                     <div class="sharesocials">
-
+                    <?php shareicon() ?>
                     </div>
                     <div class="morelikethis">
                         <h1>

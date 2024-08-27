@@ -17,3 +17,5 @@ include_once(aliving_dir . "/custom/interface/morelikethis_front.php");
 include_once(aliving_dir . "/custom/misc/trendingonsocials.php");
 include_once(aliving_dir . "/custom/interface/list_front.php");
 include_once(aliving_dir . "/custom/interface/latest_front.php");
+include_once(aliving_dir . "/custom/interface/share_bar.php");
+include_once(aliving_dir . "/custom/interface/popupmenu.php");

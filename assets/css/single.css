@@ -187,11 +187,69 @@
 }
 .elementor-singlewrap .predoct-recomwrap .sectiontitle h2 {
   font-size: 18px;
+  color: #595959;
   font-weight: 400;
   line-height: 27px;
   margin: 27px 0;
   text-align: center;
 }
+
+.elementor-singlewrap.product-recom {
+  padding: 0 20px;
+}
+/* 
+icon
+*/
+.authorwrap-ico {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 50px;
+}
+.authorwrap-ico h1 {
+  font-family: var(--maintitlefonts);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+.shar-bar h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-right: 4px;
+}
+.shar-bar .savebookmark {
+  width: 70px;
+  color: black;
+  height: 30px;
+}
+.shar-bar .savebookmark span {
+  margin-left: 5px;
+}
+.shar-bar a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 7px;
+  background-color: #e7e7e7;
+
+  border-radius: 50px;
+}
+.shar-bar {
+  display: flex;
+  align-items: center;
+}
+.shar-bar .socialicons {
+  display: flex;
+}
+.sharesocials {
+  padding: 0 0 40px 0;
+}
+
 @media (max-width: 1225px) {
   .containernextpost .next-post {
     width: 100%;
@@ -212,6 +270,9 @@
   .nextpostwrap .next-post a .infonext h2 {
     font-size: 36px;
     line-height: 51.4px;
+  }
+  .editorial .excerptwrap {
+    padding: 46px 20px;
   }
 }
 @media (max-width: 768px) {
@@ -260,6 +321,13 @@
   .elementor-singlewrap .predoct-recomwrap .sectiontitle h2 {
     margin: 0px 0px;
   }
+  .no-next-post p {
+    font-size: 28px;
+  }
+  .shar-bar {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 @media (max-width: 568px) {
   .editorial .excerptwrap {
@@ -276,5 +344,18 @@
     font-size: 44px;
 
     padding-left: 23px;
+  }
+  .sharesocials {
+    padding: 47px 0 10px 0;
+  }
+  .authorwrap-ico {
+    flex-direction: column;
+  }
+  .authorwrap-ico .shar-bar {
+    flex-direction: row;
+    align-items: start;
+  }
+  .authorwrap-ico .shar-bar {
+    margin-top: 20px;
   }
 }

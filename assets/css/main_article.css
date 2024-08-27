@@ -660,8 +660,12 @@
   .collection_list a .infocontent p {
     margin-bottom: 11px;
   }
-  .collection_list {
-    margin-top: 35px;
+
+  .tabstoggle li {
+    max-width: 25%;
+  }
+  .tabstoggle.toggle2 li {
+    max-width: 20%;
   }
 }
 @media (max-width: 488px) {
@@ -691,5 +695,16 @@
   .shopwrap .shopbtn p {
     font-size: 14px;
     margin-top: 13px;
+  }
+}
+
+@media (max-width: 395px) {
+  .collections
+    .articlefeatured_collection
+    .articlefeatured
+    .articlefeatured_details
+    h3 {
+    margin-top: 63px;
+    margin-bottom: 25px;
   }
 }
