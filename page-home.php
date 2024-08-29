@@ -98,13 +98,13 @@
 
                 <div class="tabcontents">
                     <div class="the_list_content">
-                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "aliving list") ?>
+                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "the-list") ?>
                     </div>
                     <div class="listandguidecontent">
-                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "deals") ?>
+                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "list-deals") ?>
                     </div>
                     <div class="giftsguidecontent">
-                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "gifts") ?>
+                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "gifts-guides") ?>
                     </div>
                 </div>
             </div>

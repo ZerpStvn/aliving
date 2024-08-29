@@ -341,6 +341,13 @@ img {
     text-align: left;
     color: white;
   }
+  .footer .footerwrap .rightcolumn .listpage {
+    width: 88%;
+  }
+  .footer .footerwrap .rightcolumn {
+    max-width: 87%;
+    margin-top: 31px;
+  }
 }
 @media (max-width: 560px) {
   .footer .footerwrap .rightcolumn .listpage {
