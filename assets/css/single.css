@@ -249,6 +249,18 @@ icon
 .sharesocials {
   padding: 0 0 40px 0;
 }
+.mobileinfowrap .authorwrap {
+  margin: 40px 0;
+}
+.mobileinfowrap .authorwrap h1,
+.mobileinfowrap .authorwrap h2 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 23.4px !important;
+  text-align: left;
+  margin-bottom: 5px !important;
+  padding-left: 0px !important;
+}
 
 @media (max-width: 1225px) {
   .containernextpost .next-post {
@@ -324,6 +336,11 @@ icon
   .no-next-post p {
     font-size: 28px;
   }
+  .editorial-header .wrapcontent .headingcontent h1 {
+    margin-bottom: 25px;
+    font-size: 48px;
+    line-height: 52.6px;
+  }
   .shar-bar {
     flex-direction: column;
     align-items: start;
@@ -340,7 +357,7 @@ icon
     grid-template-columns: 1fr 1fr;
   }
   .editorial-header .wrapcontent .headingcontent h1 {
-    line-height: 68.6px;
+    line-height: 50.6px;
     font-size: 44px;
 
     padding-left: 23px;

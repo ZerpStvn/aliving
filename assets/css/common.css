@@ -69,9 +69,7 @@ img {
 }
 .footer .footerwrap .uppercontent {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px solid white;
 }
 .footer .footerwrap .leftcolumn {
   padding: 70px 30px 50px 30px;
@@ -99,7 +97,8 @@ img {
   padding: 70px 30px 50px 30px;
   width: 100%;
 }
-.footer .footerwrap .rightcolumn .listpage h1 {
+.footer .footerwrap .rightcolumn .listpage h1,
+.newsletters.mobile-version h1 {
   color: white;
   font-family: var(--maintitlefonts);
   font-size: 20px;
@@ -125,19 +124,40 @@ img {
 .footer .footerwrap .rightcolumn .bottomdes {
   margin-top: 15px;
 }
-.footer .footerwrap .rightcolumn .newsletters p {
+.footer .footerwrap .rightcolumn .newsletters p,
+.newsletters.mobile-version p {
   font-family: var(--mainfontp);
   font-size: 14px;
   font-weight: 400;
   padding: 28px 0 18px 0;
   line-height: 21px;
   text-align: left;
+  color: white;
 }
-.footer .footerwrap .rightcolumn .newsletters form input {
+.newsletters.mobile-version {
+  display: none;
+}
+.newsletters.mobile-version form {
+  display: flex;
+  align-items: center;
+}
+.newsletters.mobile-version form input {
+  width: 100%;
+}
+.newsletters.mobile-version form button {
+  width: 17%;
+  margin-left: 10px;
+}
+.newsletters.mobile-version {
+  padding: 50px 30px;
+}
+.footer .footerwrap .rightcolumn .newsletters form input,
+.newsletters.mobile-version form input {
   height: 40px;
   padding-left: 16px;
 }
-.footer .footerwrap .rightcolumn .newsletters form button {
+.footer .footerwrap .rightcolumn .newsletters form button,
+.newsletters.mobile-version form button {
   border: none;
   background-color: #e37052;
   padding: 10px;
@@ -151,6 +171,7 @@ img {
   justify-content: space-between;
   padding: 37px 16px;
   color: white;
+  border-top: 1px solid white;
 }
 .footer .footerwrap .socials h1 {
   font-family: var(--mainfontp);
@@ -252,6 +273,10 @@ img {
   color: black;
   font-size: 21px;
 }
+.bottomdes.mobile {
+  display: none;
+}
+
 @media (max-width: 988px) {
   .global_padding {
     padding: 2px 30px;
@@ -277,15 +302,61 @@ img {
   }
 }
 @media (max-width: 890px) {
-  .footer .footerwrap .rightcolumn .listpage {
+  /* .footer .footerwrap .rightcolumn .listpage {
     flex-direction: column;
+  } */
+  .footer .footerwrap .uppercontent {
+    flex-direction: row;
+  }
+  .newsletters {
+    display: none;
+  }
+  .newsletters.mobile-version {
+    display: block;
+  }
+  .footer .footerwrap .rightcolumn .bottomdes {
+    display: none;
+  }
+  .footer .footerwrap .leftcolumn {
+    padding: 0px 30px 0px 30px;
+  }
+  .footer .footerwrap .rightcolumn .newsletters {
+    display: none;
   }
   .footer .footerwrap .rightcolumn {
-    padding: 0px 30px 50px 30px;
+    padding: 0px 30px 0px 30px;
   }
   ul.discovery,
   .newsletters {
     margin-top: 20px;
+  }
+  .bottomdes.mobile {
+    display: block;
+    padding: 50px 30px;
+  }
+  .bottomdes.mobile p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: white;
+  }
+}
+@media (max-width: 560px) {
+  .footer .footerwrap .rightcolumn .listpage {
+    flex-direction: column;
+  }
+  .footer .footerwrap .uppercontent {
+    flex-direction: column;
+    margin-top: 41px;
+  }
+  .bottomdes.mobile {
+    display: block;
+    padding: 14px 30px 20px 30px;
+  }
+  .footer .footerwrap .socials {
+    margin: 37px 16px 0 16px;
+    padding: 28px 8px;
   }
 }
 @media (max-width: 488px) {

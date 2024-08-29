@@ -86,9 +86,17 @@ if ($get_editorial_status === "gifts") {
                         <?php echo truncate_title(40) ?>
 
                         </h1>
-                        <!-- <p><?php echo truncate_excerpt(210) ?>
-
-                        </p> -->
+                        <div class="mobileinfowrap global_padding">
+                            <p><?php echo truncate_excerpt(150) ?>
+                            </p>
+                            <div class="authorwrap">
+                                <h1>By <?php $author_id = $post->post_author;
+                                $author_name = get_the_author_meta('display_name', $author_id);
+                                echo $author_name
+                                    ?></h1>
+                                <h2><?php echo get_the_date('F j, Y'); ?></h2>
+                            </div>
+                        </div>
                     </div>
                     <div class="authordescrip global_padding">
                         <div class="authorwrap">

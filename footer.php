@@ -42,7 +42,16 @@ endif;
 
 <div class="footer">
     <div class="footerwrap global_width">
+        <div class="newsletters mobile-version">
+            <h1>Newsletters</h1>
+            <p>Get updates on our latest collections.</p>
+            <form action="">
+                <input type="text" name="email_letters" placeholder="your@example.com">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <div class="uppercontent">
+
             <div class="leftcolumn">
                 <a href="<?php echo get_home_url() . "/" ?>"><img
                         src="<?php echo esc_url(aliving_image . "/Logo3.png") ?>" loading="lazy" alt="footer"></a>
@@ -85,6 +94,14 @@ endif;
                     </p>
                 </div>
             </div>
+        </div>
+        <div class="bottomdes mobile">
+            <p>
+                Disclaimer(s)<br>
+                Articles may contain affiliate links which enable us to share in the revenue of any purchases
+                made.
+                Registration on or use of this site constitutes acceptance of our Terms of Service.
+            </p>
         </div>
         <div class="socials">
             <h1>

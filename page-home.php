@@ -14,6 +14,11 @@
         </div>
 
     </div>
+    <div class="twolistview">
+        <div class="paddingwraplistview global_width">
+            <?php viewtwolist() ?>
+        </div>
+    </div>
     <div class="tooglepanel global_width">
         <?php toggleFronts() ?>
     </div>
@@ -42,7 +47,7 @@
         </div>
     </div>
     <div class="bycategory global_width">
-        <h1 class="title_prod"> Product Collections</h1>
+        <h1 class="title_prod">Collections</h1>
         <div class="homecollection ">
 
             <div class="articles">

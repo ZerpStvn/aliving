@@ -19,3 +19,4 @@ include_once(aliving_dir . "/custom/interface/list_front.php");
 include_once(aliving_dir . "/custom/interface/latest_front.php");
 include_once(aliving_dir . "/custom/interface/share_bar.php");
 include_once(aliving_dir . "/custom/interface/popupmenu.php");
+include_once(aliving_dir . "/custom/interface/front_viewlist.php");

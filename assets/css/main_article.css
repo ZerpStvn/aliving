@@ -103,6 +103,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  font-family: var(--maintitlefonts);
 }
 
 .articlefeatured_collection .articlefeatured {
@@ -120,6 +121,7 @@
   line-height: 39px;
   letter-spacing: -0.02em;
   text-align: left;
+  font-family: var(--maintitlefonts);
   max-width: 450px;
   height: 61px;
   width: 100%;
@@ -153,7 +155,7 @@
 .collection_article .listofarticle {
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  padding: 18px 0 14px 0;
+  padding: 18px 0 25px 0;
 }
 .collection_article .listofarticle a {
   text-decoration: none;
@@ -171,6 +173,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  font-family: var(--maintitlefonts);
   text-align: left;
 }
 
@@ -194,7 +197,7 @@
   color: #f4d77e;
 }
 .original_collections li h2 {
-  font-family: "Epilogue", sans-serif;
+  font-family: var(--maintitlefonts);
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
@@ -372,6 +375,9 @@
   line-height: 21px;
   margin-top: 25px;
   text-align: left;
+}
+.homecollection .articles .category {
+  color: #652b41;
 }
 .panels.active .pannelcontent .contentwrapping .listofcontent {
   max-width: 390px;
@@ -600,6 +606,10 @@
   line-height: 21px;
   text-align: left;
 }
+.mobileinfowrap {
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .panels.active .pannelcontent {
     padding: 30px 0px 30px 10px;
@@ -649,6 +659,9 @@
   .collections .homecollection .list_of_articles .viewcollection {
     display: none;
   }
+  .ourlatestcollection {
+    grid-template-columns: 1fr 1fr;
+  }
   .collections
     .articlefeatured_collection
     .articlefeatured
@@ -666,6 +679,15 @@
   }
   .tabstoggle.toggle2 li {
     max-width: 20%;
+  }
+  .collection_article .listofarticle {
+    border-top: none;
+  }
+  .editorial-header .wrapcontent .authordescrip {
+    display: none;
+  }
+  .mobileinfowrap {
+    display: block;
   }
 }
 @media (max-width: 488px) {
@@ -695,6 +717,11 @@
   .shopwrap .shopbtn p {
     font-size: 14px;
     margin-top: 13px;
+  }
+
+  .original_collections li h2,
+  .original_collections li h1 {
+    max-width: 256px;
   }
 }
 

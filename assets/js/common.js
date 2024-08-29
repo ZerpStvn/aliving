@@ -2,10 +2,15 @@ jQuery(document).ready(function ($) {
   // checl url
   var currentUrl = window.location.href;
   // onscroll
+  // var defaultLogo =
+  //   "http://localhost/aleving/wp-content/themes/aliving/assets/image/Logo1.png";
+  // var scrolledLogo =
+  //   "http://localhost/aleving/wp-content/themes/aliving/assets/image/logo4.png";
+
   var defaultLogo =
-    "http://localhost/aleving/wp-content/themes/aliving/assets/image/Logo1.png";
+    "https://growtestsite.com/aliving/wp-content/themes/aliving/assets/image/Logo1.png";
   var scrolledLogo =
-    "http://localhost/aleving/wp-content/themes/aliving/assets/image/logo4.png";
+    "https://growtestsite.com/aliving/wp-content/themes/aliving/assets/image/logo4.png";
   var currentUrl = window.location.pathname;
 
   if (currentUrl.includes("/editorial/")) {

@@ -6,11 +6,38 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     var index = $(this).index();
     $(".tabstoggle li").removeClass("active");
-    $(".togglemobilewrap .pannelcontent").removeClass("active").hide();
     $(this).addClass("active");
-    $(".togglemobilewrap .pannelcontent").eq(index).addClass("active").fadeIn();
+    $(".togglemobilewrap .pannelcontent")
+      .removeClass("active")
+      .hide()
+      .eq(index)
+      .addClass("active")
+      .fadeIn();
   });
 
+  function activatePanel(panelSelector) {
+    $(".togglemobilewrap .pannelcontent").removeClass("active").hide();
+
+    var $panel = $(panelSelector).addClass("active").fadeIn();
+
+    setTimeout(function () {
+      if ($panel.width() >= 80) {
+        $panel.addClass("active");
+      }
+    }, 1600);
+  }
+
+  if (window.location.href.includes("/house-keeping/")) {
+    activatePanel("#pannelwrap2");
+  } else if (window.location.href.includes("/home-improvement/")) {
+    activatePanel("#pannelwrap3");
+  } else if (window.location.href.includes("/gardening/")) {
+    activatePanel("#pannelwrap4");
+  } else if (window.location.href.includes("/what-to-buy/")) {
+    activatePanel("#pannelwrap5");
+  } else {
+    activatePanel("#pannelwrap1");
+  }
   $(".copy-link").click(function (e) {
     e.preventDefault();
 

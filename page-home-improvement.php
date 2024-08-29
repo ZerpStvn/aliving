@@ -28,11 +28,17 @@
                                 alt="arrow_icon"></span></a>
                 </div>
             </div>
+            <div class="twolistview">
+                <?php ?>
+            </div>
 
         </div>
     </div>
     <div class="tooglepanel global_width">
         <?php collectiontoggleFronts() ?>
+    </div>
+    <div class="tooglepanel-mobile global_width">
+        <?php toggleFrontsmobile2() ?>
     </div>
 
     <div class="collectionwraplist global_width">

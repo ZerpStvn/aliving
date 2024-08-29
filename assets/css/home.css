@@ -39,11 +39,10 @@
 } */
 .homecollection .list_of_articles .latestarticle {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 30px;
   text-align: left;
-  color: #698f92;
-  margin: 0 0 8px 0;
+  color: #652b41;
 }
 .homecollection .list_of_articles .viewcollection {
   background-color: #0c0b0b;
@@ -214,8 +213,8 @@
 .buttonsarrow button {
   border: 1px solid white;
   background-color: transparent;
-  width: 60px;
-  height: 60px;
+  width: 81px;
+  height: 81px;
   border-radius: 100%;
   color: white;
 }
@@ -400,7 +399,7 @@
   }
   .ourlatestcollection li a img {
     width: 100%;
-    height: 141px;
+    height: 308px;
   }
   .collections .homecollection .articles {
     flex-direction: column;
@@ -422,5 +421,18 @@
   .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
     margin-top: 69px;
     margin-bottom: 29px;
+  }
+  .original_collections li img {
+    width: 245px;
+    height: 268px;
+  }
+  .buttonsarrow {
+    margin-top: 25px;
+  }
+  .ourlatestcollection li a img {
+    height: 251px;
+  }
+  .homecollection .list_of_articles .latestarticle {
+    font-size: 24px;
   }
 }

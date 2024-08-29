@@ -34,7 +34,9 @@
     <div class="tooglepanel global_width">
         <?php collectiontoggleFronts() ?>
     </div>
-
+    <div class="tooglepanel-mobile global_width">
+        <?php toggleFrontsmobile2() ?>
+    </div>
     <div class="collectionwraplist global_width">
         <?php collectionsfront('whattobuy') ?>
     </div>
