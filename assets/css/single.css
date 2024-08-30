@@ -208,13 +208,13 @@ icon
 }
 .authorwrap-ico h1 {
   font-family: var(--maintitlefonts);
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 27px;
   text-align: left;
 }
 .shar-bar h1 {
-  font-size: 16px;
+  font-size: 16px !;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
@@ -374,5 +374,25 @@ icon
   }
   .authorwrap-ico .shar-bar {
     margin-top: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .editorial-header .wrapcontent .headingcontent h1 {
+    line-height: 35.6px;
+    font-size: 34px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .mobileinfowrap .authorwrap {
+    margin: 14px 0;
+  }
+  .elementor-singlewrap .predoct-recomwrap .sectiontitle h1 {
+    font-size: 38px;
+    line-height: 52.6px;
+  }
+  .authorwrap-ico .shar-bar {
+    flex-direction: row;
+    align-items: start;
+    flex-direction: column;
   }
 }

@@ -1,6 +1,6 @@
 .category {
   margin: 6px 0;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 400;
   line-height: 21px;
   color: #e37052;
@@ -629,7 +629,7 @@
     height: 300px;
   }
 }
-@media (max-width: 865px) {
+@media (max-width: 888px) {
   .original_collections li {
     width: 299px !important;
   }
@@ -689,6 +689,11 @@
   .mobileinfowrap {
     display: block;
   }
+  .original_collections li img {
+    width: 262px;
+    height: 285px;
+    object-fit: cover;
+  }
 }
 @media (max-width: 488px) {
   .social_trending {
@@ -723,6 +728,10 @@
   .original_collections li h1 {
     max-width: 256px;
   }
+  .original_collections li img {
+    width: 245px;
+    height: 268px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -733,5 +742,25 @@
     h3 {
     margin-top: 63px;
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .original_collections li {
+    width: 227px !important;
+    height: 404px;
+  }
+
+  .missionarywrap .logooverlay {
+    width: 300.99px;
+    height: 119px;
+    top: -84px;
+  }
+  .original_collections li img {
+    width: 194px;
+    height: 260px;
+  }
+  .original_collections li h2,
+  .original_collections li h1 {
+    max-width: 204px;
   }
 }

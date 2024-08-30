@@ -345,7 +345,7 @@ img {
     width: 88%;
   }
   .footer .footerwrap .rightcolumn {
-    max-width: 87%;
+    max-width: 50%;
     margin-top: 31px;
   }
 }
@@ -376,5 +376,18 @@ img {
   .emptywrap h1 {
     font-size: 34px;
     line-height: 73.6px;
+  }
+  .newsletters.mobile-version form button {
+    width: 31%;
+  }
+  .footer .footerwrap .rightcolumn {
+    max-width: 50%;
+    margin-top: 31px;
+  }
+  .footer .footerwrap .leftcolumn {
+    padding: 0px 0px 0px 29px;
+  }
+  .global_padding {
+    padding: 2px 9px;
   }
 }
