@@ -222,6 +222,58 @@
   line-height: 27px;
   text-align: left;
 }
+
+.giftscollectionwrap {
+  padding: 80px 0;
+  background-color: #f2f9ff;
+}
+.giftscollectionwrap .giftscontent .giftstitle {
+  font-family: var(--maintitlefonts);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 74.4px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ce3e55;
+  margin-bottom: 60px;
+}
+
+/* product recomendation */
+.productrecommendation .collectiontile h1 {
+  text-align: center !important;
+}
+.giftscollectionwrap.recomend {
+  background-color: #698f92;
+  margin-top: 30px;
+}
+.giftscollectionwrap.recomend .giftscontent .giftstitle {
+  color: #f4d77e;
+}
+.giftscollectionwrap.recomend .giftscontent .ourlatestcollection li a h1 {
+  color: white;
+}
+.giftscollectionwrap.recomend .giftscontent .ourlatestcollection li a p {
+  color: white;
+}
+.upperreco .wrapauthorname {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 0 45px 0;
+}
+.upperreco .wrapauthorname h1 {
+  font-family: var(--maintitlefonts);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+@media (max-width: 1440px) {
+  .giftscollectionwrap {
+    padding: 65px 16px;
+  }
+}
 @media (max-width: 588px) {
   .upperwrap {
     flex-direction: column;
@@ -255,5 +307,9 @@
   .upperwrapgifts .upperwrap .rightcorner {
     max-width: 100%;
     width: 100%;
+  }
+  .giftscollectionwrap .giftscontent .giftstitle {
+    font-family: var(--maintitlefonts);
+    font-size: 40px;
   }
 }

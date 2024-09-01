@@ -1,6 +1,6 @@
 <?php
 
-function ourlastestpost()
+function ourlastestpost($postslug = null)
 {
 
     ?>
@@ -9,7 +9,14 @@ function ourlastestpost()
         $trending_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => '_editorial_status',
+                        'value' => !empty($postslug) ? $postslug : array(),
+                        'compare' => '='
+                    ),
+                ),
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'posts_per_page' => 8,

@@ -75,6 +75,7 @@ function add_customer_pages()
             'post_type' => 'page',
             'post_name' => 'gifts'
         ),
+
         array(
             'post_title' => '404',
             'post_content' => '404',
