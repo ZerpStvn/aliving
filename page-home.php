@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="home  ">
+<div class="home">
     <div class="missionary" id="missionary">
         <div class="listofcontent global_width">
             <div class="missionarywrap ">
