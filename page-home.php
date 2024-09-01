@@ -92,7 +92,7 @@
             <div class="tabwraps">
                 <ul class="tablinks">
                     <li><button class="thelist"> The A List</button></li>
-                    <li><button class="listdeals">List & Deals</button></li>
+                    <li><button class="listdeals">Sales & Deals</button></li>
                     <li><button class="giftguides">Gift Guides</button></li>
                 </ul>
 
