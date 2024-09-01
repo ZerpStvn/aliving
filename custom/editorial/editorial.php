@@ -125,6 +125,7 @@ class EditorialPostType
 
             <option value="the_a_list" <?php selected($editorial_status, 'the_a_list'); ?>>The A List</option>
             <option value="gifts" <?php selected($editorial_status, 'gifts'); ?>>Gifts Guides</option>
+            <option value="giftsidea" <?php selected($editorial_status, 'giftsidea'); ?>>Gifts Ideas</option>
             <option value="sales_and_deals" <?php selected($editorial_status, 'sales_and_deals'); ?>>Sales & Deals</option>
         </select>
         <?php

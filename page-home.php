@@ -53,23 +53,23 @@
             <div class="articles">
                 <div class="list_of_articles">
                     <h2 class="latestarticle">Latest</h2>
-                    <?php listofarticle() ?>
+                    <?php listofarticle2('giftsidea') ?>
                     <a class="viewcollection" href="<?php echo get_site_url() . '/gardening/' ?>">View Collections
                         <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>
                 </div>
                 <div class="featuredarticles">
-                    <?php articlefeatured() ?>
+                    <?php articlefeatured2('giftsidea') ?>
                 </div>
             </div>
             <div class="trending">
-                <?php trendFront('trending', ) ?>
+                <?php trendFront2('trending', 'none') ?>
                 <div class="hottopics">
-                    <?php trendFrontHottopics('hot_topic', 'editorial') ?>
+                    <?php trendFrontHottopics2('giftsidea') ?>
                 </div>
                 <div class="featured">
-                    <?php trendFrontfeatured('featured', 'editorial', ) ?>
+                    <?php trendFrontfeatured2('giftsidea') ?>
                 </div>
             </div>
 
