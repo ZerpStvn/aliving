@@ -395,4 +395,7 @@ icon
     align-items: start;
     flex-direction: column;
   }
+  .authorwrap-ico .shar-bar {
+    flex-direction: column;
+  }
 }

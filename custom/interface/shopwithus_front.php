@@ -8,11 +8,18 @@ function shopwithusfront($title, $description, $link, $slugs)
         $recent_posts_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                'tax_query' => array(
+                // 'tax_query' => array(
+                //     array(
+                //         'taxonomy' => '_editorial_status',
+                //         'field' => 'slug',
+                //         'terms' => $slugs,
+                //     ),
+                // ),
+                'meta_query' => array(
                     array(
-                        'taxonomy' => 'category',
-                        'field' => 'slug',
-                        'terms' => $slugs,
+                        'key' => '_editorial_status',
+                        'value' => $slugs,
+                        'compare' => '=',
                     ),
                 ),
                 'orderby' => 'date',
@@ -24,11 +31,11 @@ function shopwithusfront($title, $description, $link, $slugs)
         $remaining_posts_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                'tax_query' => array(
+                'meta_query' => array(
                     array(
-                        'taxonomy' => 'category',
-                        'field' => 'slug',
-                        'terms' => $slugs,
+                        'key' => '_editorial_status',
+                        'value' => $slugs,
+                        'compare' => '=',
                     ),
                 ),
                 'orderby' => 'date',

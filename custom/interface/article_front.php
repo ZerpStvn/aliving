@@ -13,7 +13,7 @@ function articlefeatured($categories = null)
                     array(
                         'key' => '_service',
                         'value' => !empty($categories) ? $categories : array(),
-                        'compare' => '='
+                        'compare' => '!='
                     )
                 ),
                 'orderby' => 'date',
@@ -81,7 +81,7 @@ function listofarticle($categories = null)
                     array(
                         'key' => '_service',
                         'value' => !empty($categories) ? $categories : array(),
-                        'compare' => '='
+                        'compare' => '!='
                     )
                 ),
                 'orderby' => 'date',

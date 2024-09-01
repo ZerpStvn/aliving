@@ -17,7 +17,7 @@ function trendFront($status, $categories = null)
                 array(
                     'key' => '_service',
                     'value' => !empty($categories) ? $categories : array(),
-                    'compare' => '='
+                    'compare' => '!='
                 )
             ),
 

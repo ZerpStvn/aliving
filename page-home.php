@@ -91,20 +91,20 @@
             </div>
             <div class="tabwraps">
                 <ul class="tablinks">
-                    <li><button class="thelist"> The List</button></li>
+                    <li><button class="thelist"> The A List</button></li>
                     <li><button class="listdeals">List & Deals</button></li>
                     <li><button class="giftguides">Gift Guides</button></li>
                 </ul>
 
                 <div class="tabcontents">
                     <div class="the_list_content">
-                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "the-list") ?>
+                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "the_a_list") ?>
                     </div>
                     <div class="listandguidecontent">
-                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "list-deals") ?>
+                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "sales_and_deals") ?>
                     </div>
                     <div class="giftsguidecontent">
-                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "gifts-guides") ?>
+                        <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "gifts") ?>
                     </div>
                 </div>
             </div>

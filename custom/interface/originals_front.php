@@ -10,14 +10,12 @@ function originalsFronts()
                 $trending_query = new WP_Query(
                     array(
                         'post_type' => 'editorial',
-                        'tax_query' => array(
-                            'relation' => 'AND',
+                        'meta_query' => array(
                             array(
-                                'taxonomy' => 'category',
-                                'field' => 'slug',
-                                'terms' => 'a-list-of-living',
+                                'key' => '_service',
+                                'value' => 'a_list_living',
+                                'compare' => '=',
                             ),
-
                         ),
                         'orderby' => 'date',
                         'order' => 'DESC',

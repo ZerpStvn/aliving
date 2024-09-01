@@ -28,7 +28,7 @@ function collectionsfront($service)
                 array(
                     'key' => '_service',
                     'value' => $service,
-                    'compare' => '='
+                    'compare' => '!='
                 ),
             ),
             'orderby' => 'date',

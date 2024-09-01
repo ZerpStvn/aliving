@@ -122,7 +122,10 @@ class EditorialPostType
             <option value="featured" <?php selected($editorial_status, 'featured'); ?>>Featured</option>
             <option value="product_recommendation" <?php selected($editorial_status, 'product_recommendation'); ?>>Product
                 Recommendation</option>
-            <option value="gifts" <?php selected($editorial_status, 'gifts'); ?>>Gifts</option>
+
+            <option value="the_a_list" <?php selected($editorial_status, 'the_a_list'); ?>>The A List</option>
+            <option value="gifts" <?php selected($editorial_status, 'gifts'); ?>>Gifts Guides</option>
+            <option value="sales_and_deals" <?php selected($editorial_status, 'sales_and_deals'); ?>>Sales & Deals</option>
         </select>
         <?php
     }
@@ -138,6 +141,7 @@ class EditorialPostType
             <option value="house_keeping" <?php selected($service, 'house_keeping'); ?>>House Keeping</option>
             <option value="home_improvement" <?php selected($service, 'home_improvement'); ?>>Home Improvement</option>
             <option value="garden" <?php selected($service, 'garden'); ?>>Garden</option>
+            <option value="a_list_living" <?php selected($service, 'a_list_living'); ?>>A List of Living</option>
             <option value="whattobuy" <?php selected($service, 'whattobuy'); ?>>What to buy</option>
         </select>
         <?php
