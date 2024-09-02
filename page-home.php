@@ -84,9 +84,9 @@
                     <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper
                         vehicula.
                         Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada.</p>
-                    <a class="secondarybutton" href="<?php echo get_site_url() . '/whattobuy/' ?>">See More<span><img
+                    <!-- <a class="secondarybutton" href="<?php echo get_site_url() . '/whattobuy/' ?>">See More<span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                alt="arrow_icon"></span></a>
+                                alt="arrow_icon"></span></a> -->
                 </div>
             </div>
             <div class="tabwraps">
