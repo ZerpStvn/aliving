@@ -20,10 +20,10 @@
         </div>
     </div>
     <div class="tooglepanel global_width">
-        <?php toggleFronts() ?>
+        <?php collectiontoggleFronts() ?>
     </div>
     <div class="tooglepanel-mobile global_width">
-        <?php toggleFrontsmobile(true) ?>
+        <?php toggleFrontsmobile2() ?>
     </div>
     <div class="originals">
         <div class="originalswrap global_width">
@@ -47,14 +47,14 @@
         </div>
     </div>
     <div class="bycategory global_width">
-        <h1 class="title_prod">Collections</h1>
+        <h1 class="title_prod">Gifts</h1>
         <div class="homecollection ">
 
             <div class="articles">
                 <div class="list_of_articles">
                     <h2 class="latestarticle">Latest</h2>
                     <?php listofarticle2('giftsidea') ?>
-                    <a class="viewcollection" href="<?php echo get_site_url() . '/gardening/' ?>">View Collections
+                    <a class="viewcollection" href="<?php echo get_site_url() . '/gifts/' ?>">View Gifts
                         <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>

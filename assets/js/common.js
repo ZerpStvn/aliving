@@ -168,7 +168,7 @@ jQuery(document).ready(function ($) {
       if ($(panel).width() >= 80) {
         $activePanelContent.addClass("show-content");
       }
-    }, 1600);
+    }, 100);
   }
 
   $(".panels").on("click", function () {
