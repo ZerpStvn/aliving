@@ -278,6 +278,19 @@
   .upperwrap {
     flex-direction: column;
   }
+  .wrapauthorname .shar-bar {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .upperreco .wrapauthorname {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .upperreco .wrapauthorname {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
   .upperwrapgifts .upperwrap .leftcorner .uppertitle .thumbnails {
     width: 100%;
     object-fit: cover;

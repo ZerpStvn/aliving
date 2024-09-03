@@ -619,6 +619,7 @@ li#pannel5 {
 }
 .mobileinfowrap {
   display: none;
+  margin-top: 20px;
 }
 /* product reccomendation */
 .giftscollectionwrap.recomend .ourlatestcollection {
@@ -674,6 +675,12 @@ li#pannel5 {
   .social_trending .socialtrending a img {
     max-width: 300.36px;
     height: 300px;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection {
+    grid-template-columns: 1fr 1fr;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection li .latestwrap img {
+    height: inherit;
   }
 }
 @media (max-width: 888px) {
@@ -741,6 +748,10 @@ li#pannel5 {
     width: 262px;
     height: 285px;
     object-fit: cover;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection {
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
 @media (max-width: 488px) {

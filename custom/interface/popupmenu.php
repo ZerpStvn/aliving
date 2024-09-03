@@ -63,7 +63,7 @@ function popupmenu()
                 <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li>
 
                 <li>
-                    <a href="<?php echo esc_url($latestEditorialpost) ?>">Product Recommendation</a>
+                    <a href="<?php echo get_site_url() . '/product-recommendation' ?>">Product Recommendation</a>
                 </li>
                 <li>
                     <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>

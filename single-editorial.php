@@ -13,19 +13,19 @@ $publish_date = get_the_date('F j, Y');
             <div class="headingcontent global_padding">
                 <h1>
                     <?php echo truncate_title(40) ?>
-
-                </h1>
-                <div class="mobileinfowrap global_padding">
-                    <p><?php echo truncate_excerpt(150) ?>
-                    </p>
-                    <div class="authorwrap">
-                        <h1>By <?php $author_id = $post->post_author;
-                        $author_name = get_the_author_meta('display_name', $author_id);
-                        echo $author_name
-                            ?></h1>
-                        <h2><?php echo get_the_date('F j, Y'); ?></h2>
+                    <div class="mobileinfowrap">
+                        <p><?php echo truncate_excerpt(150) ?>
+                        </p>
+                        <div class="authorwrap">
+                            <h1>By <?php $author_id = $post->post_author;
+                            $author_name = get_the_author_meta('display_name', $author_id);
+                            echo $author_name
+                                ?></h1>
+                            <h2><?php echo get_the_date('F j, Y'); ?></h2>
+                        </div>
                     </div>
-                </div>
+                </h1>
+
             </div>
             <div class="authordescrip global_padding">
                 <div class="authorwrap">
