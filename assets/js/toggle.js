@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
   });
 
   // check
-  $(".category").each(function () {
+  $(".infocontent .listofcategory .category").each(function () {
     var textContent = $(this).text().trim();
 
     switch (true) {
