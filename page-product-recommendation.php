@@ -58,7 +58,7 @@ $latestEditorialreco = new WP_Query(array(
     <div class="giftscollectionwrap recomend">
         <div class="giftscontent global_width">
             <h1 class="giftstitle">Best Deals 2024</h1>
-            <?php ourlastestpost('sales_and_deals') ?>
+            <?php ourlastestpost2('sales_and_deals') ?>
         </div>
     </div>
 </div>
