@@ -328,6 +328,7 @@ li#pannel5 {
   line-height: 40px;
   letter-spacing: -0.02em;
   text-align: center;
+  font-family: var(--mainfontp) !important;
 }
 .tooglepanelwrap .panels .pannelnumbers h2 {
   font-family: "Libre Baskerville", serif;
