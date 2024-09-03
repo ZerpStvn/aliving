@@ -33,7 +33,7 @@ function collectionsfront($service)
             ),
             'orderby' => 'date',
             'order' => 'DESC',
-            'posts_per_page' => -1,
+            'posts_per_page' => 6,
         ));
 
         if ($trending_query->have_posts()):

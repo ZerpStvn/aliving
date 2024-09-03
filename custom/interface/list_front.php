@@ -251,9 +251,9 @@ function trendinglistview($status)
             <div>No posts found.</div>
         <?php endif; ?>
         <div class="buttontrendwrap">
-            <!-- <a class="viewcollection" href="<?php echo get_site_url() . "/home-improvement/" ?>">Read More <span><img
+            <a class="viewcollection" href="<?php echo get_site_url() . "/home-improvement/" ?>">Read More <span><img
                         src="<?php echo esc_url(aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"); ?>"
-                        alt="arrow_icon"></span></a> -->
+                        alt="arrow_icon"></span></a>
         </div>
     </div>
     <?php

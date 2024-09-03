@@ -213,8 +213,8 @@
 .buttonsarrow button {
   border: 1px solid white;
   background-color: transparent;
-  width: 81px;
-  height: 81px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   color: white;
 }
@@ -434,8 +434,8 @@
     font-size: 14px;
   }
   .buttonsarrow button {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
   .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
     margin-top: 75px;

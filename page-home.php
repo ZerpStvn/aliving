@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="bycategory global_width">
-        <h1 class="title_prod">Gifts</h1>
+        <h1 class="title_prod">Gifts Ideas</h1>
         <div class="homecollection ">
 
             <div class="articles">

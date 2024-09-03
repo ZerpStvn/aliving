@@ -145,7 +145,7 @@ jQuery(document).ready(function ($) {
   });
   // Log the breakpoint check
   jQuery(window).resize(function () {});
-  jQuery(".original_collections li:even").each(function () {
+  jQuery(".original_collections li:odd").each(function () {
     const $this = $(this);
     const $cat = $this.find(".category");
     const $img = $this.find(".image_list");

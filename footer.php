@@ -64,17 +64,18 @@ endif;
                 <div class="listpage">
                     <ul class="quicklinks">
                         <h1>Quick Links</h1>
-                        <li><a href="">Collection</a></li>
                         <li><a href="<?php echo esc_url($latest_editorial_url) ?>">Editorials</a></li>
-                        <li><a href="<?php echo esc_url($latestEditorialpost) ?>">Products</a></li>
+                        <li><a href="">Collection</a></li>
+                        <li><a href="<?php echo esc_url($latestEditorialpost) ?>">Products Recommendation</a></li>
                         <li><a href="">Gifts</a></li>
                     </ul>
                     <ul class="discovery">
                         <h1>Discover</h1>
-                        <li><a href="<?php echo esc_url("http://localhost/aleving/editorial/c") ?>">About us</a></li>
-                        <li><a href="">Our Team</a></li>
-                        <li><a href="">Tearms & Privacy</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
+                        <li><a href="<?php echo get_site_url() . "/house-keeping" ?>">House Keeping</a></li>
+                        <li><a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
+                        <li><a href="<?php echo get_site_url() . "/gardening" ?>">Garden</a></li>
+                        <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What To Buy</a></li>
                     </ul>
                     <div class="newsletters">
                         <h1>Newsletters</h1>

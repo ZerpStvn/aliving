@@ -315,6 +315,14 @@
 #pannelwrap1 {
   background-color: #652b41;
 }
+#pannelwrap1 .contentwrapping .listofcontent .listofcategory .category,
+#pannelwrap3 .contentwrapping .listofcontent .listofcategory .category,
+#pannelwrap4 .contentwrapping .listofcontent .listofcategory .category {
+  color: #f4d77e;
+}
+#pannelwrap2 .contentwrapping .listofcontent .listofcategory .category {
+  color: #652b41;
+}
 .tabstoggle .house_keeping,
 #pannelwrap2 {
   background-color: #debb50;
@@ -436,6 +444,7 @@
 
 .togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
   display: flex;
+  gap: 20px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
