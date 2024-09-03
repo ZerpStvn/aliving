@@ -15,7 +15,7 @@
                         <?php trendFrontHottopics('hot_topic', 'editorial') ?>
                     </div>
                     <div class="featured">
-                        <?php trendFrontfeatured('featured', 'editorial') ?>
+                        <?php trendFrontfeatured('featured', 'editorial', 'decor') ?>
                     </div>
                 </div>
                 <div class="articles">

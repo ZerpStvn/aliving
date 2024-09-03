@@ -130,8 +130,14 @@ function trendFrontfeatured($status, $type, $categories = null)
                     'key' => '_editorial_status',
                     'value' => $status,
                     'compare' => '='
-                )
+                ),
+                array(
+                    'key' => '_service',
+                    'value' => !empty($categories) ? $categories : array(),
+                    'compare' => '='
+                ),
             ),
+
             'orderby' => 'date',
             'order' => 'DESC',
             'posts_per_page' => 1,

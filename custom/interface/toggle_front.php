@@ -110,7 +110,7 @@ function toggleFronts()
                                     } else if ($index === 3) {
                                         $url_service = "/gardening/";
                                     }
-                                    echo get_site_url() . $url_service ?>">Rea more <span><img
+                                    echo get_site_url() . $url_service ?>">Read more <span><img
                                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                                 alt="arrow_icon"></span></a>
                                 </div>
@@ -246,7 +246,7 @@ function collectiontoggleFronts()
                                     }
 
                                     echo get_site_url() . $url_service1;
-                                    ?>">Rea more <span><img
+                                    ?>">Read more <span><img
                                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                                 alt="arrow_icon"></span></a>
                                 </div>
@@ -339,7 +339,7 @@ function toggleFrontsmobile($whattobuy = false)
                                 } else if ($index === 3) {
                                     $url_service = "/gardening/";
                                 }
-                                echo get_site_url() . $url_service ?>">Rea more <span
+                                echo get_site_url() . $url_service ?>">Read more <span
                                         class="material-symbols-outlined">
                                         arrow_forward
                                     </span></a>
@@ -473,7 +473,7 @@ function toggleFrontsmobile2()
                                 } else if ($index === 3) {
                                     $url_service = "/gardening/";
                                 }
-                                echo get_site_url() . $url_service ?>">Rea more <span
+                                echo get_site_url() . $url_service ?>">Read more <span
                                         class="material-symbols-outlined">
                                         arrow_forward
                                     </span></a>
