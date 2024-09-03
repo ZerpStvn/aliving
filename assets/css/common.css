@@ -61,9 +61,9 @@ img {
 }
 .headerwrap {
 }
-.navmenuheader .activenav {
+/* .navmenuheader .activenav {
   border-bottom: 1px solid black;
-}
+} */
 .footer {
   background-color: black;
 }

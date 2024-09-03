@@ -46,6 +46,15 @@ $latestEditorialreco = new WP_Query(array(
 
         </div>
     </div>
+    <?php
+
+    if (have_posts()):
+        while (have_posts()):
+            the_post();
+            the_content();
+        endwhile;
+    endif;
+    ?>
     <div class="giftscollectionwrap recomend">
         <div class="giftscontent global_width">
             <h1 class="giftstitle">Best Deals 2024</h1>

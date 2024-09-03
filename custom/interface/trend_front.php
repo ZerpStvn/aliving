@@ -78,6 +78,19 @@ function trendFrontHottopics($status, $type)
             'orderby' => 'date',
             'order' => 'DESC',
             'posts_per_page' => 1,
+            'meta_query' => array(
+                'relation' => 'OR',
+                array(
+                    'key' => '_editorial_status',
+                    'value' => $status,
+                    'compare' => '='
+                ),
+                array(
+                    'key' => '_service',
+                    'value' => 'a_list_living',
+                    'compare' => '!='
+                )
+            ),
         ));
 
         if ($trending_query->have_posts()):
@@ -179,7 +192,8 @@ function trendFront2($status, $categories = null)
                     'key' => '_service',
                     'value' => !empty($categories) ? $categories : array(),
                     'compare' => '='
-                )
+                ),
+
             ),
 
             'orderby' => 'date',

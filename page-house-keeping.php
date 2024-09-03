@@ -21,7 +21,7 @@
                     <?php articlefeatured('house_keeping') ?>
                 </div>
                 <div class="list_of_articles">
-                    <h2 class="latestarticle">RECOMMENDATIOn</h2>
+                    <h2 class="latestarticle">RECOMMENDATION</h2>
                     <?php listofarticle('house_keeping') ?>
                     <a class="viewcollection" href="">View Collections <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
