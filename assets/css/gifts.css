@@ -274,6 +274,11 @@
     padding: 65px 16px;
   }
 }
+@media (max-width: 988px) {
+  .upperwrapgifts .upperwrap .rightcorner {
+    margin-left: 22px;
+  }
+}
 @media (max-width: 588px) {
   .upperwrap {
     flex-direction: column;
@@ -324,5 +329,8 @@
   .giftscollectionwrap .giftscontent .giftstitle {
     font-family: var(--maintitlefonts);
     font-size: 40px;
+  }
+  .upperwrapgifts .upperwrap .rightcorner {
+    margin-left: 0px;
   }
 }

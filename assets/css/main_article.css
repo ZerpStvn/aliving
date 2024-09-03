@@ -596,9 +596,12 @@ li#pannel5 {
   object-fit: cover;
 }
 .ourlatestcollection li {
-  max-width: 307px;
+  max-width: 100%;
   width: 100%;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ourlatestcollection li a {
   color: black;
@@ -751,8 +754,7 @@ li#pannel5 {
     object-fit: cover;
   }
   .giftscollectionwrap.recomend .ourlatestcollection {
-    grid-template-columns: 1fr;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 488px) {
@@ -765,6 +767,9 @@ li#pannel5 {
   .original_collections li {
     width: 274px !important;
     height: 394px;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection {
+    grid-template-columns: 1fr;
   }
   /* font */
   .missionaryfrontwrap .first-latest .infocontent h2 {

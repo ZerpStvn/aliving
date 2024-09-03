@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <div class="house-keeping collections">
     <div class="collectiontile global_width">
-        <h1>House Keeping</h1>
+        <h1>Housekeeping</h1>
     </div>
     <div class="decorwrap global_width">
         <div class="homecollection ">

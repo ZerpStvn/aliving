@@ -346,6 +346,9 @@
   .shopwithus .mainleft .title {
     max-width: 90%;
   }
+  .homecollection .articles {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 666px) {
@@ -353,9 +356,7 @@
   .slick-slider .slick-list {
     margin-left: 0px !important;
   }
-  .homecollection .articles {
-    flex-direction: column-reverse;
-  }
+
   .articlefeatured_collection .articlefeatured img {
     max-width: 100%;
     width: 100%;

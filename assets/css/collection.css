@@ -120,3 +120,9 @@ ul.collection_service {
     width: 100%;
   }
 }
+@media (max-width: 888px) {
+  .collection_list a .infocontent h2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

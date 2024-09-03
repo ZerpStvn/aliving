@@ -311,6 +311,9 @@ img:hover {
     align-items: center;
     justify-content: center;
   }
+  img:hover {
+    transform: scale(1);
+  }
 }
 @media (max-width: 890px) {
   /* .footer .footerwrap .rightcolumn .listpage {
