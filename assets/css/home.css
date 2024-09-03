@@ -232,7 +232,7 @@
   color: #ce3e55;
 }
 .tooglepanel-mobile {
-  max-width: 716px;
+  max-width: 100%;
   width: 100%;
   padding: 49px 0;
   display: none;
