@@ -153,7 +153,7 @@ jQuery(document).ready(function ($) {
 
     $this.empty();
 
-    $this.append($cat, $title, $img);
+    $this.append($img, $cat, $title);
     $cat.css("color", "#f4d77e");
   });
 
