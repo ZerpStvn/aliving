@@ -53,9 +53,8 @@ $publish_date = get_the_date('F j, Y');
         </div>
         <div class="rightcorner">
             <?php
-            $content = apply_filters('the_content', get_the_content());
-            echo $content;
-            ?>
+            the_content()
+                ?>
 
         </div>
     </div>

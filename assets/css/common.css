@@ -276,7 +276,11 @@ img {
 .bottomdes.mobile {
   display: none;
 }
-
+.socialswrapiconft ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
 @media (max-width: 988px) {
   .global_padding {
     padding: 2px 30px;

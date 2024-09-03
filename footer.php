@@ -66,7 +66,8 @@ endif;
                         <h1>Quick Links</h1>
                         <li><a href="<?php echo esc_url($latest_editorial_url) ?>">Editorials</a></li>
                         <li><a href="">Collection</a></li>
-                        <li><a href="<?php echo esc_url($latestEditorialpost) ?>">Products Recommendation</a></li>
+                        <li><a href="<?php echo get_site_url() . "/product-recommendation" ?>">Products
+                                Recommendation</a></li>
                         <li><a href="">Gifts</a></li>
                     </ul>
                     <ul class="discovery">
@@ -106,11 +107,18 @@ endif;
         </div>
         <div class="socials">
             <h1>
-                &copy; aliving.
+                &copy; Aliving.
             </h1>
-            <div class="socialswrap">
+            <div class="socialswrapiconft">
                 <ul>
-                    <li></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon_tiktok_.png" ?>" loading="lazy"
+                                alt="ico"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon_facebook squared_.png" ?>"
+                                loading="lazy" alt="ico"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon _instagram_.png" ?>" loading="lazy"
+                                alt="ico"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon_pinterest_.png" ?>" loading="lazy"
+                                alt="ico"></a></li>
                 </ul>
             </div>
         </div>
