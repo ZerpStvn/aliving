@@ -12,6 +12,9 @@ img {
   border-radius: 6px;
   transition: transform 0.8s ease;
 }
+.nextpostwrap .next-post a img:hover {
+  transform: scale(1) !important;
+}
 img:hover {
   transform: scale(1.1); /* Zoom the image on hover */
 }
@@ -303,7 +306,7 @@ img:hover {
   }
   a#hamburgermenu span {
     margin-left: 10px;
-    font-size: 21px;
+    font-size: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,7 +339,7 @@ img:hover {
   }
   ul.discovery,
   .newsletters {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .bottomdes.mobile {
     display: block;
@@ -379,7 +382,7 @@ img:hover {
     font-size: 20px;
   }
   a#hamburgermenu span {
-    font-size: 40px;
+    font-size: 33px;
   }
   .emptywrap h1 {
     font-size: 34px;

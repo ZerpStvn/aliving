@@ -51,7 +51,7 @@ function articlefeatured($categories = null)
                         }
                         ?>
                         <h2>
-                            <?php echo truncate_title(50) ?>
+                            <?php echo truncate_title(30) ?>
                         </h2>
                         <h3><?php echo truncate_excerpt(100) ?></h3>
                         <h4>By <?php echo get_author_name() ?></h4>
@@ -251,7 +251,7 @@ function articlefeatured2($categories = null)
                         }
                         ?>
                         <h2>
-                            <?php echo truncate_title(50) ?>
+                            <?php echo truncate_title(30) ?>
                         </h2>
                         <h3><?php echo truncate_excerpt(100) ?></h3>
                         <h4>By <?php echo get_author_name() ?></h4>

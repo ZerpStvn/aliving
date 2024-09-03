@@ -213,11 +213,12 @@ icon
   text-align: left;
 }
 .shar-bar h1 {
-  font-size: 16px !;
+  font-size: 17px !important;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   margin-right: 4px;
+  margin-bottom: 10px;
 }
 .shar-bar .savebookmark {
   width: 70px;
