@@ -204,7 +204,7 @@ img {
   border-bottom: 1px solid black;
 }
 .centerheader nav .collection-header.activenav .sub-menu li a {
-  color: black;
+  color: black !important;
 }
 .centerheader nav .collection-header.activenav .sub-menu li {
   padding: 15px 0 15px 0px;

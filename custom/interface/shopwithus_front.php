@@ -2,6 +2,7 @@
 
 function shopwithusfront($title, $description, $link, $slugs)
 {
+    // 
     ?>
     <ul class="shopwithus">
         <?php

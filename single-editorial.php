@@ -53,8 +53,8 @@ $publish_date = get_the_date('F j, Y');
         </div>
         <div class="rightcorner">
             <?php
-            the_content()
-                ?>
+            the_content();
+            ?>
 
         </div>
     </div>

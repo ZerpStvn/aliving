@@ -18,7 +18,7 @@ function display_next_post_link()
                     <p>By <?php echo get_the_author_meta('display_name', $next_post->post_author); ?></p>
                 </div>
                 <?php if ($next_post_thumbnail): ?>
-                    <?php echo $next_post_thumbnail; ?>
+                    <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="thumb">
                 <?php endif; ?>
             </a>
         </div>

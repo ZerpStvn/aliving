@@ -65,7 +65,7 @@ endif;
                     <ul class="quicklinks">
                         <h1>Quick Links</h1>
                         <li><a href="<?php echo esc_url($latest_editorial_url) ?>">Editorials</a></li>
-                        <li><a href="">Collection</a></li>
+                        <li><a href="">Collections</a></li>
                         <li><a href="<?php echo get_site_url() . "/product-recommendation" ?>">Products
                                 Recommendation</a></li>
                         <li><a href="">Gifts</a></li>
@@ -73,7 +73,7 @@ endif;
                     <ul class="discovery">
                         <h1>Discover</h1>
                         <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
-                        <li><a href="<?php echo get_site_url() . "/house-keeping" ?>">House Keeping</a></li>
+                        <li><a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
                         <li><a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
                         <li><a href="<?php echo get_site_url() . "/gardening" ?>">Garden</a></li>
                         <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What To Buy</a></li>
