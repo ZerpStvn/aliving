@@ -13,11 +13,11 @@ function articlefeatured($categories = null)
                     array(
                         'key' => '_service',
                         'value' => !empty($categories) ? $categories : array(),
-                        'compare' => '!='
+                        'compare' => '='
                     )
                 ),
                 'orderby' => 'date',
-                'order' => 'DESC',
+                'order' => 'ASC',
                 'posts_per_page' => 1,
             )
         );
