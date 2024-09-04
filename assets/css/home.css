@@ -237,7 +237,9 @@
   padding: 49px 0;
   display: none;
 }
-
+.decorwrap .latestarticle {
+  color: #698f92 !important;
+}
 @media (max-width: 1440px) {
   .homecollection {
     padding: 10px 30px;
