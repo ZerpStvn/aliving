@@ -42,6 +42,7 @@ img:hover {
 }
 .logocontainer img {
   opacity: 0;
+  width: 115px;
   transition: opacity 0.5s ease;
 }
 .centerheader {

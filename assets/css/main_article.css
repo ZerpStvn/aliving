@@ -125,7 +125,7 @@
   max-width: 450px;
   height: 61px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
@@ -137,7 +137,7 @@
   max-width: 450px;
   width: 100%;
   height: 31px;
-  margin-top: 74px;
+  margin-top: 0px;
   margin-bottom: 22px;
 }
 .articlefeatured_collection .articlefeatured .articlefeatured_details h4 {
@@ -712,9 +712,7 @@ li#pannel5 {
     grid-template-rows: auto auto;
     gap: 20px;
   }
-  .collections .homecollection .articles {
-    flex-direction: column;
-  }
+
   .collections .homecollection .list_of_articles .viewcollection {
     display: none;
   }
@@ -726,7 +724,7 @@ li#pannel5 {
     .articlefeatured
     .articlefeatured_details
     h3 {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 25px;
   }
   .collection_list a .infocontent p {
@@ -755,6 +753,9 @@ li#pannel5 {
   }
   .giftscollectionwrap.recomend .ourlatestcollection {
     grid-template-columns: 1fr 1fr;
+  }
+  .articlefeatured_collection .articlefeatured .articlefeatured_details h4 {
+    display: none;
   }
 }
 @media (max-width: 488px) {
@@ -797,17 +798,26 @@ li#pannel5 {
     width: 245px;
     height: 268px;
   }
-}
-
-@media (max-width: 395px) {
+  .shopwithus .left-column .infosection h2 {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .articlefeatured_collection .articlefeatured .articlefeatured_details h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    height: 8px;
+  }
   .collections
     .articlefeatured_collection
     .articlefeatured
     .articlefeatured_details
     h3 {
-    margin-top: 63px;
+    margin-top: 34px;
     margin-bottom: 25px;
   }
+}
+
+@media (max-width: 395px) {
 }
 @media (max-width: 375px) {
   .original_collections li {
@@ -827,5 +837,12 @@ li#pannel5 {
   .original_collections li h2,
   .original_collections li h1 {
     max-width: 204px;
+  }
+  .articlefeatured_collection .articlefeatured .articlefeatured_details h2 {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .articlefeatured_collection .articlefeatured img {
+    height: 331px;
   }
 }
