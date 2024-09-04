@@ -332,15 +332,15 @@ img:hover {
   .footer .footerwrap .rightcolumn .bottomdes {
     display: none;
   }
-  .footer .footerwrap .leftcolumn {
-    padding: 0px 30px 0px 30px;
+  .footer .footerwrap .rightcolumn {
+    padding: 0px 0px 0px 30px;
   }
   .footer .footerwrap .rightcolumn .newsletters {
     display: none;
   }
-  .footer .footerwrap .rightcolumn {
+  /* .footer .footerwrap .rightcolumn {
     padding: 0px 30px 0px 30px;
-  }
+  } */
   ul.discovery,
   .newsletters {
     margin-top: 0px;
@@ -357,7 +357,7 @@ img:hover {
     color: white;
   }
   .footer .footerwrap .rightcolumn .listpage {
-    width: 88%;
+    width: 100%;
   }
   .footer .footerwrap .rightcolumn {
     max-width: 50%;
@@ -366,11 +366,12 @@ img:hover {
 }
 @media (max-width: 560px) {
   .footer .footerwrap .rightcolumn .listpage {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer .footerwrap .uppercontent {
     flex-direction: column;
-    margin-top: 41px;
+    margin-top: -20px;
   }
   .bottomdes.mobile {
     display: block;
@@ -396,7 +397,7 @@ img:hover {
     width: 31%;
   }
   .footer .footerwrap .rightcolumn {
-    max-width: 50%;
+    max-width: 90%;
     margin-top: 31px;
   }
   .footer .footerwrap .leftcolumn {

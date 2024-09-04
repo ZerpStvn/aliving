@@ -818,6 +818,9 @@ li#pannel5 {
 }
 
 @media (max-width: 395px) {
+  .collection_article .listofarticle {
+    padding: 2px 0 18px 0;
+  }
 }
 @media (max-width: 375px) {
   .original_collections li {
