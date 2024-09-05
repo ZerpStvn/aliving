@@ -306,6 +306,9 @@ icon
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.wrapproductreco {
+  margin-bottom: 80px !important;
+}
 @media (max-width: 1225px) {
   .containernextpost .next-post {
     width: 100%;

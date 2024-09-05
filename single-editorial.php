@@ -9,7 +9,7 @@ $publish_date = get_the_date('F j, Y');
 <?php
 if ($get_editorial_status == 'product_recommendation') {
 
-    signleproduct_recommendation();
+    signleproduct_recommendation("At" . $store_front);
 
 } else {
     ?>

@@ -1,12 +1,12 @@
 <?php
-function signleproduct_recommendation()
+function signleproduct_recommendation($store_front = null)
 {
     ?>
     <div>
 
         <div class="productrecommendation collections">
             <div class="collectiontile global_width">
-                <h1>Best Deals At Mart</h1>
+                <h1>Best Deals <?php echo $store_front ?></h1>
             </div>
             <div class="wrapproductreco global_width">
                 <div class="upperreco">
