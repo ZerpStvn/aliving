@@ -72,7 +72,7 @@ endif;
                         <a href="<?php echo get_home_url() ?>">Home</a>
                     </li>
                     <li>
-                        <a href="<?php echo esc_url($latest_editorial_url); ?>">Editorial</a>
+                        <a href="<?php echo get_site_url() . '/editor' ?>">Editorial</a>
                     </li>
                     <li class="collection-header">
                         <a id="collectionnav" href="">Collections <span class="material-symbols-outlined">

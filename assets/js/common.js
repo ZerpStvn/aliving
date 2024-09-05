@@ -230,32 +230,28 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
   });
 
-
   // Social Trending Section - hide controls when video is paused and show when video is played
-    var $video = $(this).find('.social_trending video');
-    var $video_overlay = $(this).find('.play-btn-wrapper');
+  var $video = $(this).find(".social_trending video");
+  var $video_overlay = $(this).find(".play-btn-wrapper");
 
-    $video.removeAttr('controls');
+  $video.removeAttr("controls");
 
-    $video.on('click', function() {
-        if (this.paused) {
-            this.play();
-        } else {
-            this.pause();
-        }
-    });
-
-    $video_overlay.on('click', function() {
-      $(this).addClass('play-hide'); // Hide the play button overlay
+  $video.on("click", function () {
+    if (this.paused) {
+      this.play();
+    } else {
+      this.pause();
+    }
   });
 
+  $video_overlay.on("click", function () {
+    $(this).addClass("play-hide"); // Hide the play button overlay
+  });
 
-    $video.on('play', function() {
-        $(this).attr('controls', 'controls');
-    });
-    $video.on('pause', function() {
-        $(this).removeAttr('controls');
-    });
+  $video.on("play", function () {
+    $(this).attr("controls", "controls");
+  });
+  $video.on("pause", function () {
+    $(this).removeAttr("controls");
+  });
 });
-
-

@@ -101,6 +101,23 @@
 ul.collection_service {
   margin-bottom: 30px;
 }
+imgvieweditorial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000a8;
+  right: 0;
+  bottom: 0;
+}
+.imgvieweditorial {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 @media (max-width: 1440px) {
   .collections {
     padding: 0 14px;
@@ -112,6 +129,7 @@ ul.collection_service {
     align-items: start;
     padding: 0px 0px;
   }
+
   .collection_list a .infocontent h2 {
     margin: 6px 0;
     font-size: 16px !important;

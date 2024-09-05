@@ -77,6 +77,15 @@ function add_customer_pages()
         ),
 
         array(
+            'post_title' => 'Editor',
+            'post_content' => 'Editor',
+            'post_status' => 'publish',
+            'post_author' => 1,
+            'post_type' => 'page',
+            'post_name' => 'editor'
+        ),
+
+        array(
             'post_title' => '404',
             'post_content' => '404',
             'post_status' => 'publish',

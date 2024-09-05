@@ -19,5 +19,4 @@ function more_like_this_shortcode($atts)
     return ob_get_clean();
 }
 
-// Register the shortcode
 add_shortcode('more_like_this', 'more_like_this_shortcode');
