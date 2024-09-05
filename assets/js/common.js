@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
     if ($("div").hasClass("product-recom")) {
       $('li:contains("Product Recommendation")').addClass("activenav");
     } else {
-      $('li:contains("Editorial")').addClass("activenav");
+      // $('li:contains("Editorial")').addClass("activenav");
     }
   } else {
     // Regular menu activation for other pages
@@ -115,7 +115,7 @@ jQuery(document).ready(function ($) {
     autoplay: false,
     autoplaySpeed: 0,
     infinite: true,
-    speed: 300,
+    speed: 1200,
     slidesToShow: 3,
     centerMode: true,
     responsive: [
@@ -254,4 +254,29 @@ jQuery(document).ready(function ($) {
   $video.on("pause", function () {
     $(this).removeAttr("controls");
   });
+
+  //
+  // function checkWindowWidth() {
+  //   if ($(window).width() <= 768) {
+  //     $(".social_trending").addClass("socialslider");
+  //   } else {
+  //     $(".social_trending").removeClass("socialslider");
+  //   }
+  // }
+
+  // checkWindowWidth();
+  // $(window).resize(function () {
+  //   checkWindowWidth();
+  // });
+
+  // jQuery(".socialslider").slick({
+  //   dots: false,
+  //   arrows: false,
+  //   autoplay: false,
+  //   autoplaySpeed: 0,
+  //   infinite: true,
+  //   speed: 1200,
+  //   slidesToShow: 3,
+  //   centerMode: true,
+  // });
 });

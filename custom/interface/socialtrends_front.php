@@ -9,13 +9,13 @@ function socialtrending()
                 'post_type' => 'trending_on_socials',
                 'orderby' => 'date',
                 'order' => 'DESC',
-                'posts_per_page' => 4,
+                'posts_per_page' => 8,
             )
         );
 
         $upload_dir = wp_get_upload_dir();
         $image_url = $upload_dir['baseurl'] . '/2024/09/play-btn.png'; // Dynamic path
-
+    
         if ($trending_query->have_posts()):
             while ($trending_query->have_posts()):
                 $trending_query->the_post();
@@ -24,19 +24,18 @@ function socialtrending()
                 ?>
                 <li class="socialtrending">
                     <a href="#">
-                        <?php  if(!empty($video_url)){ ?>
-                            <video controls loop poster=<?php echo get_the_post_thumbnail_url() ?>>
-                            <source src="<?php echo $video_url; ?>" type="video/mp4">
+                        <?php if (!empty($video_url)) { ?>
+                            <video autoplay controls loop poster=<?php echo get_the_post_thumbnail_url() ?>>
+                                <source src="<?php echo $video_url; ?>" type="video/mp4">
                             </video>
                             <div class="play-btn-wrapper">
-                            <img src="<?php echo esc_url($image_url); ?>" class="play-btn" alt="Play Button">
+                                <img src="<?php echo esc_url($image_url); ?>" class="play-btn" alt="Play Button">
                             </div>
-                        <?php } 
-                        else {
+                        <?php } else {
                             ?> <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="trending"><?php
                         }
                         ?>
-                        <h1><?php echo get_the_title();?> </h1>
+                        <h1><?php echo get_the_title(); ?> </h1>
                     </a>
 
                 </li>
