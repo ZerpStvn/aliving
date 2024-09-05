@@ -353,6 +353,9 @@
   .collections .homecollection .articles {
     flex-direction: column;
   }
+  .homecollection .articles {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 666px) {
