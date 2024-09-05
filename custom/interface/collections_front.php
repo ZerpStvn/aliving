@@ -28,12 +28,12 @@ function collectionsfront($service)
                 array(
                     'key' => '_service',
                     'value' => $service,
-                    'compare' => '='
+                    'compare' => '!='
                 ),
             ),
             'orderby' => 'date',
             'order' => 'DESC',
-            'posts_per_page' => -1,
+            'posts_per_page' => 6,
         ));
 
         if ($trending_query->have_posts()):

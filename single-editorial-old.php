@@ -7,13 +7,11 @@ $publish_date = get_the_date('F j, Y');
 
 ?>
 <div class="editorial">
-    <div class="editorial-header archive-layout" style="background-position: center; background-repeat: no-repeat;">
-        <div class="editorial-header-image">
-            <img src="<?php echo get_the_post_thumbnail_url(null, 'large') ?>"/>
-        </div>
-        <div class="editorial-header-content">
+    <div class="editorial-header"
+        style="background-position: center; background-repeat: no-repeat; background-size: cover; background-image:url(<?php echo get_the_post_thumbnail_url() ?>)">
+        <div class="wrapcontent global_width">
             <div class="headingcontent global_padding">
-                <h1 class="font__color__white">
+                <h1>
                     <?php echo truncate_title(40) ?>
                     <div class="mobileinfowrap">
                         <p><?php echo truncate_excerpt(150) ?>
@@ -27,20 +25,18 @@ $publish_date = get_the_date('F j, Y');
                         </div>
                     </div>
                 </h1>
-                <p class="dekstop__only font__color__white font__title"><?php echo truncate_excerpt(350) ?></p>
 
             </div>
-            <div class="authordescrip global_padding dekstop__only">
+            <div class="authordescrip global_padding">
                 <div class="authorwrap">
-                    <h1 class="font__color__white">By <?php $author_id = $post->post_author;
+                    <h1>By <?php $author_id = $post->post_author;
                     $author_name = get_the_author_meta('display_name', $author_id);
                     echo $author_name
                         ?></h1>
-                    <h2 class="font__color__white"><?php echo get_the_date('F j, Y'); ?></h2>
+                    <h2><?php echo get_the_date('F j, Y'); ?></h2>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="excerptwrap">

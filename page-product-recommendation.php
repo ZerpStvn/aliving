@@ -1,45 +1,67 @@
 <?php
 get_header();
+$latestEditorialreco = new WP_Query(array(
+    'post_type' => 'editorial',
+    'meta_query' => array(
+        'relation' => 'AND',
+        array(
+            'key' => '_editorial_status',
+            'value' => 'product_recommendation',
+            'compare' => '='
+        ),
+    ),
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'posts_per_page' => 1,
+));
 ?>
-<div class="productrecommendation collections">
-    <div class="collectiontile global_width">
-        <h1>Best Deals</h1>
-    </div>
-    <div class="decorwrap global_width">
-        <div class="homecollection ">
-            <div>
-                <div class="trending">
-                    <!-- <img src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo" class="logooverlay"> -->
-                    <?php trendFront('trending', 'editorial') ?>
-                    <div class="hottopics">
-                        <?php trendFrontHottopics('hot_topic', 'editorial') ?>
-                    </div>
-                    <div class="featured">
-                        <?php trendFrontfeatured('featured', 'editorial') ?>
-                    </div>
-                </div>
-            </div>
-            <div class="articles">
+<div>
 
-                <div class="featuredarticles">
-                    <?php articlefeatured('featured', 'article') ?>
-                </div>
-                <div class="list_of_articles">
-                    <h2 class="latestarticle">Latest</h2>
-                    <?php listofarticle('article') ?>
-                    <a class="viewcollection" href="">View Collections <span><img
-                                src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                alt="arrow_icon"></span></a>
-                </div>
-            </div>
+    <div class="productrecommendation collections">
+        <div class="collectiontile global_width">
+            <h1>Best Deals At Mart</h1>
+        </div>
+        <div class="wrapproductreco global_width">
+            <?php
+            if ($latestEditorialreco->have_posts()):
+                while ($latestEditorialreco->have_posts()):
+                    $latestEditorialreco->the_post();
+                    ?>
+                    <div class="upperreco">
+                        <div class="wrapauthorname">
+                            <h1>By <?php echo get_author_name() ?></h1>
+                            <div>
+                                <?php shareicon() ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php the_content(); ?>
+                    <?php
+                endwhile;
+                wp_reset_postdata();
+            else:
+                echo '<div></div>';
+            endif;
+            ?>
 
         </div>
     </div>
-    <div class="collectionwraplist global_width">
-        <?php collectionsfront('whattobuy') ?>
+    <?php
+
+    if (have_posts()):
+        while (have_posts()):
+            the_post();
+            the_content();
+        endwhile;
+    endif;
+    ?>
+    <div class="giftscollectionwrap recomend">
+        <div class="giftscontent global_width">
+            <h1 class="giftstitle">Best Deals 2024</h1>
+            <?php ourlastestpost2('sales_and_deals') ?>
+        </div>
     </div>
 </div>
-
 <?php
 get_footer();
 ?>

@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <div class="house-keeping collections">
     <div class="collectiontile global_width">
-        <h1>House Keeping</h1>
+        <h1>Housekeeping</h1>
     </div>
     <div class="decorwrap global_width">
         <div class="homecollection ">
@@ -12,7 +12,7 @@
                     <?php trendFrontHottopics('hot_topic', 'editorial') ?>
                 </div>
                 <div class="featured">
-                    <?php trendFrontfeatured('featured', 'editorial', ) ?>
+                    <?php trendFrontfeatured('featured', 'editorial', 'house_keeping') ?>
                 </div>
             </div>
             <div class="articles">
@@ -21,11 +21,11 @@
                     <?php articlefeatured('house_keeping') ?>
                 </div>
                 <div class="list_of_articles">
-                    <h2 class="latestarticle">RECOMMENDATIOn</h2>
+                    <h2 class="latestarticle">RECOMMENDATION</h2>
                     <?php listofarticle('house_keeping') ?>
-                    <a class="viewcollection" href="">View Collections <span><img
+                    <!-- <a class="viewcollection" href="">View Collections <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                alt="arrow_icon"></span></a>
+                                alt="arrow_icon"></span></a> -->
                 </div>
             </div>
 

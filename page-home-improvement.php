@@ -12,7 +12,7 @@
                     <?php trendFrontHottopics('hot_topic', 'editorial') ?>
                 </div>
                 <div class="featured">
-                    <?php trendFrontfeatured('featured', 'editorial') ?>
+                    <?php trendFrontfeatured('featured', 'editorial', 'home_improvement') ?>
                 </div>
             </div>
             <div class="articles">
@@ -23,9 +23,9 @@
                 <div class="list_of_articles">
                     <h2 class="latestarticle">RECOMMENDATION</h2>
                     <?php listofarticle('home_improvement') ?>
-                    <a class="viewcollection" href="">View Collections <span><img
+                    <!-- <a class="viewcollection" href="">View Collections <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                alt="arrow_icon"></span></a>
+                                alt="arrow_icon"></span></a> -->
                 </div>
             </div>
             <div class="twolistview">

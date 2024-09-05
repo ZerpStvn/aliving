@@ -10,14 +10,12 @@ function originalsFronts()
                 $trending_query = new WP_Query(
                     array(
                         'post_type' => 'editorial',
-                        'tax_query' => array(
-                            'relation' => 'AND',
+                        'meta_query' => array(
                             array(
-                                'taxonomy' => 'category',
-                                'field' => 'slug',
-                                'terms' => 'a-list-of-living',
+                                'key' => '_service',
+                                'value' => 'a_list_living',
+                                'compare' => '=',
                             ),
-
                         ),
                         'orderby' => 'date',
                         'order' => 'DESC',
@@ -31,8 +29,7 @@ function originalsFronts()
                         ?>
                         <li>
                             <a href="<?php echo get_permalink() ?>">
-                                <img class="image_list" src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy"
-                                    alt="originals">
+                            <img class="image_list" src="<?php echo get_the_post_thumbnail_url(null, 'large'); ?>" loading="lazy" alt="originals">
                                 <?php
                                 $categories = get_the_category();
                                 if (!empty($categories)) {

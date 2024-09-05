@@ -38,8 +38,8 @@ function viewtwolist()
                                         <?php
                                     }
                                     ?>
-                                    <h2><?php echo truncate_title(40) ?></h2>
-                                    <h3><?php echo truncate_excerpt(110) ?></h3>
+                                    <h2><?php echo truncate_title(30) ?></h2>
+                                    <h3><?php echo truncate_excerpt(40) ?></h3>
                                     <p>By <?php echo get_author_name() ?></p>
                                 </div>
                                 <?php

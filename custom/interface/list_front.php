@@ -10,7 +10,17 @@ function missionaryfront()
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'posts_per_page' => 8,
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => '_editorial_status',
+                        'value' => 'product_recommendation',
+                        'compare' => '!='
+                    )
+                ),
+
             )
+
         );
 
         if ($trending_query->have_posts()):
@@ -72,6 +82,14 @@ function missionaryfront()
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'posts_per_page' => 8,
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => '_editorial_status',
+                        'value' => 'product_recommendation',
+                        'compare' => '!='
+                    )
+                ),
             )
         );
 

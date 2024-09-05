@@ -66,14 +66,35 @@ class TrendingOnSocialsPostType
             'trending_on_socials',            // Post type
             'side'                            // Context
         );
+
+        add_meta_box(
+            'trending_on_socials_video_url',   // Unique ID
+            'Social Video URL',                     // Box title
+            array($this, 'custom_meta_box_video_html'),  // Content callback, must be of type callable
+            'trending_on_socials',            // Post type
+            'side'                            // Context
+         );
     }
+
 
     public function custom_meta_box_html($post)
     {
         $url = get_post_meta($post->ID, '_trending_on_socials_url', true);
+
         ?>
         <label for="trending_on_socials_url">Enter Social Media URL:</label>
         <input type="text" name="trending_on_socials_url" id="trending_on_socials_url" value="<?php echo esc_attr($url); ?>"
+            size="25" />
+
+        <?php
+    }
+    public function custom_meta_box_video_html($post)
+    {
+        $video_url = get_post_meta($post->ID, '_trending_on_socials_video_url', true);
+
+        ?>
+        <label for="trending_on_socials_video_url">Enter Social Media Video URL:</label>
+        <input type="text" name="trending_on_socials_video_url" id="trending_on_socials_video_url" value="<?php echo esc_attr($video_url); ?>"
             size="25" />
         <?php
     }
@@ -85,6 +106,14 @@ class TrendingOnSocialsPostType
                 $post_id,
                 '_trending_on_socials_url',
                 $_POST['trending_on_socials_url']
+            );
+        }
+
+        if (array_key_exists('trending_on_socials_video_url', $_POST)) {
+            update_post_meta(
+                $post_id,
+                '_trending_on_socials_video_url',
+                $_POST['trending_on_socials_video_url']
             );
         }
     }

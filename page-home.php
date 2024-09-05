@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="home  ">
+<div class="home">
     <div class="missionary" id="missionary">
         <div class="listofcontent global_width">
             <div class="missionarywrap ">
@@ -20,10 +20,10 @@
         </div>
     </div>
     <div class="tooglepanel global_width">
-        <?php toggleFronts() ?>
+        <?php collectiontoggleFronts() ?>
     </div>
     <div class="tooglepanel-mobile global_width">
-        <?php toggleFrontsmobile(true) ?>
+        <?php toggleFrontsmobile2() ?>
     </div>
     <div class="originals">
         <div class="originalswrap global_width">
@@ -47,29 +47,29 @@
         </div>
     </div>
     <div class="bycategory global_width">
-        <h1 class="title_prod">Collections</h1>
+        <h1 class="title_prod">Gifts Ideas</h1>
         <div class="homecollection ">
 
             <div class="articles">
                 <div class="list_of_articles">
                     <h2 class="latestarticle">Latest</h2>
-                    <?php listofarticle() ?>
-                    <a class="viewcollection" href="<?php echo get_site_url() . '/gardening/' ?>">View Collections
+                    <?php listofarticle3('giftsidea') ?>
+                    <a class="viewcollection" href="<?php echo get_site_url() . '/gifts/' ?>">View Gifts
                         <span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
                                 alt="arrow_icon"></span></a>
                 </div>
                 <div class="featuredarticles">
-                    <?php articlefeatured() ?>
+                    <?php articlefeatured2('giftsidea') ?>
                 </div>
             </div>
             <div class="trending">
-                <?php trendFront('trending', ) ?>
+                <?php trendFront2('trending', 'none') ?>
                 <div class="hottopics">
-                    <?php trendFrontHottopics('hot_topic', 'editorial') ?>
+                    <?php trendFrontHottopics2('giftsidea') ?>
                 </div>
                 <div class="featured">
-                    <?php trendFrontfeatured('featured', 'editorial', ) ?>
+                    <?php trendFrontfeatured2('giftsidea') ?>
                 </div>
             </div>
 
@@ -84,24 +84,24 @@
                     <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper
                         vehicula.
                         Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada.</p>
-                    <a class="secondarybutton" href="<?php echo get_site_url() . '/whattobuy/' ?>">See More<span><img
+                    <!-- <a class="secondarybutton" href="<?php echo get_site_url() . '/whattobuy/' ?>">See More<span><img
                                 src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                alt="arrow_icon"></span></a>
+                                alt="arrow_icon"></span></a> -->
                 </div>
             </div>
             <div class="tabwraps">
                 <ul class="tablinks">
-                    <li><button class="thelist"> The List</button></li>
-                    <li><button class="listdeals">List & Deals</button></li>
+                    <li><button class="thelist"> The A List</button></li>
+                    <li><button class="listdeals">Sales & Deals</button></li>
                     <li><button class="giftguides">Gift Guides</button></li>
                 </ul>
 
                 <div class="tabcontents">
                     <div class="the_list_content">
-                        <?php shopwithusfront("The List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "aliving list") ?>
+                        <?php shopwithusfront("The A List", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "the_a_list") ?>
                     </div>
                     <div class="listandguidecontent">
-                        <?php shopwithusfront("List & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "deals") ?>
+                        <?php shopwithusfront("Sales & Deals", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "sales_and_deals") ?>
                     </div>
                     <div class="giftsguidecontent">
                         <?php shopwithusfront("Gift Guides", "Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis.", "#", "gifts") ?>

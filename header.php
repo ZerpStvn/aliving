@@ -80,15 +80,15 @@ endif;
                             </span></a>
                         <ul class="sub-menu">
                             <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
-                            <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">House Keeping</a></li>
-                            <li> <a href="<?php echo get_site_url() . "/home-improvement" ?>">Home improvement</a></li>
+                            <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
+                            <li> <a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
                             <li><a href="<?php echo get_site_url() . "/gardening" ?>">Gardening</a></li>
                             <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="<?php echo esc_url($latestEditorialpost) ?>">Product Recommendation</a>
+                        <a href="<?php echo get_site_url() . "/product-recommendation" ?>">Product Recommendation</a>
                     </li>
                     <li>
                         <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>

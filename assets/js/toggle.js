@@ -78,4 +78,46 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     $(".popupmenu").toggleClass("popactive");
   });
+
+  // check
+  $(".infocontent .listofcategory .category").each(function () {
+    var textContent = $(this).text().trim();
+
+    switch (true) {
+      case textContent.includes("Living Room"):
+      case textContent.includes("Kitchen"):
+      case textContent.includes("Dining Room"):
+      case textContent.includes("Bathroom"):
+      case textContent.includes("Home Office"):
+        $(this).css("color", "#652B41");
+        break;
+      case textContent.includes("Cleaning"):
+      case textContent.includes("Luandry"):
+      case textContent.includes("Kitchen"):
+      case textContent.includes("Organizing"):
+      case textContent.includes("Maintenance"):
+        $(this).css("color", "#DEBB50");
+        break;
+      case textContent.includes("Interior Renovations"):
+      case textContent.includes("Exterior Improvements"):
+      case textContent.includes("Structural Upgrades"):
+      case textContent.includes("Decorative Upgrades"):
+        $(this).css("color", "#E37052");
+        break;
+      case textContent.includes("Garden Design"):
+      case textContent.includes("Plant Propagation"):
+      case textContent.includes("Tools & Equipment"):
+        $(this).css("color", "#CE3E55");
+      case textContent.includes("Furniture"):
+      case textContent.includes("Appliances"):
+      case textContent.includes("Lighting"):
+      case textContent.includes("Kitchen Essentials"):
+        $(this).css("color", "#CE3E55");
+        break;
+
+      default:
+        $(this).css("color", "#652B41");
+        break;
+    }
+  });
 });

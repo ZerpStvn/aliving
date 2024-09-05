@@ -44,6 +44,7 @@
   line-height: 21px;
   text-align: left;
   margin-top: 28px;
+  letter-spacing: 1px;
 }
 .missionaryfrontwrap {
   max-width: 987px;
@@ -105,6 +106,7 @@
   line-height: 21px;
   text-align: left;
   margin: 19px 0;
+  letter-spacing: 1px;
 }
 
 .missionaryfrontwrap .second-latest .second-third-latest p {
@@ -164,6 +166,7 @@
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  letter-spacing: 1px;
 }
 .trendingpost .next-three-posts-trending .post img {
   height: 120px;
@@ -206,6 +209,7 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 12px;
+  letter-spacing: 1px;
 }
 
 .trendingpost .buttontrendwrap .viewcollection {
@@ -245,6 +249,9 @@
 
     width: 100%;
   }
+  .trendinglist {
+    padding: 0 15px;
+  }
   .missionaryfrontwrap.mobile li a .first-latest {
     flex-direction: column-reverse;
     align-items: center;
@@ -259,6 +266,7 @@
     font-weight: 400;
     line-height: 21px;
     text-align: left;
+    letter-spacing: 1px;
   }
   .missionaryfrontwrap .first-latest .infocontent {
     margin-top: 16px;
@@ -314,6 +322,14 @@
 .tabstoggle .decor,
 #pannelwrap1 {
   background-color: #652b41;
+}
+#pannelwrap1 .contentwrapping .listofcontent .listofcategory .category,
+#pannelwrap3 .contentwrapping .listofcontent .listofcategory .category,
+#pannelwrap4 .contentwrapping .listofcontent .listofcategory .category {
+  color: #f4d77e;
+}
+#pannelwrap2 .contentwrapping .listofcontent .listofcategory .category {
+  color: #652b41;
 }
 .tabstoggle .house_keeping,
 #pannelwrap2 {
@@ -401,7 +417,7 @@
   justify-content: end;
 }
 .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a {
-  max-width: 480px;
+  max-width: 87%;
   width: 100%;
 }
 .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a h1 {
@@ -419,6 +435,7 @@
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  letter-spacing: 1px;
 }
 .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a p {
   font-family: var(--maintitlefonts);
@@ -429,19 +446,21 @@
   margin-top: 20px;
 }
 .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a img {
-  max-width: 490px;
+  max-width: 100%;
   height: 308px;
   width: 100%;
+  object-fit: cover;
 }
 
 .togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
   display: flex;
+  gap: 20px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
-  max-width: 587px;
+  max-width: 87%;
   width: 100%;
   margin: 35px 0 56px 0;
   padding-bottom: 48px;
@@ -467,6 +486,7 @@
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  letter-spacing: 1px;
 }
 .twolistview {
   display: none;
@@ -509,6 +529,7 @@
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  letter-spacing: 1px;
 }
 .front_list .front_list_wrap a .listofcategory p {
   font-size: 14px;
@@ -526,19 +547,81 @@
   ul.original_collections.responsive.slick-initialized.slick-slider {
     width: 96%;
   }
+  .front_list .front_list_wrap a {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .front_list .front_list_wrap:last-child a {
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .trendingpost .first-trendingcont {
+    width: 96%;
+  }
+  .trendingpost .next-three-posts-trending .post img {
+    height: 60px;
+    width: 120px;
+  }
+  .trendingpost .buttontrendwrap {
+    display: none;
+  }
+  .next-three-posts-trending {
+    width: 96%;
+  }
+  .trendingpost {
+    gap: 0px;
+    /* justify-items: center; */
+  }
+
+  .trendingpost .next-three-posts-trending .post {
+    width: 91%;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .trendingpost .next-three-posts-trending .listofcategory .category {
+    margin: 6px 0;
+    font-size: 10px !important;
+    font-weight: 400;
+    line-height: 21px;
+    color: #e37052;
+  }
+  .missionary .listofcontent .post p {
+    font-size: 9px;
+    line-height: 14px;
+  }
 }
 @media (max-width: 488px) {
+  .togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
+    max-width: 100%;
+  }
+  .trendingpost .first-trendingcont {
+    width: 93%;
+  }
   .trendingpost {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
   }
   .front_list .front_list_wrap a img {
-    width: 100%;
+    width: 42%;
   }
   .front_list .front_list_wrap a .listofcategory {
     margin-left: 0px;
   }
-  .front_list .front_list_wrap a {
-    flex-direction: column;
+
+  .missionaryfrontwrap .first-latest img {
+    height: 200px;
+  }
+  .front_list .front_list_wrap {
+    padding: 0px 13px;
+  }
+  .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a {
+    max-width: 100%;
+  }
+  .front_list .front_list_wrap a .listofcategory h2 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
   }
 }

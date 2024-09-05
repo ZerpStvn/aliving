@@ -2,17 +2,25 @@
 
 function shopwithusfront($title, $description, $link, $slugs)
 {
+    // 
     ?>
     <ul class="shopwithus">
         <?php
         $recent_posts_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                'tax_query' => array(
+                // 'tax_query' => array(
+                //     array(
+                //         'taxonomy' => '_editorial_status',
+                //         'field' => 'slug',
+                //         'terms' => $slugs,
+                //     ),
+                // ),
+                'meta_query' => array(
                     array(
-                        'taxonomy' => 'category',
-                        'field' => 'slug',
-                        'terms' => $slugs,
+                        'key' => '_editorial_status',
+                        'value' => $slugs,
+                        'compare' => '=',
                     ),
                 ),
                 'orderby' => 'date',
@@ -24,11 +32,11 @@ function shopwithusfront($title, $description, $link, $slugs)
         $remaining_posts_query = new WP_Query(
             array(
                 'post_type' => 'editorial',
-                'tax_query' => array(
+                'meta_query' => array(
                     array(
-                        'taxonomy' => 'category',
-                        'field' => 'slug',
-                        'terms' => $slugs,
+                        'key' => '_editorial_status',
+                        'value' => $slugs,
+                        'compare' => '=',
                     ),
                 ),
                 'orderby' => 'date',
@@ -92,9 +100,9 @@ function shopwithusfront($title, $description, $link, $slugs)
                     <div class="title">
                         <h2><?php echo $title ?></h2>
                         <p><?php echo $description ?></p>
-                        <a href="<?php echo esc_url($link) ?>">See More<span><img
+                        <!-- <a href="<?php echo esc_url($link) ?>">See More<span><img
                                     src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                    alt="arrow_icon"></span></a>
+                                    alt="arrow_icon"></span></a> -->
                     </div>
                 <?php endif; ?>
             </div>
