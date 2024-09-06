@@ -9,7 +9,7 @@ function socialtrending()
                 'post_type' => 'trending_on_socials',
                 'orderby' => 'date',
                 'order' => 'DESC',
-                'posts_per_page' => 8,
+                'posts_per_page' => 4,
             )
         );
 

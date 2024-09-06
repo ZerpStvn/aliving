@@ -54,7 +54,8 @@ endif;
 
             <div class="leftcolumn">
                 <a href="<?php echo get_home_url() . "/" ?>"><img
-                        src="<?php echo esc_url(aliving_image . "/aliving-white-logo.png") ?>" loading="lazy" alt="footer" class="logo"></a>
+                        src="<?php echo esc_url(aliving_image . "/aliving-white-logo.png") ?>" loading="lazy"
+                        alt="footer" class="logo"></a>
                 <h2>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
                     Nullam malesuada erat ut turpis.
@@ -75,7 +76,7 @@ endif;
                         <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
                         <li><a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
                         <li><a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
-                        <li><a href="<?php echo get_site_url() . "/gardening" ?>">Garden</a></li>
+                        <li><a href="<?php echo get_site_url() . "/gardening" ?>">Gardening</a></li>
                         <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What To Buy</a></li>
                     </ul>
                     <div class="newsletters">
