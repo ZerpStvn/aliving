@@ -181,7 +181,12 @@
 @media (max-width: 488px) {
   .ourlatestcollection.editor {
     align-items: start;
-    gap: 8px;
+    gap: 14px;
+  }
+  .editorialpage .imgvieweditorial {
+    align-items: center;
+    justify-content: center;
+    height: 387px !important;
   }
   .imgvieweditorial .title {
     max-width: 328px;
@@ -210,7 +215,7 @@
     margin-top: 37px;
   }
   .archivepage {
-    padding: 0 8px;
+    padding: 0 14px;
   }
   .ourlatestcollection.editor
     .articlewrap:nth-child(3)

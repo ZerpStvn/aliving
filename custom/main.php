@@ -22,3 +22,4 @@ include_once(aliving_dir . "/custom/interface/popupmenu.php");
 include_once(aliving_dir . "/custom/interface/front_viewlist.php");
 include_once(aliving_dir . "/custom/interface/editorial.php");
 include_once(aliving_dir . "/custom/interface/recommendation.php");
+include_once(aliving_dir . "/custom/interface/gifts_front.php");

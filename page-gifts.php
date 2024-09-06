@@ -17,7 +17,7 @@ get_header();
 
             <div class="archivepage">
                 <h2 class="title">
-                    Product Collections
+                    Winter Gifts
                 </h2>
                 <p class="cotenttitle">Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu
                     vulputate.

@@ -120,4 +120,11 @@ jQuery(document).ready(function ($) {
         break;
     }
   });
+
+  $("#collection-mobile").on("click", function (e) {
+    e.preventDefault();
+    $("ul.sub-menu-collections").slideToggle("fast");
+    $(this).toggleClass("menu-active");
+    $("li.menu-collections").toggleClass("activesubmenu");
+  });
 });
