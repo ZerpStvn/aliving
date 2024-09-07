@@ -242,7 +242,7 @@ ul.social_trending video {
 }
 .play-btn-wrapper {
   position: absolute;
-  top: -470px;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;

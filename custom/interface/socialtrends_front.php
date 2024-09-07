@@ -25,8 +25,8 @@ function socialtrending()
                 <li class="socialtrending">
                     <a href="#">
                         <?php if (!empty($video_url)) { ?>
-                            <video class="social-video" controls loop poster="<?php echo get_the_post_thumbnail_url(); ?>" muted>
-                                <source src="<?php echo $video_url; ?>" type="video/mp4">
+                            <video class="social-video " controls loop poster="<?php echo get_the_post_thumbnail_url(); ?>" muted>
+                                <source src="<?php echo $video_url; ?>" type="video/mp4" autoplay>
                             </video>
                             <div class="play-btn-wrapper">
                                 <img src="<?php echo esc_url($image_url); ?>" class="play-btn" alt="Play Button">
