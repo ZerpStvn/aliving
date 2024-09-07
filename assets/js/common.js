@@ -255,28 +255,51 @@ jQuery(document).ready(function ($) {
     $(this).removeAttr("controls");
   });
 
-  //
-  // function checkWindowWidth() {
-  //   if ($(window).width() <= 768) {
-  //     $(".social_trending").addClass("socialslider");
-  //   } else {
-  //     $(".social_trending").removeClass("socialslider");
-  //   }
-  // }
-
-  // checkWindowWidth();
-  // $(window).resize(function () {
-  //   checkWindowWidth();
-  // });
-
-  // jQuery(".socialslider").slick({
+  // jQuery(".sampleslide").slick({
   //   dots: false,
   //   arrows: false,
   //   autoplay: false,
   //   autoplaySpeed: 0,
   //   infinite: true,
   //   speed: 1200,
-  //   slidesToShow: 3,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
   //   centerMode: true,
   // });
+  //
+  function checkWindowWidth() {
+    if ($(window).width() <= 768) {
+      $(".social_trending").addClass("socialslider");
+    } else {
+      $(".social_trending").removeClass("socialslider");
+    }
+  }
+
+  checkWindowWidth();
+  $(window).resize(function () {
+    checkWindowWidth();
+  });
+
+  jQuery(".socialslider").slick({
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed: 0,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 2,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 468,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });

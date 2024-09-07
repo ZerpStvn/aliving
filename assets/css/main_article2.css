@@ -597,11 +597,15 @@
     max-width: 100%;
   }
   .trendingpost .first-trendingcont {
-    width: 93%;
+    /* width: 93%; */
+    width: 100%;
+  }
+  .trendingpost .next-three-posts-trending .post {
+    width: 100%;
   }
   .trendingpost {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
   }
   .front_list .front_list_wrap a img {
     width: 42%;
@@ -623,5 +627,8 @@
     font-size: 16px;
     line-height: 26px;
     font-weight: bold;
+  }
+  .popupmenu.popactive {
+    height: 111vh;
   }
 }

@@ -41,9 +41,12 @@ img:hover {
 .navmenuheader.editorialnav li a {
   color: white;
 }
+img#site-logo {
+  width: 60%;
+}
 .logocontainer img {
   opacity: 0;
-  width: 115px;
+  width: 60%;
   transition: opacity 0.5s ease;
 }
 .centerheader {
@@ -249,8 +252,6 @@ img:hover {
 .popupmenu {
   position: fixed;
   flex-direction: column;
-  justify-content: space-between;
-
   right: -100%;
   top: 0;
   width: 100%;
@@ -455,7 +456,7 @@ img:hover {
     width: 100%;
   }
   .footer .footerwrap .rightcolumn {
-    max-width: 50%;
+    max-width: 90%;
     margin-top: 31px;
   }
   .footer img.logo {

@@ -25,16 +25,15 @@ function socialtrending()
                 <li class="socialtrending">
                     <a href="#">
                         <?php if (!empty($video_url)) { ?>
-                            <video autoplay controls loop poster=<?php echo get_the_post_thumbnail_url() ?>>
+                            <video class="social-video" controls loop poster="<?php echo get_the_post_thumbnail_url(); ?>" muted>
                                 <source src="<?php echo $video_url; ?>" type="video/mp4">
                             </video>
                             <div class="play-btn-wrapper">
                                 <img src="<?php echo esc_url($image_url); ?>" class="play-btn" alt="Play Button">
                             </div>
-                        <?php } else {
-                            ?> <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="trending"><?php
-                        }
-                        ?>
+                        <?php } else { ?>
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" loading="lazy" alt="trending">
+                        <?php } ?>
                         <h1><?php echo get_the_title(); ?> </h1>
                     </a>
 
@@ -47,5 +46,6 @@ function socialtrending()
         endif;
         ?>
     </ul>
+
     <?php
 }
