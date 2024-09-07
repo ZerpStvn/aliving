@@ -29,8 +29,7 @@ function originalsFronts()
                         ?>
                         <li>
                             <a href="<?php echo get_permalink() ?>">
-                                <img class="image_list" src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy"
-                                    alt="originals">
+                            <img class="image_list" src="<?php echo get_the_post_thumbnail_url(null, 'large'); ?>" loading="lazy" alt="originals">
                                 <?php
                                 $categories = get_the_category();
                                 if (!empty($categories)) {

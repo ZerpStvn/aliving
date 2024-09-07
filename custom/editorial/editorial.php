@@ -122,6 +122,7 @@ class EditorialPostType
             <option value="featured" <?php selected($editorial_status, 'featured'); ?>>Featured</option>
             <option value="product_recommendation" <?php selected($editorial_status, 'product_recommendation'); ?>>Product
                 Recommendation</option>
+            <option value="editorial" <?php selected($editorial_status, 'editorial'); ?>>Editorial</option>
 
             <option value="the_a_list" <?php selected($editorial_status, 'the_a_list'); ?>>The A List</option>
             <option value="gifts" <?php selected($editorial_status, 'gifts'); ?>>Gifts Guides</option>
@@ -135,7 +136,7 @@ class EditorialPostType
     {
         $service = get_post_meta($post->ID, '_service', true);
         ?>
-        <label for="service">Select Service:</label>
+        <label for="service">Select Collections Type:</label>
         <select name="service" id="service" class="postbox">
             <option value="none" <?php selected($service, 'none'); ?>>none</option>
             <option value="decor" <?php selected($service, 'decor'); ?>>Decor</option>

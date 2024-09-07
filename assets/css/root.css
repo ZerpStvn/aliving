@@ -6,8 +6,14 @@
   src: url("../fonts/Mathilga-lgwXD.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Acta";
+  src: url("../fonts/ActaDisplay-Book.otf") format("opentype");
+}
+
+
 :root {
-  --mainfont: "Open Sans", sans-serif;
+  --mainfont: "Acta", sans-serif;
   --maintitlefonts: "Libre Baskerville", serif;
-  --mainfontp: "Epilogue", sans-serif;
+  --mainfontp: "Acta", sans-serif;
 }

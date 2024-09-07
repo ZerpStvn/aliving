@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: var(--mainfontp);
+  letter-spacing: 1px;
 }
 
 a {
@@ -10,6 +11,13 @@ a {
 }
 img {
   border-radius: 6px;
+  transition: transform 0.8s ease;
+}
+.nextpostwrap .next-post a img:hover {
+  transform: scale(1) !important;
+}
+img:hover {
+  transform: scale(1.1); /* Zoom the image on hover */
 }
 .global_padding {
   padding: 2px 60px;
@@ -35,6 +43,7 @@ img {
 }
 .logocontainer img {
   opacity: 0;
+  width: 115px;
   transition: opacity 0.5s ease;
 }
 .centerheader {
@@ -61,9 +70,12 @@ img {
 }
 .headerwrap {
 }
-.navmenuheader .activenav {
-  border-bottom: 1px solid black;
+.footer img.logo {
+  height: 120px;
 }
+/* .navmenuheader .activenav {
+  border-bottom: 1px solid black;
+} */
 .footer {
   background-color: black;
 }
@@ -84,6 +96,7 @@ img {
   color: white;
   text-align: left;
   margin-top: 30px;
+  letter-spacing: 1px;
 }
 .footer .footerwrap .rightcolumn p {
   font-size: 12px;
@@ -127,6 +140,7 @@ img {
 .footer .footerwrap .rightcolumn .newsletters p,
 .newsletters.mobile-version p {
   font-family: var(--mainfontp);
+  letter-spacing: 1px;
   font-size: 14px;
   font-weight: 400;
   padding: 28px 0 18px 0;
@@ -179,6 +193,7 @@ img {
   font-weight: 400;
   line-height: 21px;
   text-align: left;
+  letter-spacing: 1px;
 }
 .centerheader nav .collection-header a {
   display: flex;
@@ -204,7 +219,7 @@ img {
   border-bottom: 1px solid black;
 }
 .centerheader nav .collection-header.activenav .sub-menu li a {
-  color: black;
+  color: black !important;
 }
 .centerheader nav .collection-header.activenav .sub-menu li {
   padding: 15px 0 15px 0px;
@@ -233,16 +248,95 @@ img {
 }
 .popupmenu {
   position: fixed;
-  right: -80%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  right: -100%;
   top: 0;
-  width: 80%;
+  width: 100%;
   height: 100vh;
   background-color: white;
-  display: block;
+  display: flex;
+  flex-direction: column;
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
 }
+.popupmenu .socialswrapiconft {
+  width: 100%;
+  padding: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupmenu .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  margin-right: 73px;
+}
+.popupmenu .logo img {
+  width: 183px;
+  height: 80px;
+}
+.popupmenu .newlistmenu {
+  margin-top: 0px;
+  font-size: 26px;
+  list-style: none;
+  font-family: var(--mainfont);
+}
+.popupmenu .newlistmenu li {
+  padding: 12px 0;
+}
+.popupmenu .newlistmenu li div {
+  border-bottom: 1px solid #d9d9d9;
+  /* margin: 12px 10px; */
+  width: 95%;
+  padding: 12px 0;
+  margin: 0 12px;
+}
+.popupmenu .sub-menu-collections {
+  display: none;
+  list-style: none;
+  margin-left: 36px;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.popupmenu .newlistmenu li a {
+  color: black;
+  padding: 0 23px;
+}
+.popupmenu .newsletters.mobile-version h1 {
+  color: black;
+}
+.popupmenu .newsletters.mobile-version p {
+  color: black;
+}
 
+.popupmenu .menu-collections div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popupmenu .menu-collections.activesubmenu {
+  width: 100%;
+  background-color: #f4d77e;
+}
+.popupmenu .menu-collections.activesubmenu div {
+  border-bottom: none;
+}
+.popupmenu .menu-collections.activesubmenu div span {
+  color: black;
+  margin-right: 10px;
+  transform: rotate(90deg);
+}
+.popupmenu .menu-collections.activesubmenu div a {
+  color: black;
+}
 .popupmenu.popactive {
   transform: translateX(-100%);
 }
@@ -255,7 +349,10 @@ img {
   font-size: 41px;
 }
 .popupmenuwrap {
-  padding: 20px;
+  padding: 34px 34px 9px 34px;
+}
+.popupmenu .newsletters.mobile-version {
+  padding: 24px 27px;
 }
 .popupmenuwrap .listmenu {
   margin-top: 15px;
@@ -276,7 +373,16 @@ img {
 .bottomdes.mobile {
   display: none;
 }
-
+.socialswrapiconft ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+}
+.footer-icon.rounded {
+  padding: 3px;
+  border: solid 2px;
+}
 @media (max-width: 988px) {
   .global_padding {
     padding: 2px 30px;
@@ -292,13 +398,17 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 1px;
   }
   a#hamburgermenu span {
     margin-left: 10px;
-    font-size: 21px;
+    font-size: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  img:hover {
+    transform: scale(1);
   }
 }
 @media (max-width: 890px) {
@@ -317,18 +427,18 @@ img {
   .footer .footerwrap .rightcolumn .bottomdes {
     display: none;
   }
-  .footer .footerwrap .leftcolumn {
-    padding: 0px 30px 0px 30px;
+  .footer .footerwrap .rightcolumn {
+    padding: 0px 0px 0px 30px;
   }
   .footer .footerwrap .rightcolumn .newsletters {
     display: none;
   }
-  .footer .footerwrap .rightcolumn {
+  /* .footer .footerwrap .rightcolumn {
     padding: 0px 30px 0px 30px;
-  }
+  } */
   ul.discovery,
   .newsletters {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .bottomdes.mobile {
     display: block;
@@ -342,20 +452,24 @@ img {
     color: white;
   }
   .footer .footerwrap .rightcolumn .listpage {
-    width: 88%;
+    width: 100%;
   }
   .footer .footerwrap .rightcolumn {
     max-width: 50%;
     margin-top: 31px;
   }
+  .footer img.logo {
+    height: 90px;
+  }
 }
 @media (max-width: 560px) {
   .footer .footerwrap .rightcolumn .listpage {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .footer .footerwrap .uppercontent {
     flex-direction: column;
-    margin-top: 41px;
+    margin-top: -20px;
   }
   .bottomdes.mobile {
     display: block;
@@ -371,7 +485,7 @@ img {
     font-size: 20px;
   }
   a#hamburgermenu span {
-    font-size: 40px;
+    font-size: 33px;
   }
   .emptywrap h1 {
     font-size: 34px;
@@ -381,7 +495,7 @@ img {
     width: 31%;
   }
   .footer .footerwrap .rightcolumn {
-    max-width: 50%;
+    max-width: 90%;
     margin-top: 31px;
   }
   .footer .footerwrap .leftcolumn {
@@ -389,5 +503,14 @@ img {
   }
   .global_padding {
     padding: 2px 9px;
+  }
+}
+@media (max-width: 388px) {
+  .popupmenu .logo img {
+    width: 151px;
+    height: 60px;
+  }
+  .popupmenu .logo {
+    margin-right: 58px;
   }
 }

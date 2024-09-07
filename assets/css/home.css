@@ -93,7 +93,9 @@
   background-color: #f8f7fd;
   padding: 60px 0;
 }
-
+.shopwithus .mainleft .title {
+  display: none;
+}
 .trending_on_socials h2 {
   font-family: "Libre Baskerville", serif;
   font-size: 62px;
@@ -136,9 +138,8 @@
 .shopwrap .shopbtn p {
   max-width: 941px;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 30px;
   margin-top: 36px;
   text-align: left;
@@ -170,7 +171,6 @@
 }
 /* tabs */
 .tablinks {
-  border-bottom: 2px solid white;
   display: flex;
   list-style: none;
   max-width: 1320px;
@@ -196,9 +196,11 @@
   line-height: 36px;
   text-align: center;
   color: white;
+  border-bottom: 2px solid white
 }
 .tablinks .tabactive {
   background-color: #f4d77e;
+  border-bottom-color:#f4d77e;
   border-radius: 20px 20px 0 0;
   color: black;
 }
@@ -213,8 +215,8 @@
 .buttonsarrow button {
   border: 1px solid white;
   background-color: transparent;
-  width: 81px;
-  height: 81px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   color: white;
 }
@@ -232,12 +234,14 @@
   color: #ce3e55;
 }
 .tooglepanel-mobile {
-  max-width: 716px;
+  max-width: 100%;
   width: 100%;
   padding: 49px 0;
   display: none;
 }
-
+.decorwrap .latestarticle {
+  color: #698f92 !important;
+}
 @media (max-width: 1440px) {
   .homecollection {
     padding: 10px 30px;
@@ -346,6 +350,12 @@
   .shopwithus .mainleft .title {
     max-width: 90%;
   }
+  .collections .homecollection .articles {
+    flex-direction: column;
+  }
+  .homecollection .articles {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 666px) {
@@ -353,9 +363,7 @@
   .slick-slider .slick-list {
     margin-left: 0px !important;
   }
-  .homecollection .articles {
-    flex-direction: column-reverse;
-  }
+
   .articlefeatured_collection .articlefeatured img {
     max-width: 100%;
     width: 100%;
@@ -380,7 +388,8 @@
     max-width: 100%;
   }
   .shopwithus .left-column {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
   }
   .shopwithus .left-column img {
     height: 218px;
@@ -395,12 +404,31 @@
     width: 100%;
     height: 308px;
   }
-  .collections .homecollection .articles {
-    flex-direction: column;
+
+  .buttonsarrow button {
+    width: 50px;
+    height: 50px;
+  }
+  .shopwithus .columns {
+    padding: 0 8px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .collections .featuredarticles {
+    width: 100%;
   }
 }
 
 @media (max-width: 488px) {
+  .originals h2,
+  .bycategory .title_prod,
+  .trending_on_socials h2,
+  .shopwrap .shopwraplist h1,
+  .ourlatest .ourlatestwrap h2,
+  .shopwithus .mainleft .title h2 {
+    font-size: 38px;
+  }
   .trending_on_socials_wrap {
     padding: 4px 10px;
   }
@@ -410,7 +438,10 @@
     font-size: 15px;
   }
   .tablinks {
-    max-width: 90%;
+    max-width: 95%;
+  }
+  .homecollection {
+    padding: 30px 17px;
   }
   .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
     margin-top: 69px;
@@ -425,20 +456,56 @@
   .homecollection .list_of_articles .latestarticle {
     font-size: 24px;
   }
+  .collection_article .listofarticle .articletitle {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .collection_article .listofarticle .listofcategory .category {
+    margin-bottom: 5px;
+  }
+  .featuredarticles {
+    width: 207%;
+  }
+
+  .homecollection .list_of_articles .viewcollection {
+    padding: 3px 8px;
+  }
+
+  .homecollection .list_of_articles .viewcollection {
+    font-family: 14px;
+  }
+  .shopwithus .left-column img {
+    height: 165px;
+  }
+  .shopwithus .left-column .infosection {
+    max-width: 76%;
+  }
+  .shopwithus .left-column li:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .articlefeatured_collection .articlefeatured img {
+    object-fit: cover;
+    height: 335px;
+  }
 }
 
 @media (max-width: 375px) {
+  .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
+    margin-top: 51px;
+    margin-bottom: 84px;
+  }
   .tablinks button {
     width: 103px;
     padding: 0px 0px 0px 0px;
     font-size: 14px;
   }
   .buttonsarrow button {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
-  .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
+  /* .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
     margin-top: 75px;
     margin-bottom: 43px;
-  }
+  } */
 }
