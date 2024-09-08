@@ -211,7 +211,9 @@
 .editorwraplist {
   margin-bottom: 50px;
 }
-
+.ourlatestcollection.editor .articlewrap a .imageorverlay img {
+  border-radius: 0px !important;
+}
 @media (max-width: 1440px) {
   .archivepage,
   .editorcontent {

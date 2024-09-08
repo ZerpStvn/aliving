@@ -869,6 +869,9 @@ li#pannel5 {
     margin-top: 34px;
     margin-bottom: 25px;
   }
+  ul.social_trending video {
+    height: 312px;
+  }
 }
 
 @media (max-width: 395px) {
