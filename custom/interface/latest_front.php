@@ -121,3 +121,72 @@ function ourlastestpost2($postslug = null)
     </ul>
     <?php
 }
+
+
+function ourlastestpost3($postslug = null)
+{
+
+    ?>
+    <ul class="ourlatestcollection">
+        <?php
+        $trending_query = new WP_Query(
+            array(
+                'post_type' => 'editorial',
+                'meta_query' => array(
+                    'relation' => 'AND',
+                    array(
+                        'key' => '_editorial_status',
+                        'value' => !empty($postslug) ? $postslug : array(),
+                        'compare' => '='
+                    ),
+                ),
+                'orderby' => 'date',
+                'order' => 'DESC',
+                'posts_per_page' => 8,
+            )
+        );
+
+        if ($trending_query->have_posts()):
+            while ($trending_query->have_posts()):
+                $trending_query->the_post();
+                ?>
+                <li>
+                    <a href="<?php echo get_permalink() ?>" class="latestwrap">
+                        <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="latest">
+                        <div class="infoprod">
+                        <?php
+$categories = get_the_category();
+if (!empty($categories)) {
+    ?>
+    <div class="listofcategory">
+        <h1 class="category">
+            <?php 
+            $category_name = esc_html($categories[0]->name);
+            echo substr($category_name, 0, 5) . '...'; 
+            ?>
+        </h1>
+    </div>
+    <?php
+}
+?>
+
+                            <h1>
+                                <?php echo truncate_title(14) ?>
+                            </h1>
+                            <p>
+    By <?php echo substr(get_author_name(), 0, 5) . '...'; ?>
+</p>
+
+                        </div>
+                    </a>
+                </li>
+                <?php
+            endwhile;
+            wp_reset_postdata();
+        else:
+            echo '<div></div>';
+        endif;
+        ?>
+    </ul>
+    <?php
+}

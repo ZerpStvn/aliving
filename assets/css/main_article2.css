@@ -30,15 +30,20 @@
 .missionaryfrontwrap .first-latest .infocontent {
   margin-top: 49px;
 }
+.missionarywrap .listofcategory {
+  padding: 0 20px;
+}
 .missionaryfrontwrap .first-latest .infocontent h2 {
   font-family: var(--maintitlefonts);
   font-size: 48px;
+  padding: 0 20px;
   font-weight: 400;
   line-height: 60px;
   letter-spacing: -0.02em;
   text-align: left;
 }
 .missionaryfrontwrap .first-latest .infocontent p {
+  padding: 0 20px;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -55,6 +60,7 @@
 .missionaryfrontwrap .second-latest {
   display: flex;
   width: 100%;
+  padding: 0 20px;
 }
 .missionaryfrontwrap .second-latest .first-second-latest {
   max-width: 473px;
@@ -119,7 +125,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 20px;
   border-top: 1px solid #d9d9d9;
 }
 .missionaryfrontwrap .next-three-posts .post {
@@ -236,7 +242,7 @@
     padding: 0 30px;
   }
   .missionarywrap {
-    padding: 0 30px;
+    padding: 0 0px;
   }
   .missionaryfrontwrap .second-latest .first-second-latest {
     max-width: 321px;
@@ -264,6 +270,7 @@
     font-family: var(--mainfont);
     font-size: 14px;
     font-weight: 400;
+    padding: 0 20px;
     line-height: 21px;
     text-align: left;
     letter-spacing: 1px;
@@ -273,6 +280,7 @@
   }
   .missionaryfrontwrap.mobile li a .first-latest img {
     max-width: 100%;
+    border-radius: 0px !important;
   }
   .missionaryfrontwrap.desktop {
     display: none;
@@ -597,15 +605,22 @@
     max-width: 100%;
   }
   .trendingpost .first-trendingcont {
-    /* width: 93%; */
     width: 100%;
+    /* width: 81%; */
   }
   .trendingpost .next-three-posts-trending .post {
     width: 100%;
   }
+  .missionary .listofcontent .post .left {
+    width: 47%;
+  }
+  .trendingpost .next-three-posts-trending .post img {
+    height: 60px;
+    width: 82px;
+  }
   .trendingpost {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
   }
   .front_list .front_list_wrap a img {
     width: 42%;
@@ -631,4 +646,6 @@
   .popupmenu.popactive {
     height: 111vh;
   }
+}
+@media (max-width: 388px) {
 }

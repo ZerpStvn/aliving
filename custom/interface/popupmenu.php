@@ -153,33 +153,33 @@ function popupmenu()
 
         <nav class="newlistmenu">
 
-            <li>
+            <a href="<?php echo get_home_url() ?>">
 
                 <div>
 
-                    <a href="<?php echo get_home_url() ?>">Home</a>
+                    <h1>Home</h1>
 
                 </div>
 
-            </li>
+            </a>
 
-            <li>
+            <a href="<?php echo get_site_url() . "/editor" ?>">
 
                 <div>
 
-                    <a href="<?php echo get_site_url() . "/editor" ?>">Editorial</a>
+                    <h1>Editorial</h1>
 
 
 
                 </div>
 
-            </li>
+            </a>
 
             <li class="menu-collections">
 
                 <div>
 
-                    <a href="#" id="collection-mobile">Collections</a>
+                    <h1 id="collection-mobile">Collections</h1>
 
                     <span class="material-symbols-outlined">
 
@@ -195,12 +195,7 @@ function popupmenu()
 
                 <li>
 
-
-
                     <a href="<?php echo get_site_url() . "/decor" ?>">Decor</a>
-
-
-
                 </li>
 
                 <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
@@ -215,21 +210,23 @@ function popupmenu()
 
             </ul>
 
-            <li>
+            <a href="<?php echo get_site_url() . '/product-recommendation' ?>">
 
-                <div> <a href="<?php echo get_site_url() . '/product-recommendation' ?>">Product Recommendation</a>
-
-                </div>
-
-            </li>
-
-            <li>
-
-                <div><a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>
+                <div>
+                    <h1>Product Recommendation</h1>
 
                 </div>
 
-            </li>
+            </a>
+
+            <a href="<?php echo get_site_url() . "/gifts" ?>">
+
+                <div>
+                    <h1>Gifts</h1>
+
+                </div>
+
+            </a>
 
         </nav>
 
@@ -253,17 +250,20 @@ function popupmenu()
 
             <ul>
 
-                <li><a href=""><img src="<?php echo aliving_image . "/icon/social/icon _tiktok_.png" ?>" loading="lazy"
-                            alt="ico"></a></li>
+                <li><a href=""><img class="rounded-icon-black"
+                            src="<?php echo aliving_image . "/icon/social/icontik.svg" ?>" loading="lazy" alt="ico"></a>
+                </li>
 
-                <li><a href=""><img src="<?php echo aliving_image . "/icon/social/icon _facebook squared_.png" ?>"
+                <li><a href=""><img class="rounded-icon-black" src="<?php echo aliving_image . "/icon/social/iconfb.svg" ?>"
                             loading="lazy" alt="ico"></a></li>
 
-                <li><a href=""><img src="<?php echo aliving_image . "/icon/social/icon _instagram_.png" ?>" loading="lazy"
-                            alt="ico"></a></li>
+                <li><a href=""><img class="rounded-icon-black-insta"
+                            src="<?php echo aliving_image . "/icon/social/iconinsta.svg" ?>" loading="lazy" alt="ico"></a>
+                </li>
 
-                <li><a href=""><img src="<?php echo aliving_image . "/icon/social/icon _pinterest_.png" ?>" loading="lazy"
-                            alt="ico"></a></li>
+                <li><a href=""><img class="rounded-icon-black"
+                            src="<?php echo aliving_image . "/icon/social/iconpen.svg" ?>" loading="lazy" alt="ico"></a>
+                </li>
 
             </ul>
 

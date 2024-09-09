@@ -17,7 +17,7 @@ function display_next_post_link()
                     <p>By <?php echo get_the_author_meta('display_name', $next_post->post_author); ?></p>
                 </div>
                 <?php if ($next_post_thumbnail): ?>
-                    <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="thumb">
+                    <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="nextimg">
                 <?php endif; ?>
             </a>
         </div>
@@ -68,8 +68,7 @@ function display_next_post_link2($postslug = null)
                         <p>By <?php echo get_the_author_meta('display_name', get_post_field('post_author', $next_post_id)); ?></p>
                     </div>
                     <?php if ($next_post_thumbnail): ?>
-                        <img src="<?php echo esc_url(get_the_post_thumbnail_url($next_post_id, 'thumbnail')); ?>" loading="lazy"
-                            alt="thumb">
+                        <img src="<?php echo get_the_post_thumbnail_url() ?>" loading="lazy" alt="nextimg">
                     <?php endif; ?>
                 </a>
             </div>

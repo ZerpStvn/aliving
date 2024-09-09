@@ -399,7 +399,7 @@ function toggleFrontsmobile($whattobuy = false)
 
 function toggleFrontsmobile2()
 {
-    $categories = array('decor', 'house_improvement', 'home_improvement', 'garden', 'whattobuy');
+    $categories = array('decor', 'house_keeping', 'home_improvement', 'garden', 'whattobuy');
     $panel_count = count($categories);
     $url_service = null;
     ?>

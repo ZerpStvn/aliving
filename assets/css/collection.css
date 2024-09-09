@@ -134,6 +134,9 @@ imgvieweditorial::before {
     align-items: start;
     padding: 0px 0px;
   }
+  .imgvieweditorial .title_section {
+    justify-content: center;
+  }
 
   .collection_list a .infocontent h2 {
     margin: 6px 0;
@@ -171,6 +174,17 @@ imgvieweditorial::before {
   .collection_list a .infocontent h2 {
     font-size: 20px;
     line-height: 32px;
+  }
+  .collection_list a img {
+    width: 89%;
+    height: 148px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 488px) {
+  .collection_list a img {
+    width: 85%;
+    height: 110px;
   }
 }
 @media (max-width: 388px) {

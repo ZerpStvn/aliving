@@ -167,12 +167,12 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  $("#collection-mobile").on("click", function (e) {
+  $(".menu-collections").on("click", function (e) {
     e.preventDefault();
 
     $("ul.sub-menu-collections").slideToggle("fast");
 
-    $(this).toggleClass("menu-active");
+    $("ul.sub-menu-collections").toggleClass("menu-active");
 
     $("li.menu-collections").toggleClass("activesubmenu");
   });
@@ -181,33 +181,27 @@ jQuery(document).ready(function ($) {
     var $li = $(this);
     var $video = $li.find(".social-video");
 
-    // Play video on hover and pause others
     $li.hover(
       function () {
-        // Pause all other videos
         $("video.social-video").each(function () {
           this.pause();
-          this.currentTime = 0; // Reset to beginning
+          this.currentTime = 0;
         });
-        // Play current hovered video
+
         $video.get(0).play();
       },
       function () {
-        // Pause current video when hover ends
         $video.get(0).pause();
-        $video.get(0).currentTime = 0; // Reset to the beginning
+        $video.get(0).currentTime = 0;
       }
     );
 
-    // Play video on click and pause others
     $li.on("click", function () {
-      // Pause all other videos
       $("video.social-video").each(function () {
         this.pause();
-        this.currentTime = 0; // Reset to beginning
+        this.currentTime = 0;
       });
 
-      // Play/pause the clicked video
       var videoElement = $video.get(0);
       if (videoElement.paused) {
         videoElement.play();

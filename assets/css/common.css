@@ -280,15 +280,21 @@ img#site-logo {
   width: 183px;
   height: 80px;
 }
-.popupmenu .newlistmenu {
+.popupmenu .newlistmenu a div h1,
+.popupmenu .newlistmenu li div h1 {
   margin-top: 0px;
   font-size: 26px;
+  font-weight: 400;
   list-style: none;
   font-family: var(--mainfont);
 }
+.popupmenu .newlistmenu a,
 .popupmenu .newlistmenu li {
   padding: 12px 0;
+  list-style: none;
+  color: black;
 }
+.popupmenu .newlistmenu a div,
 .popupmenu .newlistmenu li div {
   border-bottom: 1px solid #d9d9d9;
   /* margin: 12px 10px; */
@@ -383,6 +389,17 @@ img#site-logo {
 .footer-icon.rounded {
   padding: 3px;
   border: solid 2px;
+}
+img.rounded-icon-black {
+  border: 3px solid black;
+  padding: 3px;
+  width: 29px;
+  margin: 0 6px;
+}
+img.rounded-icon-black-insta {
+  padding: 3px;
+  width: 43px;
+  margin: 0 6px;
 }
 @media (max-width: 988px) {
   .global_padding {
@@ -479,6 +496,16 @@ img#site-logo {
   .footer .footerwrap .socials {
     margin: 37px 16px 0 16px;
     padding: 28px 8px;
+  }
+  .footer .footerwrap .leftcolumn {
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer img.logo {
+    margin-right: 59px;
   }
 }
 @media (max-width: 488px) {

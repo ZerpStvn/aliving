@@ -31,12 +31,9 @@
 }
 
 .imgvieweditorial .title {
-  max-width: 660px;
-
+  max-width: 592px;
   width: 100%;
-
   color: white;
-
   z-index: 3;
 }
 
@@ -214,6 +211,13 @@
 .ourlatestcollection.editor .articlewrap a .imageorverlay img {
   border-radius: 0px !important;
 }
+.ourlatestcollection.editor .articlewrap a h2 {
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height: 25.6px !important;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
 @media (max-width: 1440px) {
   .archivepage,
   .editorcontent {
@@ -277,6 +281,11 @@
   .archivepage {
     margin-top: 23px;
   }
+  .ourlatestcollection.editor .articlewrap a h2 {
+    font-size: 16px !important;
+    line-height: 22.6px !important;
+    letter-spacing: 0.05em;
+    
 }
 
 @media (max-width: 488px) {

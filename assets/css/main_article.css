@@ -824,7 +824,38 @@ li#pannel5 {
     height: 394px;
   }
   .giftscollectionwrap.recomend .ourlatestcollection {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection li .latestwrap img {
+    width: 57px;
+    height: inherit;
+    border-radius: 0px !important;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection li {
+    height: 133px;
+  }
+  .ourlatestcollection li a h1 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .giftscollectionwrap.recomend .ourlatestcollection {
+    margin-top: 4px;
+  }
+  .giftscollectionwrap .giftscontent .giftstitle {
+    margin-bottom: -4px;
+  }
+  .giftscollectionwrap {
+    padding: 24px 16px;
+  }
+
+  .ourlatestcollection li a p {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .ourlatestcollection li a h1 {
+    font-size: 11px !important;
+    line-height: 13px;
   }
   /* font */
   .missionaryfrontwrap .first-latest .infocontent h2 {
@@ -872,6 +903,9 @@ li#pannel5 {
   ul.social_trending video {
     height: 312px;
   }
+  .ourlatestcollection {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -884,10 +918,12 @@ li#pannel5 {
     width: 227px !important;
     height: 404px;
   }
-
+  .articlefeatured_collection .articlefeatured .articlefeatured_details h2 {
+    margin-bottom: -13px;
+  }
   .missionarywrap .logooverlay {
     width: auto;
-    height: 50px;
+    height: 99px;
     top: -84px;
   }
   .original_collections li img {
