@@ -63,7 +63,7 @@
 }
 .editorial-header.archive-layout,
 .editorial-header.archive-layout img {
-  max-height: 672px;
+  height: 672px;
   width: 100%;
   object-fit: cover;
 }

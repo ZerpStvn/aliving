@@ -1,135 +1,218 @@
 .imgvieweditorial {
   position: relative;
+
   display: flex;
+
   flex-direction: column;
+
   align-items: end;
+
   justify-content: center;
+
   z-index: 1;
 }
+
 .imgvieweditorial::after {
   content: "";
+
   position: absolute;
+
   top: 0;
+
   right: 0;
+
   left: 0;
+
   bottom: 0;
+
   z-index: -1;
 
   background-color: #000000ad;
 }
+
 .imgvieweditorial .title {
   max-width: 660px;
+
   width: 100%;
+
   color: white;
+
   z-index: 3;
 }
+
 .archivepage {
   margin-top: 140px;
 }
+
 .imgvieweditorial .title h1 {
   font-size: 72px;
+
   font-weight: 400;
+
   line-height: 93.6px;
+
   letter-spacing: -0.02em;
 }
+
 .archivepage .title {
   font-size: 62px;
+
   font-weight: 400;
+
   line-height: 73px;
+
   letter-spacing: -0.02em;
+
   text-align: left;
+
   padding-bottom: 6px;
+
   border-bottom: 1px solid black;
 }
+
 .archivepage .cotenttitle {
   font-size: 20px;
+
   font-weight: 400;
+
   line-height: 30px;
+
   letter-spacing: -0.02em;
+
   text-align: left;
+
   margin-top: 16px;
+
   max-width: 590;
+
   width: 100%;
 }
+
 .ourlatestcollection.editor .articlewrap a .imageorverlay {
   position: relative;
 }
+
 .ourlatestcollection.editor .articlewrap a .imageorverlay::after {
   position: absolute;
+
   content: "";
+
   top: 0;
+
   right: 0;
+
   left: 0;
-  bottom: 0;
+
+  bottom: 4px;
+
   background-color: #0000007d;
+}
+.ourlatestcollection.editor .articlewrap a h2 {
+  margin-top: 5px;
 }
 .ourlatestcollection.editor .articlewrap:hover a .imageorverlay::after {
   position: absolute;
+
   content: "";
+
   top: 0;
+
   right: 0;
+
   left: 0;
+
   bottom: 0;
+
   opacity: 0;
 }
+
 .editorialpage.prodrecom .imgvieweditorial {
   justify-content: center;
+
   align-items: center;
+
   text-align: center;
 }
+
 .editorialpage.prodrecom .imgvieweditorial .title h1 {
   font-size: 72px;
+
   font-weight: 400;
+
   line-height: 93.6px;
+
   letter-spacing: -0.02em;
+
   text-align: center;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(1) a img {
   height: 319px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(2) a img {
   height: 460px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(3) a img {
   height: 221px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(4) a img {
   height: 322px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(5) a img {
   margin-top: -120px;
+
   height: 322px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(5) a .imageorverlay::after {
   margin-top: -120px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(7) a img {
   margin-top: -234px;
+
   height: 460px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(7) a .imageorverlay::after {
   margin-top: -234px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(8) a img {
   margin-top: -128px;
+
   height: 221px;
 }
+
 .ourlatestcollection.editor .articlewrap:nth-child(8) a .imageorverlay::after {
   margin-top: -128px;
 }
+
 .ourlatestcollection.editor {
   align-items: start;
+
   gap: 50px;
 }
+
 .editorcontent {
   margin-top: 80px;
+
   padding: 0 30px;
 }
+
 .editorialpage.prodrecom .imgvieweditorial {
   height: 568px;
 }
+
 .editorwraplist {
   margin-bottom: 50px;
+}
+.ourlatestcollection.editor .articlewrap a .imageorverlay img {
+  border-radius: 0px !important;
 }
 @media (max-width: 1440px) {
   .archivepage,
@@ -137,6 +220,7 @@
     padding: 0 30px;
   }
 }
+
 @media (max-width: 788px) {
   .ourlatestcollection.editor .articlewrap:nth-child(5),
   .ourlatestcollection.editor .articlewrap:nth-child(6),
@@ -144,93 +228,131 @@
   .ourlatestcollection.editor .articlewrap:nth-child(8) {
     display: none;
   }
+
   .ourlatestcollection.editor .articlewrap:nth-child(3) a img {
     margin-top: -124px;
+
     height: 460px;
   }
+
   .ourlatestcollection.editor
     .articlewrap:nth-child(3)
     a
     .imageorverlay::after {
     margin-top: -128px;
   }
+
   .imgvieweditorial .title h1 {
     font-size: 41px;
+
     line-height: 46.6px;
   }
+
   .imgvieweditorial .title p {
     font-size: 18px;
+
     font-weight: 400;
+
     line-height: 27px;
+
     text-align: left;
+
     margin-top: 24px;
   }
+
   .editorialpage .imgvieweditorial {
     align-items: center;
+
     justify-content: center;
+
     height: 528px !important;
   }
+
   .editorialpage.prodrecom .imgvieweditorial .title h1 {
     font-size: 44px;
+
     line-height: 44.6px;
   }
+
   .archivepage {
     margin-top: 23px;
   }
 }
+
 @media (max-width: 488px) {
   .ourlatestcollection.editor {
     align-items: start;
+
     gap: 14px;
   }
+
   .editorialpage .imgvieweditorial {
     align-items: center;
+
     justify-content: center;
+
     height: 387px !important;
   }
+
   .imgvieweditorial .title {
     max-width: 328px;
+
     width: 100%;
+
     color: white;
+
     z-index: 3;
   }
+
   .ourlatestcollection.editor .articlewrap:nth-child(1) a img {
     height: 203px;
   }
+
   .ourlatestcollection.editor .articlewrap:nth-child(2) a img {
     height: 339px;
   }
+
   .ourlatestcollection.editor .articlewrap:nth-child(3) a img {
     margin-top: -101px;
   }
+
   .ourlatestcollection.editor .articlewrap:nth-child(4) a img {
     height: 250px;
+
     margin-top: 37px;
   }
+
   .ourlatestcollection.editor
     .articlewrap:nth-child(4)
     a
     .imageorverlay::after {
     height: 250px;
+
     margin-top: 37px;
   }
+
   .archivepage {
     padding: 0 14px;
   }
+
   .ourlatestcollection.editor
     .articlewrap:nth-child(3)
     a
     .imageorverlay::after {
     margin-top: -101px;
   }
+
   .ourlatestcollection.editor .articlewrap:nth-child(3) a img {
     height: 339px;
   }
+
   .editorialpage.prodrecom .imgvieweditorial .title h1 {
     font-size: 30px;
   }
+
   .archivepage .title {
     font-size: 38px;
+
     line-height: 46px;
   }
 }

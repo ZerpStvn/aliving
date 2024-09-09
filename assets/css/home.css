@@ -196,11 +196,11 @@
   line-height: 36px;
   text-align: center;
   color: white;
-  border-bottom: 2px solid white
+  border-bottom: 2px solid white;
 }
 .tablinks .tabactive {
   background-color: #f4d77e;
-  border-bottom-color:#f4d77e;
+  border-bottom-color: #f4d77e;
   border-radius: 20px 20px 0 0;
   color: black;
 }
@@ -508,4 +508,10 @@
     margin-top: 75px;
     margin-bottom: 43px;
   } */
+}
+/* sample */
+.listsample {
+  width: 200px;
+  height: 300px;
+  background-color: #652b41;
 }

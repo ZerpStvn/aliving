@@ -113,10 +113,15 @@ imgvieweditorial::before {
 .imgvieweditorial {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: calc(100vh - 140px);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.imgvieweditorial .title_section {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10%;
 }
 @media (max-width: 1440px) {
   .collections {
@@ -158,10 +163,18 @@ imgvieweditorial::before {
   .collections .homecollection {
     margin-top: 14px;
   }
+  .productrecommendation .collections {
+    padding: 0 0px;
+  }
 }
 @media (max-width: 888px) {
   .collection_list a .infocontent h2 {
     font-size: 20px;
     line-height: 32px;
+  }
+}
+@media (max-width: 388px) {
+  .imgvieweditorial .title_section {
+    justify-content: center;
   }
 }

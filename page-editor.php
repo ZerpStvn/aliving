@@ -6,12 +6,15 @@ get_header();
     <div class="editorialpage">
         <div class="imgvieweditorial"
             style="background-image:url(<?php echo aliving_image . '/imghero.png' ?>); repeat:no-repeat;">
-            <div class="title">
-                <h1>Aliquam tincidunt mauris eu risus</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                    Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
-                </p>
+            <div class="title_section global_width">
+                <div class="title">
+                    <h1>Aliquam tincidunt mauris eu risus</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                        Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
+                    </p>
+                </div>
             </div>
+
         </div>
         <div class="global_width">
 

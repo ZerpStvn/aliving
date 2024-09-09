@@ -221,8 +221,11 @@
   list-style: none;
 }
 .social_trending .socialtrending a {
+  display: flex;
   text-decoration: none;
   color: black;
+  flex-direction: column;
+  align-items: center;
 }
 .social_trending .socialtrending a img {
   max-width: 307.36px;
@@ -239,7 +242,7 @@ ul.social_trending video {
 }
 .play-btn-wrapper {
   position: absolute;
-  top: -470px;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,8 +252,8 @@ ul.social_trending video {
   opacity: 80%;
 }
 .play-btn {
-  width: 100px !important;
-  height: 100px !important;
+  width: 70px !important;
+  height: 70px !important;
 }
 .play-hide {
   display: none;
@@ -264,6 +267,7 @@ ul.social_trending video {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  max-width: 307.36px;
 }
 
 /* toogle */
@@ -695,7 +699,7 @@ li#pannel5 {
   }
   .missionarywrap .logooverlay {
     width: auto;
-    height: 70px;
+    height: 153px;
     top: -84px;
   }
 }
@@ -713,9 +717,10 @@ li#pannel5 {
     height: 300px;
   }
   ul.social_trending video,
-  .play-btn-wrapper {
+  .play-btn-wrapper,
+  .social_trending .socialtrending a h1 {
     max-width: 300.36px;
-    height: 300px;
+    /* height: 300px; */
   }
   .play-btn-wrapper {
     top: 300px;
@@ -799,6 +804,14 @@ li#pannel5 {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .social_trending {
+    display: block;
+  }
+  li.socialtrending {
+    margin: 0 4px;
+  }
+}
 @media (max-width: 488px) {
   .social_trending {
     margin-top: 6px;
@@ -820,7 +833,7 @@ li#pannel5 {
   }
   .missionarywrap .logooverlay {
     width: auto;
-    height: 60px;
+    height: 108px;
     top: -84px;
   }
   .missionary .listofcontent .post p {
@@ -855,6 +868,9 @@ li#pannel5 {
     h3 {
     margin-top: 34px;
     margin-bottom: 25px;
+  }
+  ul.social_trending video {
+    height: 312px;
   }
 }
 

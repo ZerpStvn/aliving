@@ -2,6 +2,12 @@
 </body>
 <?php wp_footer();
 
+function enqueue_load_fa() {
+    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' );
+  }
+  
+  add_action( 'wp_enqueue_scripts', 'enqueue_load_fa');
+
 $latest_editorial = new WP_Query(array(
     'post_type' => 'editorial',
     'posts_per_page' => 1,
@@ -112,14 +118,14 @@ endif;
             </h1>
             <div class="socialswrapiconft">
                 <ul>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon_tiktok_.png" ?>" loading="lazy"
-                                alt="ico"></a></li>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon_facebook squared_.png" ?>"
-                                loading="lazy" alt="ico"></a></li>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon _instagram_.png" ?>" loading="lazy"
-                                alt="ico"></a></li>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/icon_pinterest_.png" ?>" loading="lazy"
-                                alt="ico"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-tiktok-white.svg"?>"
+                                alt="ico" class="footer-icon tiktok-icon rounded" ></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-facebook-white.svg"?>"
+                    alt="ico" class="footer-icon facebook-icon rounded" ></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-instagram-white.svg"?>"
+                    alt="ico" class="footer-icon instagram-icon" ></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-pinterest-white.svg"?>"
+                    alt="ico" class="footer-icon pinterest-icon rounded" ></a></li>
                 </ul>
             </div>
         </div>
