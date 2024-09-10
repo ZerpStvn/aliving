@@ -360,6 +360,7 @@ img#site-logo {
 }
 .popupmenu .newsletters.mobile-version {
   padding: 24px 27px;
+  margin-top: 20px;
 }
 .popupmenuwrap .listmenu {
   margin-top: 15px;
@@ -381,6 +382,7 @@ img#site-logo {
   display: none;
 }
 .socialswrapiconft ul {
+  margin-top: 40px;
   display: flex;
   list-style: none;
   gap: 10px;

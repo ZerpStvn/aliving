@@ -12,6 +12,9 @@
 .decor .collectiontile h1 {
   color: #652b41;
 }
+.post_excerpt_mobile {
+  display: none;
+}
 .house-keeping .collectiontile h1 {
   color: #debb50;
 }
@@ -183,8 +186,14 @@ imgvieweditorial::before {
 }
 @media (max-width: 488px) {
   .collection_list a img {
-    width: 85%;
-    height: 110px;
+    width: 86%;
+    height: 106px;
+  }
+  .post_excerpt_mobile {
+    display: block;
+  }
+  .post_excerpt.desktop {
+    display: none;
   }
 }
 @media (max-width: 388px) {

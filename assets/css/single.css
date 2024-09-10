@@ -474,6 +474,9 @@ icon
   .nextpostwrap .next-post a {
     height: inherit;
   }
+  .nextpostwrap .next-post a img {
+    height: 279px;
+  }
 }
 @media (max-width: 376px) {
   .editorial-header .wrapcontent .headingcontent h1 {
