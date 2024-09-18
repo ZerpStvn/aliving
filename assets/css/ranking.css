@@ -137,3 +137,11 @@
   line-height: 27px;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .alivingproduct-list .alivingproduct-item .productinfo h2 {
+    font-size: 23px;
+  }
+  .sliderback .alivingproduct-item {
+    margin: 0 14px;
+  }
+}

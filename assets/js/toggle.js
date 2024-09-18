@@ -180,7 +180,9 @@ jQuery(document).ready(function ($) {
   $(".socialtrending").each(function () {
     var $li = $(this);
     var $video = $li.find(".social-video");
+    var $link = $li.find("a");
 
+    // Hover to play and pause video on hover
     $li.hover(
       function () {
         $("video.social-video").each(function () {
@@ -196,18 +198,29 @@ jQuery(document).ready(function ($) {
       }
     );
 
-    $li.on("click", function () {
+    // Handle click on the video and allow it to redirect
+    $video.on("click", function (e) {
+      e.stopPropagation(); // Prevent the default pause/play behavior, but allow the click-through
       $("video.social-video").each(function () {
         this.pause();
         this.currentTime = 0;
       });
 
+      // Toggle play/pause for the clicked video
       var videoElement = $video.get(0);
       if (videoElement.paused) {
         videoElement.play();
       } else {
         videoElement.pause();
       }
+
+      // Redirect to the external link after the click
+      window.location.href = $link.attr("href");
+    });
+
+    // Allow the link to redirect when clicking anywhere in the list item (outside the video)
+    $li.on("click", function () {
+      window.location.href = $link.attr("href");
     });
   });
 });

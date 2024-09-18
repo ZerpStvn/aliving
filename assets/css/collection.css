@@ -116,7 +116,7 @@ imgvieweditorial::before {
 .imgvieweditorial {
   position: relative;
   width: 100%;
-  height: calc(100vh - 140px);
+  height: calc(43vh - 35px);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -124,7 +124,6 @@ imgvieweditorial::before {
 .imgvieweditorial .title_section {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 10%;
 }
 @media (max-width: 1440px) {
   .collections {

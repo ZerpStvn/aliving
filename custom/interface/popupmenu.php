@@ -104,51 +104,6 @@ function popupmenu()
                 <img src="<?php echo aliving_image . "/Logo2.png" ?>" loading="lazy" alt="logo">
 
             </div>
-
-
-
-            <!-- <nav class="listmenu">
-
-                <li>
-
-                    <a href="<?php echo get_home_url() ?>">Home</a>
-
-                </li>
-
-                <li>
-
-                    <a href="<?php echo esc_url($latest_editorial_url); ?>">Editorial</a>
-
-                </li>
-
-                <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
-
-                <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
-
-                <li> <a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
-
-                <li><a href="<?php echo get_site_url() . "/gardening" ?>">Gardening</a></li>
-
-                <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li>
-
-
-
-                <li>
-
-                    <a href="<?php echo get_site_url() . '/product-recommendation' ?>">Product Recommendation</a>
-
-                </li>
-
-                <li>
-
-                    <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>
-
-                </li>
-
-
-
-            </nav> -->
-
         </div>
 
         <nav class="newlistmenu">
@@ -162,18 +117,32 @@ function popupmenu()
                 </div>
 
             </a>
-
-            <a href="<?php echo get_site_url() . "/editor" ?>">
-
+            <a href="<?php echo get_site_url() . "/decor" ?>">
                 <div>
-
-                    <h1>Editorial</h1>
-
-
-
+                    <h1>Decor</h1>
                 </div>
-
             </a>
+            <a href="<?php echo get_site_url() . "/house-keeping" ?>">
+                <div>
+                    <h1>Housekeeping</h1>
+                </div>
+            </a>
+            <a href="<?php echo get_site_url() . "/home-improvement" ?>">
+                <div>
+                    <h1> Home Improvement</h1>
+                </div>
+            </a>
+            <a href="<?php echo get_site_url() . "/gardening" ?>">
+                <div>
+                    <h1>Gardening</h1>
+                </div>
+            </a>
+            <a href="<?php echo get_site_url() . "/what-to-buy" ?>">
+                <div>
+                    <h1>What to Buy</h1>
+                </div>
+            </a>
+
 
             <li class="menu-collections">
 
@@ -192,42 +161,25 @@ function popupmenu()
             </li>
 
             <ul class="sub-menu-collections">
-
+                <li> <a href="<?php echo get_site_url() . "/editor" ?>">
+                        Editorial
+                    </a>
+                </li>
                 <li>
 
-                    <a href="<?php echo get_site_url() . "/decor" ?>">Decor</a>
+                    <a href="<?php echo get_site_url() . '/product-recommendation' ?>">
+                        Product Recommendation
+                    </a>
+
+
                 </li>
 
-                <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
+                <li> <a href="<?php echo get_site_url() . "/gifts" ?>">
+                        Gifts
 
-                <li> <a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
-
-                <li><a href="<?php echo get_site_url() . "/gardening" ?>">Gardening</a></li>
-
-                <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li>
-
-
+                    </a></li>
 
             </ul>
-
-            <a href="<?php echo get_site_url() . '/product-recommendation' ?>">
-
-                <div>
-                    <h1>Product Recommendation</h1>
-
-                </div>
-
-            </a>
-
-            <a href="<?php echo get_site_url() . "/gifts" ?>">
-
-                <div>
-                    <h1>Gifts</h1>
-
-                </div>
-
-            </a>
-
         </nav>
 
         <div class="newsletters mobile-version">

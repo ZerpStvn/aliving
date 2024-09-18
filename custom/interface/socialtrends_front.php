@@ -2,14 +2,14 @@
 function socialtrending()
 {
     ?>
-    <ul class="social_trending">
+    <ul class="social_trending_new socialslider">
         <?php
         $trending_query = new WP_Query(
             array(
                 'post_type' => 'trending_on_socials',
                 'orderby' => 'date',
                 'order' => 'DESC',
-                'posts_per_page' => 4,
+                'posts_per_page' => 5,
             )
         );
 
@@ -21,9 +21,10 @@ function socialtrending()
                 $trending_query->the_post();
                 // $linkurl = get_post_meta( get_the_ID(), "_trending_on_socials_meta_box", true);
                 $video_url = get_post_meta(get_the_ID(), "_trending_on_socials_video_url", true);
+                $url = get_post_meta(get_the_ID(), '_trending_on_socials_url', true);
                 ?>
                 <li class="socialtrending">
-                    <a href="#">
+                    <a href="<?php echo esc_url($url) ?>" target="_blank">
                         <?php if (!empty($video_url)) { ?>
                             <video class="social-video " controls loop poster="<?php echo get_the_post_thumbnail_url(); ?>" muted>
                                 <source src="<?php echo $video_url; ?>" type="video/mp4" autoplay>

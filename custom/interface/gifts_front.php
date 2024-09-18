@@ -21,7 +21,7 @@ function gifts_front()
     <div>
         <div class="giftwraps collections">
             <div class="collectiontile global_width">
-                <h1>Best Gifts</h1>
+                <h1><?php echo the_title() ?></h1>
             </div>
             <div class="upperwrapgifts global_width">
                 <div class="upperwrap">

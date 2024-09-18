@@ -71,28 +71,37 @@ endif;
                     <li>
                         <a href="<?php echo get_home_url() ?>">Home</a>
                     </li>
-                    <li>
-                        <a href="<?php echo get_site_url() . '/editor' ?>">Editorial</a>
-                    </li>
+                    <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
+                    <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
+                    <li> <a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
+                    <li><a href="<?php echo get_site_url() . "/gardening" ?>">Gardening</a></li>
+                    <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li>
+
+
                     <li class="collection-header">
                         <a id="collectionnav" href="">Collections <span class="material-symbols-outlined">
                                 keyboard_arrow_down
                             </span></a>
                         <ul class="sub-menu">
-                            <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
+                            <li>
+                                <a href="<?php echo get_site_url() . '/editor' ?>">Editorial</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo get_site_url() . "/product-recommendation" ?>">Product
+                                    Recommendation</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>
+                            </li>
+                            <!-- <li><a href="<?php echo get_site_url() . "/decor" ?>">Decor</a></li>
                             <li> <a href="<?php echo get_site_url() . "/house-keeping" ?>">Housekeeping</a></li>
                             <li> <a href="<?php echo get_site_url() . "/home-improvement" ?>">Home Improvement</a></li>
                             <li><a href="<?php echo get_site_url() . "/gardening" ?>">Gardening</a></li>
-                            <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li>
+                            <li><a href="<?php echo get_site_url() . "/what-to-buy" ?>">What to Buy</a></li> -->
                         </ul>
                     </li>
 
-                    <li>
-                        <a href="<?php echo get_site_url() . "/product-recommendation" ?>">Product Recommendation</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a>
-                    </li>
+
 
                 </nav>
             </div>
