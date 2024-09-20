@@ -37,9 +37,10 @@
 
 .treding_post_collection li a .title {
   max-width: 243px;
+  font-family: var(--mainfont);
   width: 100%;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 30px;
   text-align: left;
 }
@@ -47,6 +48,7 @@
   max-width: 243px;
   width: 100%;
   margin-top: 3px;
+  font-family: var(--maintitlechar);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -101,7 +103,7 @@
 }
 .treding_post_collection_featured .featuredwrap .featuredetails h2 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 27px;
   font-family: var(--maintitlefonts);
 }
@@ -117,9 +119,9 @@
 }
 .articlefeatured_collection .articlefeatured .articlefeatured_details h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 39px;
-  letter-spacing: -0.02em;
+  /* letter-spacing: -0.02em; */
   text-align: left;
   font-family: var(--maintitlefonts);
   max-width: 450px;
@@ -131,6 +133,7 @@
 .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
   font-size: 14px;
   font-weight: 400;
+  font-family: var(--maintitlechar);
   line-height: 21px;
   text-align: left;
   color: #595959;
@@ -172,7 +175,7 @@
 }
 .collection_article .listofarticle .articletitle {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 27px;
   font-family: var(--maintitlefonts);
   text-align: left;
@@ -198,9 +201,11 @@
 .original_collections li h2 {
   font-family: var(--maintitlefonts);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 1px;
   line-height: 30px;
   text-align: left;
+  margin-bottom: 20px;
 }
 .original_collections li img {
   width: 300px;
@@ -360,7 +365,7 @@ li#pannel5 {
   font-family: var(--mainfontp) !important;
 }
 .tooglepanelwrap .panels .pannelnumbers h2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--mainfont);
   font-size: 20px;
   font-weight: 400;
   vertical-align: text-bottom;
@@ -385,11 +390,10 @@ li#pannel5 {
   width: 100%;
 }
 .panels.active .pannelcontent .contentwrapping .recentcontent h1 {
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--mainfont);
   font-size: 32px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 40px;
-  letter-spacing: -0.02em;
   color: white;
   text-align: left;
   margin: 19px 0;
@@ -397,6 +401,7 @@ li#pannel5 {
 .panels.active .pannelcontent .contentwrapping .recentcontent h2 {
   font-size: 14px;
   font-weight: 400;
+  font-family: var(--maintitlechar);
   line-height: 21px;
   color: white;
   text-align: left;
@@ -475,16 +480,17 @@ li#pannel5 {
   text-align: left;
 }
 .panels.active .pannelcontent .contentwrapping .listofcontent h2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--mainfont);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 24px;
-  letter-spacing: -0.02em;
+
   text-align: left;
   margin: 10px 0;
 }
 .panels.active .pannelcontent .contentwrapping .listofcontent h3 {
   font-size: 14px;
+  font-family: var(--maintitlechar);
   font-weight: 400;
   line-height: 21px;
   text-align: left;
@@ -527,7 +533,7 @@ li#pannel5 {
 .shopwithus .left-column .infosection h2 {
   font-family: var(--maintitlefonts);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 30px;
   text-align: left;
 }
@@ -597,7 +603,7 @@ li#pannel5 {
 .shopwithus .right-column li .infosection h2 {
   font-family: var(--maintitlefonts);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 23px;
   text-align: left;
 }
@@ -639,7 +645,7 @@ li#pannel5 {
 .ourlatestcollection li a h1 {
   font-family: var(--maintitlefonts);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 27px;
   text-align: left;
   margin: 8px 0;

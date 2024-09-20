@@ -136,6 +136,7 @@
 }
 
 .shopwrap .shopbtn p {
+  font-family: var(--maintitlechar);
   max-width: 941px;
   width: 100%;
   font-size: 20px;

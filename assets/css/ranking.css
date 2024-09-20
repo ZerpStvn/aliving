@@ -24,6 +24,7 @@
 }
 .alivingproduct-list .alivingproduct-item .productinfo h3 {
   margin-top: 20px;
+  font-family: var(--maintitlechar);
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -31,7 +32,7 @@
 }
 .fullwidth_alivingproduct .alivingproduct-item .productinfo a span,
 .alivingproduct-list .alivingproduct-item .productinfo a span {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -143,5 +144,8 @@
   }
   .sliderback .alivingproduct-item {
     margin: 0 14px;
+  }
+  .fullwidth_alivingproduct .alivingproduct-item .productinfo h3 {
+    font-size: 14px;
   }
 }

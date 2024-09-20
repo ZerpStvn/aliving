@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: var(--mainfontp);
+  font-family: var(--maintitlechar);
   letter-spacing: 1px;
 }
 
@@ -486,6 +486,16 @@ img.rounded-icon-black-insta {
   .footer img.logo {
     height: 90px;
   }
+  .popupmenu .newlistmenu a div {
+    margin: 10px 12px !important;
+  }
+  .popupmenu .newsletters.mobile-version {
+    padding: 5px 27px;
+    margin-top: 18px;
+  }
+  .socialswrapiconft ul {
+    margin-top: 21px;
+  }
 }
 @media (max-width: 560px) {
   .footer .footerwrap .rightcolumn .listpage {
@@ -538,6 +548,15 @@ img.rounded-icon-black-insta {
   }
   .global_padding {
     padding: 2px 9px;
+  }
+  .popupmenu .newlistmenu a div h1,
+  .popupmenu .newlistmenu li div h1 {
+    font-size: 20px;
+  }
+  .popupmenu .newlistmenu a div,
+  .popupmenu .newlistmenu li div {
+    width: 95%;
+    padding: 6px 0;
   }
 }
 @media (max-width: 388px) {

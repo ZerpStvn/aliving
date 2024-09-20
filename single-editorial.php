@@ -28,7 +28,7 @@ if ($get_editorial_status == 'product_recommendation') {
                 <div class="editorial-header-content">
                     <div class="headingcontent global_padding">
                         <h1 class="font__color__white">
-                        <?php echo truncate_title(40) ?>
+                        <?php echo truncate_title(120) ?>
                             <div class="mobileinfowrap">
                                 <p><?php echo truncate_excerpt(120) ?>
                                 </p>

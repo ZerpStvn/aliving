@@ -95,13 +95,18 @@
 .editorial-header-content .headingcontent p {
   font-size: 18px;
   margin: 1.5rem 0 2.5rem;
+  font-family: var(--maintitlechar);
   color: white;
   line-height: 27px;
 }
+.elementor-721 .elementor-element > .elementor-widget-container {
+  font-family: var(--maintitlechar);
+}
 .editorial-header-content .headingcontent h1 {
-  font-size: 49px;
-  margin-bottom: 37px;
-  line-height: 78px;
+  font-size: 31px;
+  margin-bottom: 36px;
+  line-height: 43px;
+  font-family: var(--mainfont) !important;
 }
 .editorial .excerptwrap {
   padding: 110px 60px;
@@ -141,11 +146,18 @@
   width: 100%;
 }
 .editorial .excerptwrap .rightcorner p {
-  font-family: var(--maintitlefonts);
-  font-size: 18px;
+  font-family: var(--maintitlechar) !important;
+  font-size: 1.15rem;
   font-weight: 400;
-  line-height: 30.6px;
+  line-height: 28px;
   text-align: left;
+}
+.elementor-715 .elementor-element,
+.elementor-715 .elementor-element span {
+  font-size: 1.15rem !important;
+  font-family: var(--maintitlechar) !important;
+  font-weight: 400;
+  line-height: 28px !important;
 }
 .editorial .excerptwrap .rightcorner p:not(:first-of-type) {
   margin-top: 35px;
@@ -190,7 +202,7 @@
 .nextpostwrap .next-post a .infonext h2 {
   font-family: var(--maintitlefonts);
   font-size: 52px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 62.4px;
   letter-spacing: -0.02em;
   text-align: left;
@@ -271,6 +283,10 @@ icon
   text-align: left;
   margin-right: 4px;
   margin-bottom: 10px;
+}
+.shar-bar #isntagram img {
+  height: 20px;
+  width: 20px;
 }
 .shar-bar .savebookmark {
   width: 70px;
@@ -392,10 +408,29 @@ icon
   .editorial-header.archive-layout img {
     max-height: 265px;
   }
-  .editorial-header-image {
-  }
+
   .editorial-header.archive-layout {
     height: auto !important;
+  }
+  .mobileinfowrap .authorwrap h1,
+  .mobileinfowrap .authorwrap h2 {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 12.4px !important;
+  }
+  .editorial-header-content .headingcontent h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .mobileinfowrap .authorwrap {
+    margin: 17px 0;
+  }
+  .editorial-header-content .headingcontent p {
+    font-size: 14px;
+    margin: 0.5rem 0 0.5rem;
+    font-weight: 300;
+    line-height: 17px;
   }
 }
 @media (max-width: 768px) {
@@ -405,10 +440,7 @@ icon
   .morelikethiswraplist {
     grid-template-columns: 1fr 1fr;
   }
-  .editorial-header-content .headingcontent h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
+
   .nextpostwrap .next-post a {
     flex-direction: column-reverse;
   }
@@ -434,10 +466,10 @@ icon
   .editorial .excerptwrap .rightcorner {
     margin-left: 0px;
   }
-  .editorial .excerptwrap .leftcorner {
-    max-width: 100%;
-    width: 100%;
-  }
+  /* .editorial .excerptwrap .leftcorner {
+  max-width: 100%;
+  width: 100%;
+} */
   .morelikethiswraplist li {
     max-width: 228px;
     width: 100%;
@@ -475,6 +507,21 @@ icon
   }
   .elementor-singlewrap.product-gifts {
     margin: 0 14px;
+  }
+}
+@media (max-width: 888px) {
+  .elementor-715 .elementor-element,
+  .elementor-715 .elementor-element span {
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 24px !important;
+  }
+  .editorial .excerptwrap .rightcorner p {
+    font-family: var(--maintitlefonts);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.6px;
+    text-align: left;
   }
 }
 @media (max-width: 568px) {

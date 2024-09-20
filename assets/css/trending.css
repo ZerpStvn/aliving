@@ -27,4 +27,10 @@
   .social_trending_post {
     margin-top: 35px;
   }
+  .social_trending_new li a video {
+    height: 309px;
+  }
+  .social_trending_new li a img {
+    height: 309px;
+  }
 }

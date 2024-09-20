@@ -270,6 +270,37 @@
   line-height: 27px;
   text-align: left;
 }
+.elementor-831
+  .elementor-element.elementor-element-73c2f3f
+  .elementor-heading-title,
+.elementor-831
+  .elementor-element.elementor-element-c6213ea
+  .elementor-heading-title,
+.elementor-831
+  .elementor-element.elementor-element-abbd3f0
+  .elementor-heading-title {
+  font-size: 40px !important;
+  font-family: var(--mainfont) !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.elementor-831 .elementor-heading-title,
+.elementor-831
+  .elementor-element.elementor-element-998f24a
+  .elementor-icon-list-item
+  > .elementor-icon-list-text,
+.elementor-831
+  .elementor-element.elementor-element-998f24a
+  .elementor-icon-list-item
+  > a,
+.e-con > .e-con-inner > .elementor-widget > .elementor-widget-container,
+.upperwrapgifts .upperwrap .leftcorner .uppertitle p {
+  font-family: var(--maintitlechar) !important;
+  font-size: 1.15rem !important;
+  font-weight: 400;
+  line-height: 32px;
+}
 @media (max-width: 1440px) {
   .giftscollectionwrap {
     padding: 65px 16px;
