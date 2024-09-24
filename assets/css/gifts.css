@@ -270,6 +270,13 @@
   line-height: 27px;
   text-align: left;
 }
+.elementor-837,
+.elementor-837 .elementor-element .elementor-heading-title {
+  font-family: var(--maintitlechar) !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+}
 .elementor-831
   .elementor-element.elementor-element-73c2f3f
   .elementor-heading-title,

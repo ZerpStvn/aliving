@@ -285,7 +285,7 @@ jQuery(document).ready(function ($) {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 968,
+        breakpoint: 1091,
         settings: {
           dots: false,
           arrows: false,
