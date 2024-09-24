@@ -56,8 +56,8 @@ function missionaryfront()
                                         <?php
                                     }
                                     ?>
-                                    <h2><?php echo truncate_title(90); ?></h2>
-                                    <h3><?php echo truncate_excerpt(210) ?></h3>
+                                    <h2><?php echo truncate_title(50); ?></h2>
+                                    <h3><?php echo truncate_excerpt(110) ?></h3>
                                     <p>By <?php the_author(); ?></p>
                                 </div>
                                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" loading="lazy" alt="thumbnail">
@@ -105,7 +105,7 @@ function missionaryfront()
                         <a href="<?php echo get_permalink() ?>">
                             <div class="first-latest">
                                 <div class="infocontent">
-                                    <h2><?php echo truncate_title(40); ?></h2>
+                                    <h2><?php echo truncate_title(90); ?></h2>
                                     <p>By <?php the_author(); ?></p>
                                 </div>
                                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" loading="lazy" alt="thumbnail">

@@ -30,20 +30,25 @@
 .missionaryfrontwrap .first-latest .infocontent {
   margin-top: 49px;
 }
+.missionarywrap .listofcategory {
+  padding: 0 0px;
+}
 .missionaryfrontwrap .first-latest .infocontent h2 {
   font-family: var(--maintitlefonts);
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: -0.02em;
+  font-size: 38px;
+  padding: 0 10px;
+  font-weight: bold;
+  line-height: 49px;
+  /* letter-spacing: -0.02em; */
   text-align: left;
 }
 .missionaryfrontwrap .first-latest .infocontent p {
+  padding: 0 10px;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
   text-align: left;
-  margin-top: 28px;
+  margin-top: 13px;
   letter-spacing: 1px;
 }
 .missionaryfrontwrap {
@@ -55,6 +60,7 @@
 .missionaryfrontwrap .second-latest {
   display: flex;
   width: 100%;
+  padding: 0 20px;
 }
 .missionaryfrontwrap .second-latest .first-second-latest {
   max-width: 473px;
@@ -89,18 +95,18 @@
   width: 100%;
 }
 .missionaryfrontwrap .second-latest .second-third-latest {
-  padding: 16px 0 12px 50px;
+  padding: 45px 0 12px 50px;
 }
 .missionaryfrontwrap .second-latest .second-third-latest h2 {
   font-family: var(--maintitlefonts);
   font-size: 30px;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: -0.02em;
+  font-weight: bolder;
+  line-height: 38px;
+  /* letter-spacing: -0.02em; */
   text-align: left;
 }
 .missionaryfrontwrap .second-latest .second-third-latest h3 {
-  font-family: var(--mainfont);
+  font-family: var(--maintitlechar);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -119,7 +125,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 20px;
   border-top: 1px solid #d9d9d9;
 }
 .missionaryfrontwrap .next-three-posts .post {
@@ -155,7 +161,7 @@
 .trendingpost .first-latest-trending .infocontent h2 {
   font-family: var(--maintitlefonts);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 30px;
   text-align: left;
 }
@@ -196,7 +202,7 @@
 .missionary .listofcontent .post p {
   font-family: var(--maintitlefonts);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 30px;
   text-align: left;
 }
@@ -236,7 +242,7 @@
     padding: 0 30px;
   }
   .missionarywrap {
-    padding: 0 30px;
+    padding: 0 0px;
   }
   .missionaryfrontwrap .second-latest .first-second-latest {
     max-width: 321px;
@@ -246,13 +252,14 @@
   .missionaryfrontwrap.mobile {
     display: block;
     max-width: 100%;
-
+    /* padding: 0 15px; */
     width: 100%;
   }
   .trendinglist {
     padding: 0 15px;
   }
   .missionaryfrontwrap.mobile li a .first-latest {
+    padding: 0 16px;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: start;
@@ -261,9 +268,10 @@
     width: 100%;
   }
   .missionaryfrontwrap.mobile li a .first-latest .infocontent h3 {
-    font-family: var(--mainfont);
+    font-family: var(--maintitlechar);
     font-size: 14px;
     font-weight: 400;
+    /* padding: 0 20px; */
     line-height: 21px;
     text-align: left;
     letter-spacing: 1px;
@@ -273,6 +281,7 @@
   }
   .missionaryfrontwrap.mobile li a .first-latest img {
     max-width: 100%;
+    border-radius: 0px !important;
   }
   .missionaryfrontwrap.desktop {
     display: none;
@@ -312,6 +321,9 @@
   /* slider */
   ul.original_collections.responsive.slick-initialized.slick-slider {
     width: 92%;
+  }
+  .missionaryfrontwrap .first-latest .infocontent h2 {
+    padding: 0 0px;
   }
 }
 
@@ -430,7 +442,7 @@
   margin: 20px 0;
 }
 .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a h2 {
-  font-family: var(--mainfont);
+  font-family: var(--maintitlechar);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -518,9 +530,9 @@
 .front_list .front_list_wrap a .listofcategory h2 {
   font-family: var(--maintitlefonts);
   font-size: 30px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 45px;
-  letter-spacing: -0.02em;
+  /* letter-spacing: -0.02em; */
   text-align: left;
 }
 .front_list .front_list_wrap a .listofcategory h3 {
@@ -542,10 +554,25 @@
   .twolistview {
     display: block;
   }
+  .missionaryfrontwrap .first-latest .infocontent h2 {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 12px;
+  }
+  .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .original_collections li h2 {
+    margin-bottom: 12px;
+  }
 }
 @media (max-width: 768px) {
   ul.original_collections.responsive.slick-initialized.slick-slider {
     width: 96%;
+  }
+  .missionaryfrontwrap .first-latest .infocontent p {
+    padding: 0 0px;
   }
   .front_list .front_list_wrap a {
     flex-direction: row;
@@ -591,21 +618,61 @@
     font-size: 9px;
     line-height: 14px;
   }
+  .missionarywrap {
+    padding: 0 13px;
+  }
+  .missionaryfrontwrap .first-latest img {
+    height: 309px;
+  }
+  .missionaryfrontwrap.mobile li a .first-latest {
+    padding: 0 0px;
+  }
+  .tabstoggle li {
+    height: 174px;
+  }
+  .togglemobilewrap
+    .pannelcontent
+    .contentwrapping
+    .listofcontent
+    .list-item
+    h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
+    margin: 31px 0 35px 0;
+    padding-bottom: 18px;
+  }
+
+  .togglemobilewrap li {
+    padding: 0px 15px 18px 15px;
+  }
 }
 @media (max-width: 488px) {
   .togglemobilewrap .pannelcontent .contentwrapping .listofcontent {
     max-width: 100%;
   }
+  .togglemobilewrap .pannelcontent .contentwrapping .recentcontent a h1 {
+    font-size: 23px;
+  }
   .trendingpost .first-trendingcont {
-    /* width: 93%; */
     width: 100%;
+    /* width: 81%; */
   }
   .trendingpost .next-three-posts-trending .post {
     width: 100%;
   }
+  .missionary .listofcontent .post .left {
+    width: 47%;
+  }
+  .trendingpost .next-three-posts-trending .post img {
+    height: 60px;
+    width: 82px;
+  }
   .trendingpost {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
   }
   .front_list .front_list_wrap a img {
     width: 42%;
@@ -614,9 +681,6 @@
     margin-left: 0px;
   }
 
-  .missionaryfrontwrap .first-latest img {
-    height: 200px;
-  }
   .front_list .front_list_wrap {
     padding: 0px 13px;
   }
@@ -626,9 +690,11 @@
   .front_list .front_list_wrap a .listofcategory h2 {
     font-size: 16px;
     line-height: 26px;
-    font-weight: bold;
+    margin-bottom: 12px;
   }
   .popupmenu.popactive {
     height: 111vh;
   }
+}
+@media (max-width: 388px) {
 }

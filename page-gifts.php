@@ -7,7 +7,7 @@ get_header();
         <div class="imgvieweditorial"
             style="background-image:url(<?php echo aliving_image . '/Hero1.png' ?>); repeat:no-repeat;">
             <div class="title">
-                <h1>Gifts</h1>
+                <h1>Favorite Gifts</h1>
                 <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
                     Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
                 </p> -->

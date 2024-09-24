@@ -8,12 +8,30 @@
 
 @font-face {
   font-family: "Acta";
-  src: url("../fonts/ActaDisplay-Book.otf") format("opentype");
+  src: url("../fonts/acta-bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Recoleta";
+  src: url("../fonts/Recoleta-RegularDEMO.otf") format("opentype");
+}
+@font-face {
+  font-family: "ActaBold";
+  src: url("../fonts/acta-bold.otf") format("opentype");
 }
 
-
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/Futura Std Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "PTserrif";
+  src: url("../fonts/PTSerif-Regular.ttf") format("opentype");
+}
 :root {
-  --mainfont: "Acta", sans-serif;
-  --maintitlefonts: "Libre Baskerville", serif;
-  --mainfontp: "Acta", sans-serif;
+  --mainfont: "Recoleta", sans-serif;
+  --maintitlefonts: "Recoleta", sans-serif;
+  --mainfontp: "Recoleta", sans-serif;
+  --maintitlechar: "Futura", sans-serif;
+  --maintitleserif: "PTserrif", sans-serif;
+  --maintitleActabod: "ActaBold", sans-serif;
 }

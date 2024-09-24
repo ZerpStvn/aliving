@@ -73,7 +73,7 @@ class TrendingOnSocialsPostType
             array($this, 'custom_meta_box_video_html'),  // Content callback, must be of type callable
             'trending_on_socials',            // Post type
             'side'                            // Context
-         );
+        );
     }
 
 
@@ -94,8 +94,8 @@ class TrendingOnSocialsPostType
 
         ?>
         <label for="trending_on_socials_video_url">Enter Social Media Video URL:</label>
-        <input type="text" name="trending_on_socials_video_url" id="trending_on_socials_video_url" value="<?php echo esc_attr($video_url); ?>"
-            size="25" />
+        <input type="text" name="trending_on_socials_video_url" id="trending_on_socials_video_url"
+            value="<?php echo esc_attr($video_url); ?>" size="25" />
         <?php
     }
 

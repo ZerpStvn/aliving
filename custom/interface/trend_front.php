@@ -10,15 +10,16 @@ function trendFront($status, $categories = null)
             'meta_query' => array(
                 'relation' => 'OR',
                 array(
+                    'key' => '_service',
+                    'value' => !empty($categories) ? $categories : array(),
+                    'compare' => '='
+                ),
+                array(
                     'key' => '_editorial_status',
                     'value' => $status,
                     'compare' => '='
                 ),
-                array(
-                    'key' => '_service',
-                    'value' => !empty($categories) ? $categories : array(),
-                    'compare' => '='
-                )
+
             ),
 
             'orderby' => 'date',

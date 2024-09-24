@@ -65,7 +65,8 @@ function collectionsfront($service)
                             }
                             ?>
                             <h2 class="title"><?php echo truncate_title(50); ?></h2>
-                            <p class="post_excerpt"><?php echo truncate_excerpt(120) ?></p>
+                            <p class="post_excerpt desktop"><?php echo truncate_excerpt(120) ?></p>
+                            <p class="post_excerpt_mobile"><?php echo truncate_excerpt(15) ?></p>
                         </div>
                         <div class="author">
                             <h2>By <?php echo get_author_name() ?></h2>

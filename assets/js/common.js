@@ -226,11 +226,11 @@ jQuery(document).ready(function ($) {
     $(".collection-header").toggleClass("activenav");
   });
 
+  // Social Trending Section - hide controls when video is paused and show when video is played
   $(".socialtrending a").on("click", function (e) {
     e.preventDefault();
   });
 
-  // Social Trending Section - hide controls when video is paused and show when video is played
   var $video = $(this).find(".social_trending video");
   var $video_overlay = $(this).find(".play-btn-wrapper");
 
@@ -267,13 +267,7 @@ jQuery(document).ready(function ($) {
   //   centerMode: true,
   // });
   //
-  function checkWindowWidth() {
-    if ($(window).width() <= 768) {
-      $(".social_trending").addClass("socialslider");
-    } else {
-      $(".social_trending").removeClass("socialslider");
-    }
-  }
+  function checkWindowWidth() {}
 
   checkWindowWidth();
   $(window).resize(function () {
@@ -287,7 +281,39 @@ jQuery(document).ready(function ($) {
     autoplaySpeed: 0,
     infinite: true,
     speed: 1200,
-    slidesToShow: 2,
+    slidesToShow: 4,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 968,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 468,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+  jQuery(".sliderback").slick({
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed: 0,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 3,
     centerMode: true,
     responsive: [
       {

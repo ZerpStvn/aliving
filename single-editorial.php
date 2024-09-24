@@ -28,9 +28,9 @@ if ($get_editorial_status == 'product_recommendation') {
                 <div class="editorial-header-content">
                     <div class="headingcontent global_padding">
                         <h1 class="font__color__white">
-                        <?php echo truncate_title(40) ?>
+                        <?php echo truncate_title(120) ?>
                             <div class="mobileinfowrap">
-                                <p><?php echo truncate_excerpt(150) ?>
+                                <p><?php echo truncate_excerpt(120) ?>
                                 </p>
                                 <div class="authorwrap">
                                     <h1>By <?php $author_id = $post->post_author;
@@ -41,7 +41,7 @@ if ($get_editorial_status == 'product_recommendation') {
                                 </div>
                             </div>
                         </h1>
-                        <p class="dekstop__only font__color__white font__title"><?php echo truncate_excerpt(350) ?></p>
+                        <p class="dekstop__only font__color__white font__title"><?php echo truncate_excerpt(100) ?></p>
 
                     </div>
                     <div class="authordescrip global_padding dekstop__only">

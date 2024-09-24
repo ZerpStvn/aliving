@@ -136,6 +136,7 @@
 }
 
 .shopwrap .shopbtn p {
+  font-family: var(--maintitlechar);
   max-width: 941px;
   width: 100%;
   font-size: 20px;
@@ -330,15 +331,10 @@
   }
   .tablinks button {
     width: 100%;
-    padding: 0px 60px 0px 60px;
-  }
-
-  .tablinks button {
-    width: 165px;
     padding: 0px 5px 0px 5px;
   }
   .shopwithus .left-column .infosection {
-    max-width: 90%;
+    max-width: 80%;
   }
   .shopwithus .left-column li {
     max-width: 100%;
@@ -433,7 +429,7 @@
     padding: 4px 10px;
   }
   .tablinks button {
-    width: 116px;
+    width: 100%;
     padding: 0px 0px 0px 0px;
     font-size: 15px;
   }
@@ -444,8 +440,8 @@
     padding: 30px 17px;
   }
   .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
-    margin-top: 69px;
-    margin-bottom: 29px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .buttonsarrow {
     margin-top: 25px;
@@ -491,12 +487,8 @@
 }
 
 @media (max-width: 375px) {
-  .articlefeatured_collection .articlefeatured .articlefeatured_details h3 {
-    margin-top: 51px;
-    margin-bottom: 84px;
-  }
   .tablinks button {
-    width: 103px;
+    width: 100%;
     padding: 0px 0px 0px 0px;
     font-size: 14px;
   }

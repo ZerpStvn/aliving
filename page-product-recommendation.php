@@ -7,7 +7,7 @@ get_header();
         <div class="imgvieweditorial"
             style="background-image:url(<?php echo aliving_image . '/flowers.png' ?>); repeat:no-repeat;">
             <div class="title">
-                <h1>Product Recommendation</h1>
+                <h1>Favorite Product Recommendations</h1>
                 <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
                     Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
                 </p> -->
@@ -38,7 +38,7 @@ get_header();
         <div class="giftscollectionwrap recomend">
             <div class="giftscontent global_width">
                 <h1 class="giftstitle">Best Deals 2024</h1>
-                <?php ourlastestpost2('sales_and_deals') ?>
+                <?php ourlastestpost3('sales_and_deals') ?>
             </div>
         </div>
     </div>

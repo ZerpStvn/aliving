@@ -2,11 +2,12 @@
 </body>
 <?php wp_footer();
 
-function enqueue_load_fa() {
-    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' );
-  }
-  
-  add_action( 'wp_enqueue_scripts', 'enqueue_load_fa');
+function enqueue_load_fa()
+{
+    wp_enqueue_style('load-fa', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_load_fa');
 
 $latest_editorial = new WP_Query(array(
     'post_type' => 'editorial',
@@ -75,7 +76,7 @@ endif;
                         <li><a href="">Collections</a></li>
                         <li><a href="<?php echo get_site_url() . "/product-recommendation" ?>">Products
                                 Recommendation</a></li>
-                        <li><a href="">Gifts</a></li>
+                        <li><a href="<?php echo get_site_url() . "/gifts" ?>">Gifts</a></li>
                     </ul>
                     <ul class="discovery">
                         <h1>Discover</h1>
@@ -114,18 +115,18 @@ endif;
         </div>
         <div class="socials">
             <h1>
-                &copy; Aliving.
+                &#169; Aliving.
             </h1>
             <div class="socialswrapiconft">
                 <ul>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-tiktok-white.svg"?>"
-                                alt="ico" class="footer-icon tiktok-icon rounded" ></a></li>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-facebook-white.svg"?>"
-                    alt="ico" class="footer-icon facebook-icon rounded" ></a></li>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-instagram-white.svg"?>"
-                    alt="ico" class="footer-icon instagram-icon" ></a></li>
-                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-pinterest-white.svg"?>"
-                    alt="ico" class="footer-icon pinterest-icon rounded" ></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-tiktok-white.svg" ?>"
+                                alt="ico" class="footer-icon tiktok-icon rounded"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-facebook-white.svg" ?>"
+                                alt="ico" class="footer-icon facebook-icon rounded"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-instagram-white.svg" ?>"
+                                alt="ico" class="footer-icon instagram-icon"></a></li>
+                    <li><a href=""><img src="<?php echo aliving_image . "/icon/social/logo-pinterest-white.svg" ?>"
+                                alt="ico" class="footer-icon pinterest-icon rounded"></a></li>
                 </ul>
             </div>
         </div>
