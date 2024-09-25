@@ -177,50 +177,68 @@ jQuery(document).ready(function ($) {
     $("li.menu-collections").toggleClass("activesubmenu");
   });
 
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  }
+
   $(".socialtrending").each(function () {
     var $li = $(this);
     var $video = $li.find(".social-video");
     var $link = $li.find("a");
+    var clickCount = 0; // Counter to track clicks for double-click behavior
 
-    // Hover to play and pause video on hover
-    $li.hover(
-      function () {
+    if (isMobile()) {
+      // For mobile and tablet: click behavior only
+      $li.on("click", function (e) {
+        e.preventDefault(); // Prevent the default link redirection
+        clickCount++; // Increment click counter
+
+        // Pause all videos and reset time before playing the clicked one
         $("video.social-video").each(function () {
           this.pause();
           this.currentTime = 0;
         });
 
-        $video.get(0).play();
-      },
-      function () {
-        $video.get(0).pause();
-        $video.get(0).currentTime = 0;
-      }
-    );
+        // Toggle play/pause for the clicked video
+        var videoElement = $video.get(0);
+        if (videoElement.paused) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
 
-    // Handle click on the video and allow it to redirect
-    $video.on("click", function (e) {
-      e.stopPropagation(); // Prevent the default pause/play behavior, but allow the click-through
-      $("video.social-video").each(function () {
-        this.pause();
-        this.currentTime = 0;
+        // If this is the second click, redirect to the link
+        if (clickCount === 2) {
+          window.location.href = $link.attr("href");
+        }
+
+        // Reset clickCount after a short delay to avoid unintended double-clicks
+        setTimeout(function () {
+          clickCount = 0;
+        }, 500);
       });
+    } else {
+      // For desktop: hover to play and pause video
+      $li.hover(
+        function () {
+          $("video.social-video").each(function () {
+            this.pause();
+            this.currentTime = 0;
+          });
+          $video.get(0).play();
+        },
+        function () {
+          $video.get(0).pause();
+          $video.get(0).currentTime = 0;
+        }
+      );
 
-      // Toggle play/pause for the clicked video
-      var videoElement = $video.get(0);
-      if (videoElement.paused) {
-        videoElement.play();
-      } else {
-        videoElement.pause();
-      }
-
-      // Redirect to the external link after the click
-      window.location.href = $link.attr("href");
-    });
-
-    // Allow the link to redirect when clicking anywhere in the list item (outside the video)
-    $li.on("click", function () {
-      window.location.href = $link.attr("href");
-    });
+      // Handle click for desktop to redirect
+      $li.on("click", function () {
+        window.location.href = $link.attr("href");
+      });
+    }
   });
 });

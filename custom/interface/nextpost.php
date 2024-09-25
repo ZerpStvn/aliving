@@ -12,7 +12,7 @@ function display_next_post_link()
         <div class="next-post">
             <a href="<?php echo esc_url($next_post_url); ?>" title="<?php echo esc_attr($next_post_title); ?>">
                 <div class="infonext">
-                    <h2><?php echo truncate_title(60); ?></h2>
+                    <h2><?php echo truncate_title(30); ?></h2>
                     <h3><?php echo esc_html(wp_trim_words($next_post_excerpt, 30)); ?></h3>
                     <p>By <?php echo get_the_author_meta('display_name', $next_post->post_author); ?></p>
                 </div>

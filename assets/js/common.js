@@ -226,11 +226,11 @@ jQuery(document).ready(function ($) {
     $(".collection-header").toggleClass("activenav");
   });
 
+  // Social Trending Section - hide controls when video is paused and show when video is played
   $(".socialtrending a").on("click", function (e) {
     e.preventDefault();
   });
 
-  // Social Trending Section - hide controls when video is paused and show when video is played
   var $video = $(this).find(".social_trending video");
   var $video_overlay = $(this).find(".play-btn-wrapper");
 
@@ -285,7 +285,7 @@ jQuery(document).ready(function ($) {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 968,
+        breakpoint: 1292,
         settings: {
           dots: false,
           arrows: false,

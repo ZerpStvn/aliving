@@ -152,9 +152,9 @@ img#site-logo {
   text-align: left;
   color: white;
 }
-/* .newsletters.mobile-version {
+.newsletters.mobile-version {
   display: none;
-} */
+}
 
 .newsletters.mobile-version form {
   display: flex;
@@ -196,7 +196,6 @@ img#site-logo {
   border-top: 1px solid white;
 }
 .footer .footerwrap .socials h1 {
-  font-family: var(--mainfontp);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -210,6 +209,7 @@ img#site-logo {
 .centerheader nav .collection-header {
   position: relative;
 }
+
 .centerheader nav .collection-header .sub-menu {
   display: none;
 }
@@ -221,7 +221,7 @@ img#site-logo {
   background-color: white;
   list-style: none;
   padding: 14px;
-  width: 256px;
+  width: 131px;
 }
 .centerheader nav .collection-header.activenav .sub-menu li:hover {
   border-bottom: 1px solid black;
@@ -400,14 +400,15 @@ img#site-logo {
 img.rounded-icon-black {
   border: 3px solid black;
   padding: 3px;
-  width: 29px;
+  width: 19px;
   margin: 0 6px;
 }
 img.rounded-icon-black-insta {
   padding: 3px;
-  width: 43px;
+  width: 35px;
   margin: 0 6px;
 }
+
 @media (max-width: 988px) {
   .global_padding {
     padding: 2px 30px;
@@ -550,13 +551,17 @@ img.rounded-icon-black-insta {
     padding: 2px 9px;
   }
   .popupmenu .newlistmenu a div h1,
-  .popupmenu .newlistmenu li div h1 {
+  .popupmenu .newlistmenu li div h1,
+  .newsletters.mobile-version h1 {
     font-size: 20px;
   }
   .popupmenu .newlistmenu a div,
   .popupmenu .newlistmenu li div {
     width: 95%;
     padding: 6px 0;
+  }
+  .newsletters.mobile-version p {
+    padding: 13px 0 18px 0;
   }
 }
 @media (max-width: 388px) {

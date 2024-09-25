@@ -32,7 +32,7 @@
 }
 .fullwidth_alivingproduct .alivingproduct-item .productinfo a span,
 .alivingproduct-list .alivingproduct-item .productinfo a span {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;

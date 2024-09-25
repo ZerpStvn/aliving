@@ -20,9 +20,8 @@
 }
 
 @font-face {
-  font-family: "Untittled Serif";
-  src: url("../fonts/TestUntitledSerif-Regular-BF664576c34dded.otf")
-    format("opentype");
+  font-family: "Futura";
+  src: url("../fonts/Futura Std Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "PTserrif";
@@ -32,7 +31,7 @@
   --mainfont: "Recoleta", sans-serif;
   --maintitlefonts: "Recoleta", sans-serif;
   --mainfontp: "Recoleta", sans-serif;
-  --maintitlechar: "Untittled Serif", sans-serif;
+  --maintitlechar: "Futura", sans-serif;
   --maintitleserif: "PTserrif", sans-serif;
   --maintitleActabod: "ActaBold", sans-serif;
 }
