@@ -71,7 +71,7 @@ function missionaryfront()
             endwhile;
             wp_reset_postdata();
         else: ?>
-            <div>No posts found.</div>
+            <div></div>
         <?php endif; ?>
     </ul>
     <ul class="missionaryfrontwrap desktop">
@@ -173,7 +173,7 @@ function missionaryfront()
             endwhile;
             wp_reset_postdata();
         else: ?>
-            <div>No posts found.</div>
+            <div></div>
         <?php endif; ?>
     </ul>
     <?php
@@ -203,8 +203,12 @@ function trendinglistview($status)
         );
 
         if ($trending_query->have_posts()):
+            ?>
+            <h1 id="trendingtitle">Trending</h1>
+            <?php
             $post_count = 0;
             while ($trending_query->have_posts()):
+
                 $trending_query->the_post();
                 $post_count++;
 
@@ -247,14 +251,17 @@ function trendinglistview($status)
 
             endwhile;
             wp_reset_postdata();
+            ?>
+            <div class="buttontrendwrap">
+                <a class="viewcollection" href="<?php echo get_site_url() . "/home-improvement/" ?>">Read More <span><img
+                            src="<?php echo esc_url(aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"); ?>"
+                            alt="arrow_icon"></span></a>
+            </div>
+            <?php
         else: ?>
-            <div>No posts found.</div>
+            <div></div>
         <?php endif; ?>
-        <div class="buttontrendwrap">
-            <a class="viewcollection" href="<?php echo get_site_url() . "/home-improvement/" ?>">Read More <span><img
-                        src="<?php echo esc_url(aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"); ?>"
-                        alt="arrow_icon"></span></a>
-        </div>
+
     </div>
     <?php
 }

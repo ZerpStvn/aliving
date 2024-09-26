@@ -91,7 +91,11 @@ function listofarticle($categories = null)
         );
 
         if ($trending_query->have_posts()):
+            ?>
+            <h2 class="latestarticle">RECOMMENDATION</h2>
+            <?php
             while ($trending_query->have_posts()):
+
                 $trending_query->the_post();
                 ?>
 
@@ -222,7 +226,11 @@ function listofarticle3($categories = null)
         );
 
         if ($trending_query->have_posts()):
+            ?>
+            <h2 class="latestarticle">Latest</h2>
+            <?php
             while ($trending_query->have_posts()):
+
                 $trending_query->the_post();
                 ?>
 
@@ -257,6 +265,12 @@ function listofarticle3($categories = null)
                 <?php
             endwhile;
             wp_reset_postdata();
+            ?>
+            <a class="viewcollection" href="<?php echo get_site_url() . '/gifts/' ?>">View Gifts
+
+                <span><img src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
+                        alt="arrow_icon"></span></a>
+            <?php
         else:
             echo '<div></div>';
         endif;

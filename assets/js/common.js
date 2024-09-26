@@ -306,6 +306,48 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+  jQuery(".prodslider").slick({
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed: 0,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 5,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1056,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 468,
+        settings: {
+          dots: false,
+          arrows: false,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
   jQuery(".sliderback").slick({
     dots: false,
     arrows: false,

@@ -17,7 +17,7 @@
 
             <div class="trendinglist">
 
-                <h1 id="trendingtitle">Trending</h1>
+
 
                 <?php trendinglistview('trending') ?>
 
@@ -122,15 +122,11 @@
 
                 <div class="list_of_articles">
 
-                    <h2 class="latestarticle">Latest</h2>
+
 
                     <?php listofarticle3('giftsidea') ?>
 
-                    <a class="viewcollection" href="<?php echo get_site_url() . '/gifts/' ?>">View Gifts
 
-                        <span><img
-                                src="<?php echo aliving_svg . "/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" ?>"
-                                alt="arrow_icon"></span></a>
 
                 </div>
 

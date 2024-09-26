@@ -81,8 +81,7 @@
 }
 .fullwidth_alivingproduct .alivingproduct-item .alivingproduct-cover img {
   height: 300px;
-  object-fit: cover;
-
+  object-fit: contain;
   width: 100%;
 }
 .fullwidth_alivingproduct .alivingproduct-item .productinfo {
@@ -138,6 +137,7 @@
   line-height: 27px;
   text-align: left;
 }
+
 @media (max-width: 768px) {
   .alivingproduct-list .alivingproduct-item .productinfo h2 {
     font-size: 23px;
