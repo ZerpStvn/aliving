@@ -104,6 +104,24 @@ function my_theme_add_elementor_support()
 }
 add_action('init', 'my_theme_add_elementor_support');
 
+// 
+// Disable WordPress auto-update email notification
+add_filter('auto_core_update_send_email', '__return_false');
+
+// Disable theme and plugin update notifications in the admin dashboard
+add_filter('auto_update_plugin', '__return_false');
+add_filter('auto_update_theme', '__return_false');
+// Disable plugin auto-update notifications
+add_filter('auto_update_plugin', '__return_false');
+add_filter('auto_plugin_update_send_email', '__return_false');
+
+
+function my_custom_admin_css()
+{
+    // Enqueue custom admin CSS file
+    wp_enqueue_style('custom-admin-style', aliving_css . '/update.css');
+}
+add_action('admin_enqueue_scripts', 'my_custom_admin_css');
 
 // custom widget
 //================================================
