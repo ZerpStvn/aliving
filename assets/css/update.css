@@ -1,0 +1,6 @@
+/* Hide plugin update notifications */
+.update-nag,
+.plugin-update-tr,
+.update-plugins {
+  display: none !important;
+}

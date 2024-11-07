@@ -78,7 +78,7 @@ if ($get_editorial_status == 'product_recommendation') {
             </div>
             <div class="nextpostwrap">
                 <div class="containernextpost ">
-                <?php display_next_post_link() ?>
+                <?php display_next_post_link2($get_editorial_status) ?>
                 </div>
 
             </div>

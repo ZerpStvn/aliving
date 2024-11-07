@@ -19,8 +19,8 @@ get_header();
                 <h2 class="title">
                     From My Editor
                 </h2>
-                <p class="cotenttitle">Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu
-                    vulputate.
+                <p class="cotenttitle">Our goal is to inspire and inform, bringing you valuable insights on topics that
+                    matter.
                 </p>
 
                 <div class="editorwraplist">

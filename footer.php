@@ -64,8 +64,8 @@ endif;
                         src="<?php echo esc_url(aliving_image . "/aliving-white-logo.png") ?>" loading="lazy"
                         alt="footer" class="logo"></a>
                 <h2>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                    Nullam malesuada erat ut turpis.
+                    <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                    Nullam malesuada erat ut turpis. -->
                 </h2>
             </div>
             <div class="rightcolumn">

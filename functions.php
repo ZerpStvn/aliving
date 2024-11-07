@@ -83,12 +83,10 @@ add_action('login_enqueue_scripts', 'my_custom_login_logo');
 // 
 function filter_editorial_posts_by_author($query)
 {
-    // Check if we're in the admin area and it's the main query
     if (is_admin() && $query->is_main_query() && $query->get('post_type') === 'editorial') {
 
         $current_user = wp_get_current_user();
 
-        // If the user is not an administrator, filter posts by author
         if (!in_array('administrator', $current_user->roles)) {
             $query->set('author', $current_user->ID);
         }
@@ -104,6 +102,19 @@ function my_theme_add_elementor_support()
 }
 add_action('init', 'my_theme_add_elementor_support');
 
+add_filter('auto_core_update_send_email', '__return_false');
+
+add_filter('auto_update_plugin', '__return_false');
+add_filter('auto_update_theme', '__return_false');
+add_filter('auto_update_plugin', '__return_false');
+add_filter('auto_plugin_update_send_email', '__return_false');
+
+
+function my_custom_admin_css()
+{
+    wp_enqueue_style('custom-admin-style', aliving_css . '/update.css');
+}
+add_action('admin_enqueue_scripts', 'my_custom_admin_css');
 
 // custom widget
 //================================================

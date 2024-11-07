@@ -19,8 +19,8 @@ get_header();
                 <h2 class="title">
                     Product Collections
                 </h2>
-                <p class="cotenttitle">Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu
-                    vulputate.
+                <p class="cotenttitle">Explore our curated selection of premium products. Each collection is designed to
+                    meet your needs with quality, style, and innovation.
                 </p>
 
                 <div class="editorwraplist">

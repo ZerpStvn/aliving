@@ -57,7 +57,7 @@ function display_next_post_link2($postslug = null)
             $next_post_id = get_the_ID();
             $next_post_url = get_permalink($next_post_id);
             $next_post_title = get_the_title($next_post_id);
-            $next_post_excerpt = get_the_excerpt($next_post_id); // Prefer using excerpt instead of content for a brief preview
+            $next_post_excerpt = get_the_excerpt($next_post_id);
             $next_post_thumbnail = get_the_post_thumbnail($next_post_id, 'thumbnail');
             ?>
             <div class="next-post">
